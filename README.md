@@ -1,146 +1,210 @@
-<h1 align="center"> 🌐 ManuSearch: Democratizing Deep Search in Large Language Models with a Transparent and Open Multi-Agent Framework</a></h1>
+# MultiHop-Searcher
 
-<div align="center"> 
+一个基于多智能体协作的复杂问题搜索求解框架。通过 **Planner-Searcher-Reader** 三级架构，将复杂的多跳推理问题自动分解为可搜索的子问题，迭代检索并整合多源信息，最终生成精确答案。
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv)](https://arxiv.org/pdf/2505.18105)
-[![dataset](https://img.shields.io/badge/dataset-Hugging%20Face-yellow?logo=huggingface)](https://huggingface.co/datasets/RUC-AIBOX/ORION)
-[![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
+## 架构概览
 
-</div>
+```
+用户问题
+   │
+   ▼
+┌──────────────────────────────────────────┐
+│              SearchAgent                 │
+│  (协调器：全局超时控制 + Fallback 兜底)    │
+│                                          │
+│  ┌──────────┐    ┌──────────┐            │
+│  │ Planner  │───▶│ Searcher │            │
+│  │ 问题拆解  │◀───│ 搜索求解  │            │
+│  └──────────┘    └────┬─────┘            │
+│       │               │                  │
+│       │          ┌────▼─────┐            │
+│       │          │  Reader  │            │
+│       │          │ 网页抓取  │            │
+│       │          │ 内容摘要  │            │
+│       │          └──────────┘            │
+│       │                                  │
+│  ┌────▼─────┐                            │
+│  │ Recorder │  ← 维护搜索图 + 推理记忆    │
+│  └──────────┘                            │
+└──────────────────────────────────────────┘
+   │
+   ▼
+最终答案
+```
 
-## Introduction
+### 核心组件
 
-<p align="center">
-  <img src="./assets/pipline.jpg" width="666"/>
-</p>
+| 组件 | 职责 |
+|------|------|
+| **Planner** | 将复杂问题迭代拆解为单跳子问题，根据已收集信息判断是否需要继续搜索或生成最终答案 |
+| **Searcher** | 调用搜索引擎获取网页结果，通过多轮工具调用（GoogleSearch + FinalAnswer）求解子问题 |
+| **Reader** | 使用 Jina Reader 抓取网页内容，并通过 LLM 并发生成摘要，支持 WebPage 缓存 |
+| **Recorder** | 维护搜索图（WebSearchGraph），记录子问题拆解关系、搜索结果和推理过程 |
+| **TimeoutContext** | 全局看门狗超时机制，贯穿整条调用链，超时后自动触发 Fallback 回答 |
 
-We propose `ManuSearch`, a transparent and modular multi-agent framework designed to democratize deep search for LLMs. ManuSearch decomposes the search and reasoning process into three collaborative agents: (1) a solution planning agent that iteratively formulates sub-queries, (2) an Internet search agent that retrieves relevant documents via real-time web search, and (3) a structured webpage reading agent that extracts key evidence from raw web content. 
+### 工作流程
 
-To rigorously evaluate deep reasoning abilities, we introduce `ORION`, a challenging benchmark focused on open-web reasoning over long-tail entities, covering both English and Chinese.
+1. **问题拆解**：Planner 分析用户问题，迭代式地拆解出一个单跳子问题
+2. **搜索求解**：Searcher 生成搜索 query，调用 Google Search API 获取结果
+3. **内容抓取与摘要**：Reader 通过 Jina Reader 并发抓取网页，LLM 并发生成内容摘要
+4. **智能筛选**：根据搜索结果数量自适应选择 URL 筛选策略（全量保留 / 交叉排序 / LLM 语义筛选）
+5. **迭代推理**：将子问题答案反馈给 Planner，继续拆解下一个子问题，直到信息充分
+6. **最终回答**：Planner 综合所有已收集信息，生成结构化的最终答案
 
-Experimental results show that ManuSearch substantially outperforms prior open-source baselines and even surpasses leading closed-source systems.
+## 项目结构
 
-<p align="center">
-  <img src="./assets/main_results.png" width="666"/>
-</p>
+```
+MultiHop-Searcher/
+├── searchagent/                # 核心代码
+│   ├── agent/
+│   │   └── agent.py            # AgentInterface 入口，组装各组件
+│   ├── models/
+│   │   ├── basellm.py          # LLM 基类（OpenAI 兼容 API）
+│   │   ├── planner.py          # Planner 问题拆解
+│   │   ├── searcher.py         # Searcher 搜索求解
+│   │   ├── reader.py           # Reader 网页抓取 + LLM 摘要
+│   │   ├── recorder.py         # Recorder 搜索图 + 记忆管理
+│   │   └── searchagent.py      # SearchAgent 协调器
+│   ├── prompt/                 # Prompt 模板（中英文双语）
+│   │   ├── planner.py
+│   │   ├── searcher.py
+│   │   └── reader.py
+│   ├── tools/
+│   │   ├── websearch.py        # Google Serper Search API 封装
+│   │   ├── jina_reader.py      # Jina AI Reader 网页抓取
+│   │   ├── visitpage.py        # Serper Scrape API 备选抓取
+│   │   └── final_answer.py     # FinalAnswer 工具定义
+│   ├── utils/
+│   │   ├── cache.py            # WebPageCache 网页缓存
+│   │   ├── timeout_context.py  # 全局超时看门狗
+│   │   ├── url_normalizer.py   # URL 标准化 + 去重
+│   │   └── utils.py            # 通用工具函数
+│   └── schema.py               # 数据模型 + 自定义异常
+├── script/
+│   ├── run_question.py         # 批量测试脚本（支持断点续跑）
+│   └── run_question.sh         # Shell 启动脚本
+├── .env.example                # 环境变量配置模板
+├── requirements.txt
+├── question.jsonl              # 测试问题集
+└── validation.jsonl            # 验证问题集
+```
 
-The `ORION` dataset is also available now on [HuggingFace](https://huggingface.co/datasets/RUC-AIBOX/ORION) 🤗.
+## 快速开始
 
-
-## 🔧 Installation
-
-### Environment Setup
+### 1. 环境配置
 
 ```bash
-conda create --name manusearch python=3.9
-conda activate manusearch
+# 克隆项目
+git clone https://github.com/your-username/MultiHop-Searcher.git
+cd MultiHop-Searcher
 
-# Install requirements
-cd ManuSearch
+# 创建虚拟环境（推荐 Python 3.10+）
+conda create -n multihop python=3.10
+conda activate multihop
+
+# 安装依赖
 pip install -r requirements.txt
 ```
-## 🏃 Quick Start
 
-### Pre-preparation
+### 2. 配置 API Key
 
-#### Model Serving
-Our system comprises three LLM-based collaborative agents where each agent supports various configurations by integrating different LLMs, enabling diverse combinations tailored to specific tasks. 
+复制环境变量模板并填入你的密钥：
 
-Before running manusearch, ensure your planner model, searcher model and reader model are served as **OpenAI-Compatible Server** using vLLM. In our experiments, we use QwQ-32B/deepseek-R1 as the planner model, QwQ-32B/deepseek-V3 as the searcher model and Qwen2.5-32B-Instruct as the reader model, respectively. For detailed instructions on model serving, see [here](https://docs.vllm.ai/en/stable/serving/openai_compatible_server.html). 
-
-We also conducted in-depth discussions on how to select models for each module. For details, please refer to Section 5 of the [paper](https://arxiv.org/pdf/2505.18105).
-
-
-#### Google search api
-
-We use Serper.dev Google Search API as our search engine api. To use, you should pass your serper API key to the constructor. You can create a free API key at https://serper.dev. We recommend enabling a proxy to prevent access issues with certain websites. We also implemented a cache to store the full text of accessed web pages. Please configure your cache folder path accordingly.
-
-
-Now you can run different inference modes using the provided scripts. Below are examples of how to execute each mode:
-
-### Problem Solving
-
-1. If you would like to ask a single question, run the following command:
 ```bash
-python run_manusearch.py \
-  --google_subscription_key "YOUR_GOOGLE_SUBSCRIPTION_KEY" \
-  --google_search_topk 5 \
-  --proxy "your proxy"\
-  --planner_model_name "QwQ-32B"\
-  --planner_api_base "YOUR_PLANNER_MODEL_API_BASE_URL"\
-  --planner_api_key "YOUR_PLANNER_MODEL_API_KEY"\
-  --searcher_model_name "QwQ-32B"\
-  --searcher_api_base "YOUR_SEARCHER_MODEL_API_BASE_URL"\
-  --searcher_api_key "YOUR_SEARCHER_MODEL_API_KEY"\
-  --reader_model_name "Qwen2.5-32B-Instruct"\
-  --reader_api_base "YOUR_READER_MODEL_API_BASE_URL"\
-  --reader_api_key "YOUR_READER_MODEL_API_KEY"\
-  --cache_dir "/path/to/your/cache"\
-  --single_question "What is OpenAI Deep Research?"
+cp .env.example .env
 ```
 
-2. If you would like to run results on benchmarks, run the following command:
+编辑 `.env` 文件：
+
+```env
+# Google Serper Search API Key (多个 key 用逗号分隔)
+# 免费申请: https://serper.dev
+GOOGLE_SUBSCRIPTION_KEY=your_serper_api_key
+
+# LLM API 配置 (以阿里云 DashScope 为例)
+LLM_API_BASE=https://dashscope.aliyuncs.com/compatible-mode/v1/
+LLM_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# 代理设置 (可选)
+HTTP_PROXY=http://127.0.0.1:7897
+```
+
+### 3. 运行
+
+**单条问题测试：**
+
 ```bash
-python run_manusearch.py \
-  --dataset_name GAIA \
-  --split dev \
-  --google_subscription_key "YOUR_GOOGLE_SUBSCRIPTION_KEY" \
-  --google_search_topk 5 \
-  --proxy "your proxy"\
-  --planner_model_name "QwQ-32B"\
-  --planner_api_base "YOUR_PLANNER_MODEL_API_BASE_URL"\
-  --planner_api_key "YOUR_PLANNER_MODEL_API_KEY"\
-  --searcher_model_name "QwQ-32B"\
-  --searcher_api_base "YOUR_SEARCHER_MODEL_API_BASE_URL"\
-  --searcher_api_key "YOUR_SEARCHER_MODEL_API_KEY"\
-  --reader_model_name "Qwen2.5-32B-Instruct"\
-  --reader_api_base "YOUR_READER_MODEL_API_BASE_URL"\
-  --reader_api_key "YOUR_READER_MODEL_API_KEY"\
-  --cache_dir "/opt/aps/workdir/hls/WebRAG/cache"
+cd script
+python run_question.py \
+  --input_file "../question.jsonl" \
+  --start_idx 0 --end_idx 1 \
+  --google_subscription_key "$GOOGLE_SUBSCRIPTION_KEY" \
+  --planner_model_name "qwen3-max" \
+  --planner_api_base "$LLM_API_BASE" \
+  --planner_api_key "$LLM_API_KEY" \
+  --searcher_model_name "qwen3-max" \
+  --searcher_api_base "$LLM_API_BASE" \
+  --searcher_api_key "$LLM_API_KEY" \
+  --reader_model_name "qwen3-max" \
+  --reader_api_base "$LLM_API_BASE" \
+  --reader_api_key "$LLM_API_KEY" \
+  --max_time 480
 ```
 
+**批量处理（使用 Shell 脚本）：**
 
-**Parameters Explanation:**
-- `--dataset_name`: Name of the dataset to use (glaive).
-- `--split`: Data split to run (test).
-- `--single_question`: The question you want to ask when running in single question mode.
-- `--concurrent_limit`: Maximum number of concurrent requests.
-- `--cache_dir`: "cache for searched webpages".
-- `--proxy`: "port-based proxy(e.g., localhost:8080)"
-- `--google_subscription_key`: Your serper.dev Google Search API subscription key.
-- `--google_search_topk`: topk returned documents for google search.
-- ` --planner_model_name`: "Name of the planner model to use".
--  `--planner_api_base`: "Base URL for the API endpoint".
--  `--planner_api_key`: "api key for the planner model API endpoint".
--  `--searcher_model_name`: "Name of the searcher model to use".
--  `--searcher_api_base`: "Base URL for the API endpoint".
--  `--searcher_api_key`: "api key for the searcher model API endpoint".
--  `--reader_model_name`: "Name of the reader model to use".
--  `--reader_api_base`: "Base URL for the API endpoint".
--  `--reader_api_key`: "api key for the reader model API endpoint".
-
-
-### Evaluation
-If you would like to evaluate results on benchmarks, run the following command:
 ```bash
-python eval_ans_searchagent.py \
-  --model_name "MODEL_NAME"\
-  --api_base "MODEL_API_BASE_URL"\
-  --api_key "YOUR_API_KEY"\
-  --file_path "path/to/your/answers"
+# 先 source 环境变量
+source ../.env
+
+# 全量运行
+bash run_question.sh
+
+# 指定范围
+bash run_question.sh --start 0 --end 10
+
+# 断点续跑
+bash run_question.sh --resume
 ```
 
-## 📄 Citation
+### 主要参数说明
 
-If you find this work helpful, please cite our paper:
-```bibtex
-@misc{huang2025manusearchdemocratizingdeepsearch,
-      title={ManuSearch: Democratizing Deep Search in Large Language Models with a Transparent and Open Multi-Agent Framework}, 
-      author={Lisheng Huang and Yichen Liu and Jinhao Jiang and Rongxiang Zhang and Jiahao Yan and Junyi Li and Wayne Xin Zhao},
-      year={2025},
-      eprint={2505.18105},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.18105}, 
-}
-```
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--input_file` | 输入的 JSONL 文件路径 | `../question.jsonl` |
+| `--google_subscription_key` | Serper API Key（多个用逗号分隔） | 必填 |
+| `--planner_model_name` | Planner 使用的模型 | 必填 |
+| `--searcher_model_name` | Searcher 使用的模型 | 必填 |
+| `--reader_model_name` | Reader 使用的模型 | 必填 |
+| `--max_time` | 每条问题的全局超时（秒） | `None` |
+| `--max_new_tokens` | LLM 最大生成 token 数 | `8192` |
+| `--google_search_topk` | 每次搜索返回的结果数 | `5` |
+| `--resume` | 断点续跑模式 | `False` |
+| `--start_idx` / `--end_idx` | 处理的问题 ID 范围 | 全部处理 |
+| `--cache_dir` | 网页缓存目录 | 无 |
+
+## 特性
+
+- **迭代式多跳推理**：自动将复杂问题分解为多个单跳子问题，逐步求解
+- **中英文双语支持**：自动检测问题语言，切换对应的 Prompt 模板
+- **智能 URL 筛选**：根据候选数量自适应选择策略（全保留 / Round-Robin / LLM 语义筛选）
+- **跨迭代 URL 去重**：避免重复抓取同一网页
+- **全局超时看门狗**：`TimeoutContext` 贯穿调用链，超时自动触发 Fallback
+- **Fallback 兜底机制**：主流程异常时利用已收集信息生成兜底回答
+- **网页缓存**：基于 URL 哈希的本地文件缓存，避免重复抓取
+- **并发处理**：搜索查询并发执行、网页抓取并发、LLM 摘要并发
+- **断点续跑**：批量测试支持中断后从上次进度继续
+- **搜索参数自动修复**：自动修正 LLM 生成的不合规工具调用参数
+
+## 致谢
+
+本项目的 Agent 架构设计参考了以下开源项目和思想：
+
+- [ManuSearch](https://github.com/ManuSearch/ManuSearch) — 多智能体搜索框架
+- [ReAct](https://arxiv.org/abs/2210.03629) — Reasoning + Acting 范式
+- [Jina AI Reader](https://jina.ai/reader/) — 免费的网页内容提取 API
+- [Serper.dev](https://serper.dev/) — Google Search API 服务
+
+## License
+
+MIT
