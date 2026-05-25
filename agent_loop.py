@@ -9,13 +9,19 @@ import json5
 import tiktoken
 from openai import AsyncOpenAI
 
-from prompts import SYSTEM_PROMPT, USER_PROMPT_TEMPLATE
+from prompts import SYSTEM_PROMPT, USER_PROMPT_TEMPLATE_NORMAL, USER_PROMPT_TEMPLATE_THINKING
 from tools_search import batch_search
 from tools_visit import visit_pages
 
 
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
 AGENT_MODEL = os.getenv("AGENT_MODEL", "qwen3.5-plus")
+
+THINKING_MODELS = {
+    "qwen3.5-plus",
+}
+
+IS_THINKING_MODEL = AGENT_MODEL.lower() in THINKING_MODELS
 MAX_ROUNDS = 100
 TIMEOUT_SECONDS = 540  # 9 minutes (leave 1 min buffer for 10 min limit)
 MAX_TOKENS_ESTIMATE = 500000  # Upgraded from 80K - qwen-plus supports 128K, leave buffer
@@ -97,7 +103,7 @@ def _normalize_answer(answer: str) -> str:
     return text
 
 
-def _extract_tool_call(content: str) -> str | None:
+def _extract_tool_call(content: str) -> Optional[str]:
     """Extract tool call JSON from content, supporting multiple formats."""
     # Format 1: <tool_call>...</tool_call>
     if "<tool_call>" in content and "</tool_call>" in content:
@@ -155,6 +161,10 @@ async def _call_llm(
     max_tokens: int = 8192,
 ) -> str:
     """Call LLM via DashScope OpenAI-compatible API with retries."""
+    extra_body = {}
+    if IS_THINKING_MODEL:
+        extra_body["enable_thinking"] = True
+
     for attempt in range(3):
         try:
             resp = await _client.chat.completions.create(
@@ -163,7 +173,7 @@ async def _call_llm(
                 stop=stop or ["<tool_response>"],
                 temperature=temperature,
                 max_tokens=max_tokens,
-                extra_body={"enable_thinking": True},
+                extra_body=extra_body,
             )
             msg = resp.choices[0].message
             # qwen3.5 with thinking mode: reasoning is in reasoning_content field
@@ -172,7 +182,7 @@ async def _call_llm(
             # Clean up garbled tag fragments at start of content (e.g. "ynchroneg>")
             content = re.sub(r'^[a-z]*>', '', content.lstrip())
             # Reassemble: wrap reasoning in <think> tags + content
-            if reasoning:
+            if IS_THINKING_MODEL and reasoning:
                 full = f"<think>\n{reasoning}\n</think>\n{content}"
             else:
                 full = content
@@ -259,9 +269,14 @@ async def react_agent(question: str) -> str:
     - Iterative think → tool_call → tool_response → ... → answer
     - Timeout and token limit management
     """
+    if IS_THINKING_MODEL:
+        user_prompt = USER_PROMPT_TEMPLATE_THINKING + question
+    else:
+        user_prompt = USER_PROMPT_TEMPLATE_NORMAL + question
+
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT + _today_date()},
-        {"role": "user", "content": USER_PROMPT_TEMPLATE + question},
+        {"role": "user", "content": user_prompt},
     ]
 
     start_time = time.time()
@@ -335,7 +350,7 @@ async def react_agent(question: str) -> str:
         # Debug: print first 500 chars of model output
         print(f"[agent] Output preview: {content[:500]}")
         # Check for <think> usage and prepare reminder
-        think_reminder = "<think>" not in content and round_idx > 0
+        think_reminder = not IS_THINKING_MODEL and "<think>" not in content and round_idx > 0
 
         # Check for final answer (with or without closing tag)
         if "<answer>" in content:

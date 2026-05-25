@@ -1,0 +1,80 @@
+# NoDesk AI Gateway 接入指南
+
+## 网关信息
+- 网关地址: https://llm-gateway-api.nodesk.tech
+- 透传端点: POST https://llm-gateway-api.nodesk.tech/default/passthrough
+- 认证方式: Authorization: Bearer {你的网关Key}（创建项目时已自动生成，在项目列表可查看/复制）
+
+## 请求格式
+所有请求统一走透传端点，Body 中通过 channel + channel_url 指定目标渠道和下游 API 地址。
+
+### 必填字段
+- channel (Body): 渠道名，对应网关后台"渠道管理"中的名称
+- channel_url (Body): 下游真实 API 地址，网关会原样转发到这个 URL
+
+### 可选字段
+- model (Body): 模型名，有值才记录用量，无值视为轮询/确认请求不记录
+- ND-Trace-Id (Header): 追踪 ID，串联同一次业务操作的多个请求
+- ND-Thread-Id (Header): 线程 ID，串联同一个会话的多次调用
+
+## 场景 A: 对话补全（最常见）
+```bash
+curl -X POST https://llm-gateway-api.nodesk.tech/default/passthrough \
+  -H "Authorization: Bearer {你的Key}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "channel": "你的渠道名",
+    "channel_url": "https://下游API地址/v1/chat/completions",
+    "model": "模型名",
+    "messages": [{"role": "user", "content": "你好"}]
+  }'
+```
+
+## 场景 B: 图片生成
+```bash
+curl -X POST https://llm-gateway-api.nodesk.tech/default/passthrough \
+  -H "Authorization: Bearer {你的Key}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "channel": "你的渠道名",
+    "channel_url": "https://下游API地址/v1/images/generate",
+    "model": "模型名",
+    "prompt": "图片描述"
+  }'
+```
+
+## 场景 C: 轮询/状态确认（不记录用量）
+不传 model 字段，网关不记录用量。
+```bash
+curl -X POST https://llm-gateway-api.nodesk.tech/default/passthrough \
+  -H "Authorization: Bearer {你的Key}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "channel": "你的渠道名",
+    "channel_url": "https://下游API地址/v1/status/xxx"
+  }'
+```
+
+## 带 Trace/Thread 追踪（完整示例）
+```bash
+curl -X POST https://llm-gateway-api.nodesk.tech/default/passthrough \
+  -H "Authorization: Bearer {你的Key}" \
+  -H "ND-Trace-Id: 你的追踪ID" \
+  -H "ND-Thread-Id: 你的线程ID" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "channel": "你的渠道名",
+    "channel_url": "https://下游API地址/v1/chat/completions",
+    "model": "模型名",
+    "messages": [{"role": "user", "content": "你好"}]
+  }'
+```
+
+## 核心原理
+- 网关只做透传：请求/响应原样转发，不改格式
+- Key 映射：你的虚拟 Key → 渠道真实 Key 池 → 轮询选一个
+- 条件记录：model 有值=真实调用（记录用量），无值=轮询确认（不记录）
+- 请根据你的实际渠道名、下游 API 地址、模型名替换上方示例中的占位符
+DMX
+OneRouter
+UCloud
