@@ -15,6 +15,7 @@ from tools_visit import visit_pages
 
 
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
+NODESK_GATEWAY_KEY = os.getenv("NODESK_GATEWAY_KEY", "")
 AGENT_MODEL = os.getenv("AGENT_MODEL", "qwen3.5-plus")
 
 THINKING_MODELS = {
@@ -28,8 +29,8 @@ MAX_TOKENS_ESTIMATE = 500000  # Upgraded from 80K - qwen-plus supports 128K, lea
 MAX_TOOL_RESULT_CHARS = 15000  # Max chars per tool result to keep context manageable
 
 _client = AsyncOpenAI(
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-    api_key=DASHSCOPE_API_KEY,
+    base_url="https://llm-gateway-api.nodesk.tech/default/passthrough?",
+    api_key=NODESK_GATEWAY_KEY,
 )
 
 # Initialize tiktoken encoder for accurate token counting
@@ -161,7 +162,10 @@ async def _call_llm(
     max_tokens: int = 8192,
 ) -> str:
     """Call LLM via DashScope OpenAI-compatible API with retries."""
-    extra_body = {}
+    extra_body = {
+        "channel": "DMX",
+        "channel_url": "https://www.dmxapi.cn/v1/chat/completions"
+    }
     if IS_THINKING_MODEL:
         extra_body["enable_thinking"] = True
 
