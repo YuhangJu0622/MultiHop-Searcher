@@ -1,0 +1,60 @@
+[16:29:55] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1746
+[16:30:07] [INFO] [agent_loop] Calling tool: search
+[16:30:07] [INFO] [tools_search] Query: "以主义为名的青年社团 秘密组织 机构" -> Bing/IQS (LLM:bing)
+[16:30:08] [INFO] [tools_search] Query: "青年社团 主义 秘密组织 20世纪 技术合作" -> Bing/IQS (LLM:bing)
+[16:30:10] [INFO] [tools_search] Query: "三民主义青年团 秘密组织 机构" -> Bing/IQS (LLM:bing)
+[16:30:11] [INFO] [agent_loop] Round 2, elapsed 17s, tokens 9525
+[16:30:20] [INFO] [agent_loop] Calling tool: search
+[16:30:20] [INFO] [tools_search] Query: "三民主义青年团 秘密组织 特务机构 二战 技术合作" -> Bing/IQS (LLM:bing)
+[16:30:22] [INFO] [tools_search] Query: "复兴社 力行社 特务处 德国 技术合作 二战" -> Bing/IQS (LLM:bing)
+[16:30:23] [INFO] [tools_search] Query: "中国航空公司 中央航空公司 起义 1949 台湾" -> Bing/IQS (LLM:bing)
+[16:30:24] [INFO] [tools_search] Query: "继承机构 轮流主讲 政治理论 业务知识" -> Bing/IQS (LLM:bing)
+[16:30:26] [INFO] [agent_loop] Round 3, elapsed 31s, tokens 18222
+[16:30:40] [INFO] [agent_loop] Calling tool: search
+[16:30:40] [INFO] [tools_search] Query: "军统局 保密局 迁往台湾 1949" -> Bing/IQS (LLM:bing)
+[16:30:41] [INFO] [tools_search] Query: "中美特种技术合作所 军统 戴笠 美国 技术合作" -> Bing/IQS (LLM:bing)
+[16:30:43] [INFO] [tools_search] Query: "保密局 继承机构 轮流主讲 政治理论" -> Bing/IQS (LLM:bing)
+[16:30:44] [INFO] [tools_search] Query: "军事委员会调查统计局 全称 沿革" -> Bing/IQS (LLM:bing)
+[16:30:45] [INFO] [agent_loop] Round 4, elapsed 51s, tokens 27617
+[16:31:10] [INFO] [agent_loop] Calling tool: search
+[16:31:10] [INFO] [tools_search] Query: "三民主义青年团 下属 秘密组织 核心组织" -> Bing/IQS (LLM:bing)
+[16:31:11] [INFO] [tools_search] Query: "三青团 内部 秘密组织 特务" -> Bing/IQS (LLM:bing)
+[16:31:12] [INFO] [tools_search] Query: "国防部保密局 台湾 国家安全局 沿革" -> Bing/IQS (LLM:bing)
+[16:31:14] [INFO] [tools_search] Query: "台湾 国家安全局 轮流主讲 政治学习" -> Bing/IQS (LLM:bing)
+[16:31:15] [INFO] [agent_loop] Round 5, elapsed 80s, tokens 37097
+[16:31:40] [INFO] [agent_loop] Calling tool: search
+[16:31:40] [INFO] [tools_search] Query: "三民主义力行社 全称 主义 青年社团" -> Bing/IQS (LLM:bing)
+[16:31:41] [INFO] [tools_search] Query: "力行社 三民主义 秘密组织 特务处" -> Bing/IQS (LLM:bing)
+[16:31:42] [INFO] [tools_search] Query: "军统局 前身 力行社特务处 复兴社" -> Bing/IQS (LLM:bing)
+[16:31:44] [INFO] [tools_search] Query: "国防部保密局 台湾 军情局 轮流主讲" -> Bing/IQS (LLM:bing)
+[16:31:45] [INFO] [agent_loop] Round 6, elapsed 110s, tokens 45407
+[16:32:09] [INFO] [agent_loop] Calling tool: search
+[16:32:09] [INFO] [tools_search] Query: "革命青年同志会 力行社 外围组织" -> Bing/IQS (LLM:bing)
+[16:32:11] [INFO] [tools_search] Query: "军统 保密局 台湾 军情局 内部学习 轮流主讲" -> Bing/IQS (LLM:bing)
+[16:32:12] [INFO] [tools_search] Query: "国防部军事情报局 政治学习 业务学习 制度" -> Bing/IQS (LLM:bing)
+[16:32:14] [INFO] [tools_search] Query: "两航起义 1949 保密局 迁台 同年" -> Bing/IQS (LLM:bing)
+[16:32:15] [INFO] [agent_loop] Round 7, elapsed 140s, tokens 55430
+[16:32:38] [INFO] [agent_loop] Calling tool: search
+[16:32:38] [INFO] [tools_search] Query: "三民主义力行社 青年社团 性质" -> Bing/IQS (LLM:bing)
+[16:32:39] [INFO] [tools_search] Query: ""轮流主讲" 政治理论 业务知识 情报 特务" -> Bing/IQS (LLM:bing)
+[16:32:41] [INFO] [tools_search] Query: "军统 保密局 继承机构 轮流讲课 制度" -> Bing/IQS (LLM:bing)
+[16:32:42] [INFO] [tools_search] Query: "共产主义青年团 社会主义青年团 主义 青年社团" -> Bing/IQS (LLM:bing)
+[16:32:44] [INFO] [agent_loop] Round 8, elapsed 169s, tokens 63604
+[16:33:21] [INFO] [agent_loop] Calling tool: search
+[16:33:21] [INFO] [tools_search] Query: "三民主义力行社 革命青年同志会 下属 秘密组织" -> Bing/IQS (LLM:bing)
+[16:33:22] [INFO] [tools_search] Query: "军统局 全称 国民政府军事委员会调查统计局" -> Bing/IQS (LLM:bing)
+[16:33:24] [INFO] [tools_search] Query: "国防部保密局 全称 沿革 1949 迁台" -> Bing/IQS (LLM:bing)
+[16:33:25] [INFO] [tools_search] Query: "国家安全部 前身 轮流主讲 政治理论" -> Bing/IQS (LLM:bing)
+[16:33:26] [INFO] [agent_loop] Round 9, elapsed 212s, tokens 72544
+[16:33:45] [INFO] [agent_loop] Calling tool: search
+[16:33:45] [INFO] [tools_search] Query: ""发端于" 秘密组织 机构 二战 技术合作 台湾" -> Bing/IQS (LLM:bing)
+[16:33:46] [INFO] [tools_search] Query: ""以主义为名" 青年社团 秘密组织" -> Bing/IQS (LLM:bing)
+[16:33:47] [INFO] [tools_search] Query: "国民政府军事委员会调查统计局 全称 答案" -> Bing/IQS (LLM:bing)
+[16:33:48] [INFO] [tools_search] Query: "国防部保密局 主要继承机构 轮流主讲" -> Bing/IQS (LLM:bing)
+[16:33:49] [INFO] [agent_loop] Round 10, elapsed 235s, tokens 81326
+[16:34:32] [INFO] [agent_loop] Calling tool: visit
+[16:35:02] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E5%9B%BD%E6%B0%91%E6%94%BF%E5%BA%9C%E5%86%9B%E4%BA%8B%E5%A7%94%E5%91%98%E4%BC%9A%E8%B0%83%E6%9F%A5%E7%BB%9F%E8%AE%A1%E5%B1%80/4482020" -> httpx (Jina failed: [visit] Jina fetch failed: )
+[16:35:02] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E5%8A%9B%E8%A1%8C%E7%A4%BE" -> httpx (Jina failed: [visit] Jina fetch failed: )
+[16:35:22] [WARNING] [tools_visit] Summary attempt 1 failed: Error code: 400 - {'error': {'message': 'Output data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content', 'type': 'data_inspection_failed', 'param': None, 'code': 'data_inspection_failed'}, 'id': 'chatcmpl-38854841-7789-9ed3-a992-00e7372b6459', 'request_id': '38854841-7789-9ed3-a992-00e7372b6459'}
+[16:35:49] [INFO] [agent_loop] Round 11, elapsed 355s, tokens 84408
+[16:36:21] [INFO] [agent_loop] Got answer at round 11: 国民政府军事委员会调查统计局

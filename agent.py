@@ -5,13 +5,15 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
 from agent_loop import react_agent
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, StreamingResponse
+from logger_config import get_logger
 from pydantic import BaseModel, ConfigDict
+
+logger = get_logger()
 
 app = FastAPI()
 
@@ -59,7 +61,7 @@ async def query(req: QueryRequest, raw_request: Request):
 
                 answer = await agent_task
             except Exception as e:
-                print(f"[agent] SSE error: {e}")
+                logger.error("SSE error: %s", e)
                 answer = f"Error: {e}"
 
             data = json.dumps({"answer": answer}, ensure_ascii=False)
@@ -71,6 +73,6 @@ async def query(req: QueryRequest, raw_request: Request):
     try:
         answer = await react_agent(req.question)
     except Exception as e:
-        print(f"[agent] Error: {e}")
+        logger.error("Error: %s", e)
         answer = f"Error: {e}"
     return JSONResponse(content={"answer": answer})

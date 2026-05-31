@@ -1,11 +1,15 @@
 import json
 import os
+import random
 import re
 import urllib.parse
 from typing import List
 
 import httpx
 
+from logger_config import get_logger
+
+logger = get_logger()
 
 IQS_API_KEY = os.getenv("IQS_API_KEY", "")
 IQS_BASE = "https://cloud-iqs.aliyuncs.com"
@@ -18,7 +22,6 @@ SERPER_API_KEYS = [k.strip() for k in os.getenv(
 ).split(",") if k.strip()]
 SERPER_BASE = "https://google.serper.dev/search"
 SERPER_TIMEOUT = 15
-_serper_key_index = 0
 
 
 def _contains_chinese(text: str) -> bool:
@@ -62,23 +65,22 @@ def iqs_search(query: str, retries: int = 3) -> str:
                 data = resp.json()
                 return _format_search_results(query, data.get("pageItems", []))
             else:
-                print(f"[search] IQS error {resp.status_code}: {resp.text[:200]}")
+                logger.warning("IQS error %d: %s", resp.status_code, resp.text[:200])
         except Exception as e:
-            print(f"[search] Attempt {attempt + 1} failed: {e}")
+            logger.warning("IQS attempt %d failed: %s", attempt + 1, e)
 
     return f"Search failed for '{query}'. Please try a different query."
 
 
 def serper_search(query: str) -> str:
-    """Search using Serper (Google) API with key rotation and IQS fallback."""
-    global _serper_key_index
+    """Search using Serper (Google) API with random-offset key rotation and IQS fallback."""
     if not SERPER_API_KEYS:
-        print("[search] No Serper API keys configured, falling back to IQS")
+        logger.warning("No Serper API keys configured, falling back to IQS")
         return iqs_search(query)
 
-    tried = 0
-    while tried < len(SERPER_API_KEYS):
-        key = SERPER_API_KEYS[_serper_key_index % len(SERPER_API_KEYS)]
+    start = random.randint(0, len(SERPER_API_KEYS) - 1)
+    for i in range(len(SERPER_API_KEYS)):
+        key = SERPER_API_KEYS[(start + i) % len(SERPER_API_KEYS)]
         headers = {"X-API-Key": key, "Content-Type": "application/json"}
         payload = {"q": query, "num": 10}
         try:
@@ -87,20 +89,16 @@ def serper_search(query: str) -> str:
                 data = resp.json()
                 return _format_serper_results(query, data)
             elif resp.status_code in (400, 403, 429):
-                # Key exhausted / no credits, rotate to next
-                print(f"[search] Serper key {_serper_key_index} exhausted (HTTP {resp.status_code}), rotating")
-                _serper_key_index += 1
-                tried += 1
+                logger.warning("Serper key %d exhausted (HTTP %d), rotating", (start + i) % len(SERPER_API_KEYS), resp.status_code)
                 continue
             else:
-                print(f"[search] Serper error {resp.status_code}: {resp.text[:200]}")
+                logger.warning("Serper error %d: %s", resp.status_code, resp.text[:200])
                 break
         except Exception as e:
-            print(f"[search] Serper request failed: {e}")
+            logger.warning("Serper request failed: %s", e)
             break
 
-    # All keys exhausted or error, fallback to IQS
-    print("[search] All Serper keys exhausted or failed, falling back to IQS")
+    logger.warning("All Serper keys exhausted or failed, falling back to IQS")
     return iqs_search(query)
 
 
@@ -173,7 +171,7 @@ def batch_search(queries: List[str], engines: List[str] = None) -> str:
 
         engine_name = 'Google/Serper' if use_google else 'Bing/IQS'
         source = f'LLM:{engine}' if engine else 'auto'
-        print(f'[search] Query: "{q[:60]}" -> {engine_name} ({source})')
+        logger.info('Query: "%s" -> %s (%s)', q[:60], engine_name, source)
         if use_google:
             result = serper_search(q)
         else:
@@ -183,10 +181,10 @@ def batch_search(queries: List[str], engines: List[str] = None) -> str:
         if _is_poor_result(result):
             # Try cross-engine fallback
             if use_google:
-                print(f"[search] Poor Google results for '{q}', trying Bing/IQS fallback")
+                logger.info("Poor Google results for '%s', trying Bing/IQS fallback", q)
                 fallback = iqs_search(q)
             else:
-                print(f"[search] Poor Bing/IQS results for '{q}', trying Google fallback")
+                logger.info("Poor Bing/IQS results for '%s', trying Google fallback", q)
                 fallback = serper_search(q)
 
             if not _is_poor_result(fallback):
@@ -195,7 +193,7 @@ def batch_search(queries: List[str], engines: List[str] = None) -> str:
                 # Both engines failed, try simplified query
                 simplified = _simplify_query(q)
                 if simplified != q:
-                    print(f"[search] Both engines poor for '{q}', retrying simplified: '{simplified}'")
+                    logger.info("Both engines poor for '%s', retrying simplified: '%s'", q, simplified)
                     retry_result = serper_search(simplified) if use_google else iqs_search(simplified)
                     if not _is_poor_result(retry_result):
                         result = retry_result

@@ -1,0 +1,30 @@
+[16:27:58] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1708
+[16:28:13] [INFO] [agent_loop] Calling tool: search
+[16:28:13] [INFO] [tools_search] Query: "作家 本名 功率单位 相同" -> Bing/IQS (LLM:bing)
+[16:28:14] [INFO] [tools_search] Query: "作家 本名 瓦特 35岁 全职作家" -> Bing/IQS (LLM:bing)
+[16:28:15] [INFO] [tools_search] Query: "author name same as power unit watt writer" -> Google/Serper (LLM:google)
+[16:28:17] [INFO] [agent_loop] Round 2, elapsed 19s, tokens 7943
+[16:28:23] [INFO] [agent_loop] Calling tool: search
+[16:28:23] [INFO] [tools_search] Query: "作家 35岁 成为全职作家 作品改编 影视剧" -> Bing/IQS (LLM:bing)
+[16:28:25] [INFO] [tools_search] Query: "作家 本名 马力 功率单位" -> Bing/IQS (LLM:bing)
+[16:28:26] [INFO] [tools_search] Query: "作家 笔名 本名 瓦特 watt author" -> Google/Serper (LLM:google)
+[16:28:29] [INFO] [agent_loop] Round 3, elapsed 31s, tokens 14110
+[16:28:55] [INFO] [agent_loop] Calling tool: search
+[16:28:55] [INFO] [tools_search] Query: "马伯庸 原名 马力 35岁 全职作家" -> Bing/IQS (LLM:bing)
+[16:28:56] [INFO] [tools_search] Query: "马伯庸 作品 改编 影视剧 话剧 数量" -> Bing/IQS (LLM:bing)
+[16:28:57] [INFO] [tools_search] Query: "马伯庸 2019年 电视剧 改编" -> Bing/IQS (LLM:bing)
+[16:28:59] [INFO] [agent_loop] Round 4, elapsed 61s, tokens 21719
+[16:29:20] [INFO] [agent_loop] Calling tool: search
+[16:29:20] [INFO] [tools_search] Query: "马伯庸 35岁 辞职 全职作家" -> Bing/IQS (LLM:bing)
+[16:29:21] [INFO] [tools_search] Query: "长安十二时辰 男主角 雷佳音 易烊千玺 角色" -> Bing/IQS (LLM:bing)
+[16:29:22] [INFO] [tools_search] Query: "马伯庸 何时 成为 全职作家" -> Bing/IQS (LLM:bing)
+[16:29:24] [INFO] [agent_loop] Round 5, elapsed 86s, tokens 28575
+[16:29:54] [INFO] [agent_loop] Calling tool: visit
+[16:30:32] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E9%A9%AC%E4%BC%AF%E5%BA%B8/1013786" -> httpx (Jina failed: [visit] Jina fetch failed: )
+[16:30:32] [INFO] [tools_visit] Visit: "https://baike.sogou.com/m/v154633972.htm" -> httpx (Jina failed: [visit] Jina fetch failed: )
+[16:30:59] [INFO] [agent_loop] Round 6, elapsed 181s, tokens 29894
+[16:31:05] [INFO] [agent_loop] Calling tool: search
+[16:31:05] [INFO] [tools_search] Query: "马伯庸 本名 马力 功率单位" -> Bing/IQS (LLM:bing)
+[16:31:06] [INFO] [tools_search] Query: "马伯庸 2015年 35岁 辞职 全职" -> Bing/IQS (LLM:bing)
+[16:31:08] [INFO] [agent_loop] Round 7, elapsed 190s, tokens 35344
+[16:31:24] [INFO] [agent_loop] Got answer at round 7: 雷佳音和易烊千玺

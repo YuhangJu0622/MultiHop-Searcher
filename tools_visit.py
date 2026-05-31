@@ -1,14 +1,17 @@
 import asyncio
 import json
 import os
+import random
 from typing import List, Union
 
 import httpx
 from bs4 import BeautifulSoup
 from openai import AsyncOpenAI
 
+from logger_config import get_logger
 from prompts import EXTRACTOR_PROMPT
 
+logger = get_logger()
 
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
 VISIT_TIMEOUT = 20
@@ -23,7 +26,6 @@ JINA_API_KEYS = [k.strip() for k in os.getenv(
 ).split(",") if k.strip()]
 JINA_BASE = "https://r.jina.ai/"
 JINA_TIMEOUT = 30
-_jina_key_index = 0
 
 _summary_client = AsyncOpenAI(
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
@@ -32,41 +34,54 @@ _summary_client = AsyncOpenAI(
 
 
 async def fetch_page_jina(url: str) -> str:
-    """Fetch webpage as clean markdown via Jina Reader API with key rotation."""
-    global _jina_key_index
-    if not JINA_API_KEYS:
-        return "[visit] No Jina API keys configured"
+    """Fetch webpage as clean markdown via Jina Reader API.
+    Tries authenticated keys first, then falls back to unauthenticated access."""
+    if JINA_API_KEYS:
+        start = random.randint(0, len(JINA_API_KEYS) - 1)
+        for i in range(len(JINA_API_KEYS)):
+            key = JINA_API_KEYS[(start + i) % len(JINA_API_KEYS)]
+            headers = {
+                "Authorization": f"Bearer {key}",
+                "Accept": "text/markdown",
+                "X-No-Cache": "true",
+            }
+            try:
+                async with httpx.AsyncClient(
+                    follow_redirects=True,
+                    timeout=JINA_TIMEOUT,
+                    verify=False,
+                ) as client:
+                    resp = await client.get(f"{JINA_BASE}{url}", headers=headers)
+                    if resp.status_code == 200:
+                        text = resp.text.strip()
+                        if text:
+                            return text
+                    elif resp.status_code in (400, 403, 429):
+                        logger.warning("Jina key %d exhausted (HTTP %d), rotating", (start + i) % len(JINA_API_KEYS), resp.status_code)
+                        continue
+                    else:
+                        break
+            except Exception:
+                break
+        logger.info("Jina authenticated keys all failed, trying without key")
 
-    tried = 0
-    while tried < len(JINA_API_KEYS):
-        key = JINA_API_KEYS[_jina_key_index % len(JINA_API_KEYS)]
-        headers = {
-            "Authorization": f"Bearer {key}",
-            "Accept": "text/markdown",
-            "X-No-Cache": "true",
-        }
-        try:
-            async with httpx.AsyncClient(
-                follow_redirects=True,
-                timeout=JINA_TIMEOUT,
-                verify=False,
-            ) as client:
-                resp = await client.get(f"{JINA_BASE}{url}", headers=headers)
-                if resp.status_code == 200:
-                    text = resp.text.strip()
-                    if text:
-                        return text
-                    return "[visit] Jina returned empty content"
-                elif resp.status_code in (400, 403, 429):
-                    _jina_key_index += 1
-                    tried += 1
-                    continue
-                else:
-                    return f"[visit] Jina HTTP {resp.status_code} for {url}"
-        except Exception as e:
-            return f"[visit] Jina fetch failed: {str(e)}"
-
-    return "[visit] All Jina API keys exhausted (rate limited)"
+    # Fallback: unauthenticated Jina access
+    headers = {"Accept": "text/markdown", "X-No-Cache": "true"}
+    try:
+        async with httpx.AsyncClient(
+            follow_redirects=True,
+            timeout=JINA_TIMEOUT,
+            verify=False,
+        ) as client:
+            resp = await client.get(f"{JINA_BASE}{url}", headers=headers)
+            if resp.status_code == 200:
+                text = resp.text.strip()
+                if text:
+                    return text
+                return "[visit] Jina returned empty content (no key)"
+            return f"[visit] Jina HTTP {resp.status_code} for {url}"
+    except Exception as e:
+        return f"[visit] Jina fetch failed: {str(e)}"
 
 
 async def fetch_page(url: str) -> str:
@@ -180,7 +195,7 @@ async def summarize_content(content: str, goal: str, max_retries: int = 2) -> st
                 return f"Extracted content:\n{raw}"
 
         except Exception as e:
-            print(f"[visit] Summary attempt {attempt + 1} failed: {e}")
+            logger.warning("Summary attempt %d failed: %s", attempt + 1, e)
 
     return "The webpage content could not be processed."
 
@@ -188,11 +203,10 @@ async def summarize_content(content: str, goal: str, max_retries: int = 2) -> st
 async def visit_page(url: str, goal: str) -> str:
     """Visit a single webpage and return extracted information.
     Tries Jina Reader API first, falls back to httpx + BeautifulSoup."""
-    # Try Jina Reader API first (if enabled)
     text = await fetch_page_jina(url) if JINA_ENABLED else "[visit] Jina disabled"
 
     if text.startswith("[visit]"):
-        # Jina disabled or failed, fall back to httpx + BeautifulSoup
+        logger.info("Visit: \"%s\" -> httpx (Jina failed: %s)", url, text)
         html = await fetch_page(url)
         if html.startswith("[visit]"):
             return (
@@ -201,6 +215,8 @@ async def visit_page(url: str, goal: str) -> str:
                 f"Summary:\nThe webpage content could not be accessed.\n"
             )
         text = extract_main_text(html)
+    else:
+        logger.info("Visit: \"%s\" -> Jina Reader", url)
 
     if not text or len(text) < 20:
         return (

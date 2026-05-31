@@ -9,9 +9,12 @@ import json5
 import tiktoken
 from openai import AsyncOpenAI
 
+from logger_config import get_logger
 from prompts import SYSTEM_PROMPT, USER_PROMPT_TEMPLATE_NORMAL, USER_PROMPT_TEMPLATE_THINKING
 from tools_search import batch_search
 from tools_visit import visit_pages
+
+logger = get_logger()
 
 
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
@@ -35,10 +38,10 @@ _client = AsyncOpenAI(
 
 # Initialize tiktoken encoder for accurate token counting
 try:
-    _tokenizer = tiktoken.get_encoding("cl100k_base")  # GPT-4 encoding, works well for Qwen
-    print("[agent_loop] Using tiktoken for accurate token counting")
+    _tokenizer = tiktoken.get_encoding("cl100k_base")
+    logger.debug("Using tiktoken for accurate token counting")
 except Exception as e:
-    print(f"[agent_loop] Warning: Failed to load tiktoken encoder: {e}")
+    logger.warning("Failed to load tiktoken encoder: %s", e)
     _tokenizer = None
 
 
@@ -68,7 +71,7 @@ def _estimate_tokens(messages: list) -> int:
                 total_tokens += len(_tokenizer.encode(content))
             return total_tokens
         except Exception as e:
-            print(f"[agent_loop] Tokenizer error: {e}, falling back to char estimation")
+            logger.warning("Tokenizer error: %s, falling back to char estimation", e)
 
     # Fallback: rough estimation
     total_chars = sum(len(m.get("content", "")) for m in messages)
@@ -131,7 +134,7 @@ def _extract_tool_call(content: str) -> Optional[str]:
             except Exception:
                 args[param_name] = param_value
         result = json.dumps({"name": tool_name, "arguments": args})
-        print(f"[agent] Converted <function={tool_name}> to JSON: {result[:200]}")
+        logger.debug("Converted <function=%s> to JSON: %s", tool_name, result[:200])
         return result
 
     # Format 3: bare JSON tool call (no tags)
@@ -192,13 +195,13 @@ async def _call_llm(
                 full = content
             if full and full.strip():
                 return full.strip()
-            print(f"[agent] Empty response on attempt {attempt + 1}")
+            logger.warning("Empty response on attempt %d", attempt + 1)
         except Exception as e:
             err_str = str(e)
-            print(f"[agent] LLM call attempt {attempt + 1} failed: {e}")
+            logger.warning("LLM call attempt %d failed: %s", attempt + 1, e)
             # Content safety filter - no point retrying the same prompt
             if "data_inspection_failed" in err_str:
-                print(f"[agent] Content filter triggered, signaling redirect")
+                logger.warning("Content filter triggered, signaling redirect")
                 return CONTENT_FILTER_MARKER
             if attempt < 2:
                 await _async_sleep(2 ** attempt)
@@ -291,18 +294,18 @@ async def react_agent(question: str) -> str:
         # Timeout check
         elapsed = time.time() - start_time
         if elapsed > TIMEOUT_SECONDS:
-            print(f"[agent] Timeout after {elapsed:.0f}s at round {round_idx + 1}")
+            logger.warning("Timeout after %.0fs at round %d", elapsed, round_idx + 1)
             return await _force_answer(messages)
 
         # Call LLM
         current_tokens = _estimate_tokens(messages)
-        print(f"[agent] Round {round_idx + 1}, elapsed {elapsed:.0f}s, tokens {current_tokens}")
+        logger.info("Round %d, elapsed %.0fs, tokens %d", round_idx + 1, elapsed, current_tokens)
         content = await _call_llm(messages)
 
         # Handle content filter: redirect or force a neutral search
         if content == CONTENT_FILTER_MARKER:
             content_filter_count += 1
-            print(f"[agent] Content filter hit #{content_filter_count} at round {round_idx + 1}")
+            logger.warning("Content filter hit #%d at round %d", content_filter_count, round_idx + 1)
             if content_filter_count <= 2:
                 redirect_msg = (
                     "The previous response was blocked by content filters. "
@@ -314,7 +317,7 @@ async def react_agent(question: str) -> str:
                 messages.append({"role": "user", "content": redirect_msg})
             else:
                 # After 2 redirects, context itself is toxic — force answer with sanitized context
-                print(f"[agent] Too many content filters, forcing answer with sanitized context")
+                logger.warning("Too many content filters, forcing answer with sanitized context")
                 # Keep only system prompt, original question, and a summary of findings
                 sanitized_messages = [messages[0], messages[1]]  # system + user question
                 # Check if model already found an answer in earlier rounds
@@ -346,13 +349,12 @@ async def react_agent(question: str) -> str:
 
         # Detect stalled output (very short meaningless content like "<" or empty)
         if len(content.strip()) < 5 and "<answer>" not in content:
-            print(f"[agent] Stalled output detected: '{content.strip()}', retrying")
+            logger.warning("Stalled output detected: '%s', retrying", content.strip())
             continue
 
         messages.append({"role": "assistant", "content": content})
 
-        # Debug: print first 500 chars of model output
-        print(f"[agent] Output preview: {content[:500]}")
+        logger.debug("Output preview: %s", content[:500])
         # Check for <think> usage and prepare reminder
         think_reminder = not IS_THINKING_MODEL and "<think>" not in content and round_idx > 0
 
@@ -366,7 +368,7 @@ async def react_agent(question: str) -> str:
                 # Take only the first line to avoid grabbing trailing content
                 if "\n" in answer_text:
                     answer_text = answer_text.split("\n")[0].strip()
-                print(f"[agent] Detected <answer> without </answer>, extracted: {answer_text[:100]}")
+                logger.debug("Detected <answer> without </answer>, extracted: %s", answer_text[:100])
 
             if answer_text:
                 # Early answer gating: if answered too quickly, inject verification prompt
@@ -382,10 +384,10 @@ async def react_agent(question: str) -> str:
                         "If correct, repeat your answer. If not, search more."
                     )
                     messages.append({"role": "user", "content": verify_msg})
-                    print(f"[agent] Early answer blocked at round {round_idx + 1}, requesting verification")
+                    logger.info("Early answer blocked at round %d, requesting verification", round_idx + 1)
                     continue
 
-                print(f"[agent] Got answer at round {round_idx + 1}: {answer_text[:100]}")
+                logger.info("Got answer at round %d: %s", round_idx + 1, answer_text[:100])
                 return _normalize_answer(answer_text)
 
         # Check for tool call — support both <tool_call> tags and bare JSON
@@ -396,7 +398,7 @@ async def react_agent(question: str) -> str:
                 tool_data = json5.loads(tool_call_str)
                 tool_name = tool_data.get("name", "")
                 tool_args = tool_data.get("arguments", {})
-                print(f"[agent] Calling tool: {tool_name}")
+                logger.info("Calling tool: %s", tool_name)
 
                 result = await _execute_tool(tool_name, tool_args)
 
@@ -428,9 +430,9 @@ async def react_agent(question: str) -> str:
 
         # Token limit check
         if _estimate_tokens(messages) > MAX_TOKENS_ESTIMATE:
-            print(f"[agent] Token limit reached at round {round_idx + 1}")
+            logger.warning("Token limit reached at round %d", round_idx + 1)
             return await _force_answer(messages)
 
     # Exhausted all rounds
-    print(f"[agent] Max rounds ({MAX_ROUNDS}) exhausted")
+    logger.warning("Max rounds (%d) exhausted", MAX_ROUNDS)
     return await _force_answer(messages)

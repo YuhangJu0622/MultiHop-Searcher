@@ -1,0 +1,61 @@
+[17:09:07] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1624
+[17:09:12] [INFO] [agent_loop] Calling tool: search
+[17:09:12] [INFO] [tools_search] Query: "2005年后创办 中学 数学竞赛 国家队 IMO" -> Bing/IQS (LLM:bing)
+[17:09:13] [INFO] [tools_search] Query: "中学 2018年 改名 数学奥赛 国家队" -> Bing/IQS (LLM:bing)
+[17:09:14] [INFO] [tools_search] Query: "high school founded after 2005 IMO national team member Chin" -> Google/Serper (LLM:google)
+[17:09:17] [INFO] [agent_loop] Round 2, elapsed 10s, tokens 7009
+[17:09:35] [INFO] [agent_loop] Calling tool: search
+[17:09:35] [INFO] [tools_search] Query: "2018年 中学 改名 新校名" -> Bing/IQS (LLM:bing)
+[17:09:36] [INFO] [tools_search] Query: "乐成寄宿 改名 2018" -> Bing/IQS (LLM:bing)
+[17:09:38] [INFO] [tools_search] Query: "北京 中学 2018年 改名 IMO" -> Bing/IQS (LLM:bing)
+[17:09:40] [INFO] [tools_search] Query: "深圳 中学 2005年后创办 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[17:09:41] [INFO] [agent_loop] Round 3, elapsed 34s, tokens 15463
+[17:09:58] [INFO] [agent_loop] Calling tool: search
+[17:09:58] [INFO] [tools_search] Query: "乐清市知临中学 创办时间 第一届" -> Bing/IQS (LLM:bing)
+[17:09:59] [INFO] [tools_search] Query: "乐清市乐成寄宿中学 成立时间 IMO 国家队" -> Bing/IQS (LLM:bing)
+[17:10:01] [INFO] [tools_search] Query: "知临中学 数学竞赛 国家队成员" -> Bing/IQS (LLM:bing)
+[17:10:02] [INFO] [tools_search] Query: "乐清知临中学 创办年份" -> Bing/IQS (LLM:bing)
+[17:10:03] [INFO] [agent_loop] Round 4, elapsed 57s, tokens 24049
+[17:10:21] [INFO] [agent_loop] Calling tool: search
+[17:10:21] [INFO] [tools_search] Query: "谢柏庭 知临中学 第几届" -> Bing/IQS (LLM:bing)
+[17:10:22] [INFO] [tools_search] Query: "乐清市乐成寄宿中学 第一届 IMO 国家队" -> Bing/IQS (LLM:bing)
+[17:10:23] [INFO] [tools_search] Query: "知临中学 首届学生 数学竞赛" -> Bing/IQS (LLM:bing)
+[17:10:24] [INFO] [tools_search] Query: "谢柏庭 2019 IMO 乐清" -> Bing/IQS (LLM:bing)
+[17:10:26] [INFO] [agent_loop] Round 5, elapsed 79s, tokens 34279
+[17:10:47] [INFO] [agent_loop] Calling tool: search
+[17:10:47] [INFO] [tools_search] Query: "知临中学 IMO国家队 名单 全部" -> Bing/IQS (LLM:bing)
+[17:10:48] [INFO] [tools_search] Query: "乐清 乐成寄宿中学 数学竞赛 国家队 历史" -> Bing/IQS (LLM:bing)
+[17:10:49] [INFO] [tools_search] Query: "2011年 乐成寄宿中学 第一届 学生" -> Bing/IQS (LLM:bing)
+[17:10:51] [INFO] [tools_search] Query: "中学 2005年后创办 2018改名 IMO国家队 第一届" -> Bing/IQS (LLM:bing)
+[17:10:52] [INFO] [agent_loop] Round 6, elapsed 105s, tokens 42354
+[17:11:07] [INFO] [agent_loop] Calling tool: search
+[17:11:07] [INFO] [tools_search] Query: "谢柏庭 知临中学 哪一届 学生" -> Bing/IQS (LLM:bing)
+[17:11:08] [INFO] [tools_search] Query: "乐清知临中学 2011级  IMO" -> Bing/IQS (LLM:bing)
+[17:11:09] [INFO] [tools_search] Query: "乐成寄宿中学 首届高中 学生 竞赛" -> Bing/IQS (LLM:bing)
+[17:11:11] [INFO] [tools_search] Query: "知临中学 历史 IMO 国家队 最早" -> Bing/IQS (LLM:bing)
+[17:11:12] [INFO] [agent_loop] Round 7, elapsed 125s, tokens 51027
+[17:11:20] [INFO] [agent_loop] Calling tool: search
+[17:11:20] [INFO] [tools_search] Query: "苍南县嘉禾中学 改名 2018" -> Bing/IQS (LLM:bing)
+[17:11:21] [INFO] [tools_search] Query: "嘉禾中学 乐清 知临 关系" -> Bing/IQS (LLM:bing)
+[17:11:22] [INFO] [tools_search] Query: "黄哲宇 嘉禾中学 IMO 国家队" -> Bing/IQS (LLM:bing)
+[17:11:23] [INFO] [tools_search] Query: "苍南嘉禾中学 创办时间 改名" -> Bing/IQS (LLM:bing)
+[17:11:25] [INFO] [agent_loop] Round 8, elapsed 138s, tokens 59709
+[17:12:00] [INFO] [agent_loop] Calling tool: search
+[17:12:00] [INFO] [tools_search] Query: "乐清市嘉禾中学 知临中学 前身" -> Bing/IQS (LLM:bing)
+[17:12:01] [INFO] [tools_search] Query: "乐清 嘉禾中学 2018 改名" -> Bing/IQS (LLM:bing)
+[17:12:02] [INFO] [tools_search] Query: "知临中学 嘉禾校区 关系" -> Bing/IQS (LLM:bing)
+[17:12:04] [INFO] [tools_search] Query: "乐清市乐成寄宿中学 嘉禾" -> Bing/IQS (LLM:bing)
+[17:12:05] [INFO] [agent_loop] Round 9, elapsed 178s, tokens 68000
+[17:12:31] [INFO] [agent_loop] Calling tool: search
+[17:12:31] [INFO] [tools_search] Query: "谢柏庭 入学年份 知临中学" -> Bing/IQS (LLM:bing)
+[17:12:32] [INFO] [tools_search] Query: "知临中学 第一届学生 毕业年份" -> Bing/IQS (LLM:bing)
+[17:12:34] [INFO] [tools_search] Query: "乐清市乐成寄宿中学 2014届 IMO" -> Bing/IQS (LLM:bing)
+[17:12:35] [INFO] [tools_search] Query: "谢柏庭 2016级 还是 2013级" -> Bing/IQS (LLM:bing)
+[17:12:37] [INFO] [agent_loop] Round 10, elapsed 210s, tokens 77616
+[17:13:06] [INFO] [agent_loop] Calling tool: search
+[17:13:06] [INFO] [tools_search] Query: "乐清市乐成寄宿中学 2014届 IMO 国家队" -> Bing/IQS (LLM:bing)
+[17:13:07] [INFO] [tools_search] Query: "乐成寄宿中学 第一届 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[17:13:08] [INFO] [tools_search] Query: "知临中学 最早 IMO 国家队 成员" -> Bing/IQS (LLM:bing)
+[17:13:10] [INFO] [tools_search] Query: "2011级 乐成寄宿中学 奥数 国家队" -> Bing/IQS (LLM:bing)
+[17:13:11] [INFO] [agent_loop] Round 11, elapsed 244s, tokens 87068
+[17:13:23] [INFO] [agent_loop] Got answer at round 11: 乐清市知临中学
