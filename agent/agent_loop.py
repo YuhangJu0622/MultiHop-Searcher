@@ -17,12 +17,12 @@ from agent.tools.tools_visit import visit_pages
 logger = get_logger()
 
 
-DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
 NODESK_GATEWAY_KEY = os.getenv("NODESK_GATEWAY_KEY", "")
+NODESK_BASE_URL = os.getenv("NODESK_BASE_URL", "")
 AGENT_MODEL = os.getenv("AGENT_MODEL", "qwen3.5-plus")
 
 THINKING_MODELS = {
-    "qwen3.5-plus",
+    "qwen3.5-plus", "qwen3-30b-a3b-thinking-2507"
 }
 
 IS_THINKING_MODEL = AGENT_MODEL.lower() in THINKING_MODELS
@@ -32,7 +32,7 @@ MAX_TOKENS_ESTIMATE = 500000  # Upgraded from 80K - qwen-plus supports 128K, lea
 MAX_TOOL_RESULT_CHARS = 15000  # Max chars per tool result to keep context manageable
 
 _client = AsyncOpenAI(
-    base_url="https://llm-gateway-api.nodesk.tech/default/passthrough?",
+    base_url=NODESK_BASE_URL,
     api_key=NODESK_GATEWAY_KEY,
 )
 

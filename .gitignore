@@ -6,10 +6,10 @@ dist/
 build/
 
 # Virtual environment
-.venv/
+**/.venv/
 
 # Environment variables
-.env
+**/.env
 
 # IDE
 .DS_Store

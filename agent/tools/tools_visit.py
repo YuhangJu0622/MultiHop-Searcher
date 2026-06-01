@@ -13,10 +13,11 @@ from agent.prompts import EXTRACTOR_PROMPT
 
 logger = get_logger()
 
-DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
+NODESK_GATEWAY_KEY = os.getenv("NODESK_GATEWAY_KEY", "")
+NODESK_BASE_URL = os.getenv("NODESK_BASE_URL", "")
 VISIT_TIMEOUT = 20
 WEBCONTENT_MAXLENGTH = 50000
-SUMMARY_MODEL = "qwen-plus"
+SUMMARY_MODEL = os.getenv("SUMMARY_MODEL", "qwen-plus")
 
 # Jina Reader API configuration
 JINA_ENABLED = os.getenv("JINA_ENABLED", "1").strip() in ("1", "true", "yes")
@@ -28,8 +29,8 @@ JINA_BASE = "https://r.jina.ai/"
 JINA_TIMEOUT = 30
 
 _summary_client = AsyncOpenAI(
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-    api_key=DASHSCOPE_API_KEY,
+    base_url=NODESK_BASE_URL,
+    api_key=NODESK_GATEWAY_KEY,
 )
 
 
@@ -156,6 +157,10 @@ async def summarize_content(content: str, goal: str, max_retries: int = 2) -> st
                 messages=messages,
                 temperature=0.3,
                 max_tokens=4096,
+                extra_body={
+                    "channel": "DMX",
+                    "channel_url": "https://www.dmxapi.cn/v1/chat/completions"
+                },
             )
             raw = resp.choices[0].message.content
             if not raw or len(raw) < 10:

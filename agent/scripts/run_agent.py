@@ -3,8 +3,9 @@ Concurrent answer generation script for Research Agent.
 Runs questions from a JSONL data file and writes answers to a results JSONL file.
 
 Usage:
-    python -m agent.scripts.run_agent --data agent/data/data_stage_1.jsonl
-    python -m agent.scripts.run_agent --data agent/data/data_stage_1.jsonl --start 0 --end 50 --concurrency 3
+    python agent/scripts/run_agent.py --data agent/data/data_stage_1.jsonl
+    python agent/scripts/run_agent.py --data agent/data/data_stage_1.jsonl --start 0 --end 50 --concurrency 3
+    nohup python agent/scripts/run_agent.py --data agent/data/data_stage_1.jsonl --start 0 --end 50 --concurrency 5 > agent/output.log 2>&1 &
 """
 import argparse
 import asyncio
@@ -16,7 +17,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 from agent.agent_loop import react_agent
 from agent.logger_config import current_qid, setup_eval_logging

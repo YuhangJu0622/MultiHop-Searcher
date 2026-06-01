@@ -2,8 +2,8 @@
 Offline scoring script: compare agent results against reference answers.
 
 Usage:
-    python score.py --results results.jsonl --ref data_stage_1.jsonl
-    python score.py --results results.jsonl --ref data_stage_2.jsonl
+    python agent/scripts/score.py --results agent/results.jsonl --ref agent/data/data_stage_1.jsonl
+    python agent/scripts/score.py --results agent/results.jsonl --ref agent/data/data_stage_2.jsonl
 """
 import argparse
 import json
