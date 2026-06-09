@@ -1,0 +1,14 @@
+[11:51:33] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1645
+[11:52:01] [INFO] [agent_loop] Calling tool: search
+[11:52:01] [INFO] [tools_search] Query: "Eurobarometer launched 1970s parliamentary report European C" -> Google/Serper (LLM:google)
+[11:52:03] [INFO] [tools_search] Query: "European monetary union public opinion survey 1970s history" -> Google/Serper (LLM:google)
+[11:52:04] [INFO] [agent_loop] Round 2, elapsed 31s, tokens 4390
+[11:52:40] [INFO] [agent_loop] Calling tool: search
+[11:52:40] [INFO] [tools_search] Query: "James Callaghan 1967 sterling crisis interest rates Chancell" -> Google/Serper (LLM:google)
+[11:52:42] [INFO] [tools_search] Query: "1967 pound sterling devaluation dollar rate Callaghan measur" -> Google/Serper (LLM:google)
+[11:52:43] [INFO] [agent_loop] Round 3, elapsed 70s, tokens 7623
+[11:52:50] [INFO] [agent_loop] Calling tool: search
+[11:52:50] [INFO] [tools_search] Query: "James Callaghan 1967 interest rate raise bank rate sterling " -> Google/Serper (LLM:google)
+[11:52:52] [INFO] [tools_search] Query: "James Callaghan 1975 EEC referendum role key figure campaign" -> Google/Serper (LLM:google)
+[11:52:53] [INFO] [agent_loop] Round 4, elapsed 80s, tokens 9626
+[11:53:11] [INFO] [agent_loop] Got answer at round 4: 2.40

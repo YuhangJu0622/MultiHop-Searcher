@@ -13,8 +13,8 @@ from agent.prompts import EXTRACTOR_PROMPT
 
 logger = get_logger()
 
-NODESK_GATEWAY_KEY = os.getenv("NODESK_GATEWAY_KEY", "")
-NODESK_BASE_URL = os.getenv("NODESK_BASE_URL", "")
+TOOL_API_KEY = os.getenv("TOOL_API_KEY", "")
+TOOL_BASE_URL = os.getenv("TOOL_BASE_URL", "")
 VISIT_TIMEOUT = 20
 WEBCONTENT_MAXLENGTH = 50000
 SUMMARY_MODEL = os.getenv("SUMMARY_MODEL", "qwen-plus")
@@ -29,8 +29,8 @@ JINA_BASE = "https://r.jina.ai/"
 JINA_TIMEOUT = 30
 
 _summary_client = AsyncOpenAI(
-    base_url=NODESK_BASE_URL,
-    api_key=NODESK_GATEWAY_KEY,
+    base_url=TOOL_BASE_URL,
+    api_key=TOOL_API_KEY,
 )
 
 

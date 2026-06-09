@@ -1,0 +1,25 @@
+[12:01:52] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1584
+[12:02:03] [INFO] [agent_loop] Calling tool: search
+[12:02:03] [INFO] [tools_search] Query: "中学 创办2005年后 第一届学生 数学竞赛国家队 改名2018" -> Google/Serper (LLM:google)
+[12:02:04] [INFO] [tools_search] Query: "中学 第一届学生 数学奥赛国家队 2018年改名" -> Bing/IQS (LLM:bing)
+[12:02:05] [INFO] [agent_loop] Round 2, elapsed 14s, tokens 5605
+[12:02:19] [INFO] [agent_loop] Calling tool: search
+[12:02:19] [INFO] [tools_search] Query: "新建中学 2005年后创办 第一届学生 IMO国家队 改名" -> Google/Serper (LLM:google)
+[12:02:21] [INFO] [tools_search] Query: "中学 改名 2018 数学竞赛强校 新校" -> Bing/IQS (LLM:bing)
+[12:02:22] [INFO] [agent_loop] Round 3, elapsed 30s, tokens 10401
+[12:02:40] [INFO] [agent_loop] Calling tool: search
+[12:02:40] [INFO] [tools_search] Query: "乐清知临中学 创办 历史 改名" -> Google/Serper (LLM:google)
+[12:02:41] [INFO] [tools_search] Query: "深圳中学 初中部 改名 2018 新建学校" -> Bing/IQS (LLM:bing)
+[12:02:42] [INFO] [agent_loop] Round 4, elapsed 51s, tokens 14923
+[12:03:13] [INFO] [agent_loop] Calling tool: search
+[12:03:13] [INFO] [tools_search] Query: "乐清知临中学 第一届 高中 毕业生 2010 IMO 国家队" -> Google/Serper (LLM:google)
+[12:03:14] [INFO] [tools_search] Query: "乐成寄宿中学 2010年 2011年 毕业生 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[12:03:16] [INFO] [agent_loop] Round 5, elapsed 84s, tokens 20014
+[12:04:31] [INFO] [agent_loop] Calling tool: search
+[12:04:31] [INFO] [tools_search] Query: "郑志伟 IMO 2009 乐成公立寄宿学校 高中" -> Google/Serper (LLM:google)
+[12:04:33] [INFO] [tools_search] Query: "乐清知临中学 前身 乐成寄宿中学 2007年创办 首届高中毕业生" -> Bing/IQS (LLM:bing)
+[12:04:35] [INFO] [agent_loop] Round 6, elapsed 163s, tokens 27700
+[12:05:15] [INFO] [agent_loop] Calling tool: visit
+[12:05:32] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E4%B9%90%E6%B8%85%E5%B8%82%E7%9F%A5%E4%B8%B4%E4%B8%AD%E5%AD%A6" -> Jina Reader
+[12:06:12] [INFO] [agent_loop] Round 7, elapsed 261s, tokens 31709
+[12:06:27] [INFO] [agent_loop] Got answer at round 7: 乐清市知临中学

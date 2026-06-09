@@ -1,0 +1,17 @@
+[12:01:39] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1824
+[12:01:46] [INFO] [agent_loop] Calling tool: search
+[12:01:46] [INFO] [tools_search] Query: "ILOVEYOU worm Philippines 2000 creator not prosecuted" -> Google/Serper (LLM:google)
+[12:01:47] [INFO] [tools_search] Query: "中国公司 2000年成立 管理欧洲顶级联赛球队" -> Bing/IQS (LLM:bing)
+[12:01:49] [INFO] [tools_search] Query: "Chinese company founded 2000 owns European football team" -> Google/Serper (LLM:google)
+[12:01:50] [INFO] [agent_loop] Round 2, elapsed 11s, tokens 6416
+[12:01:59] [INFO] [agent_loop] Calling tool: search
+[12:01:59] [INFO] [tools_search] Query: "星辉娱乐 策略游戏 手游 系列" -> Bing/IQS (LLM:bing)
+[12:02:00] [INFO] [tools_search] Query: "星辉娱乐 游戏 开发 移动版" -> Bing/IQS (LLM:bing)
+[12:02:01] [INFO] [tools_search] Query: "Rastar Group strategy game mobile version series" -> Google/Serper (LLM:google)
+[12:02:03] [INFO] [agent_loop] Round 3, elapsed 24s, tokens 12463
+[12:02:18] [INFO] [agent_loop] Calling tool: search
+[12:02:18] [INFO] [tools_search] Query: "三国群英传 系列 神话 神兽 变化" -> Bing/IQS (LLM:bing)
+[12:02:19] [INFO] [tools_search] Query: "三国群英传 系列 历史 神话元素 演变" -> Bing/IQS (LLM:bing)
+[12:02:21] [INFO] [tools_search] Query: "三国群英传 宇峻奥汀 Windows 策略游戏" -> Bing/IQS (LLM:bing)
+[12:02:22] [INFO] [agent_loop] Round 4, elapsed 43s, tokens 18519
+[12:02:33] [INFO] [agent_loop] Got answer at round 4: 三国群英传

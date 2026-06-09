@@ -1,0 +1,30 @@
+[14:33:03] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1781
+[14:33:12] [INFO] [agent_loop] Calling tool: search
+[14:33:12] [INFO] [tools_search] Query: "北半球 三大 周期性 流星雨 废弃 星座" -> Google/Serper (LLM:google)
+[14:33:14] [INFO] [tools_search] Query: "周期性 流星雨 废弃 星座" -> Bing/IQS (auto)
+[14:33:15] [INFO] [tools_search] Query: "北半球 三大 周期性 流星雨" -> Bing/IQS (auto)
+[14:33:17] [INFO] [agent_loop] Round 2, elapsed 13s, tokens 7921
+[14:33:43] [INFO] [agent_loop] Calling tool: search
+[14:33:43] [INFO] [tools_search] Query: "电离 现象 设备" -> Google/Serper (LLM:google)
+[14:33:44] [INFO] [tools_search] Query: "探测 电离 现象 设备" -> Bing/IQS (auto)
+[14:33:46] [INFO] [agent_loop] Round 3, elapsed 42s, tokens 11612
+[14:34:18] [INFO] [agent_loop] Calling tool: search
+[14:34:18] [INFO] [tools_search] Query: "流星体 燃烧 电离 现象 设备" -> Google/Serper (LLM:google)
+[14:34:19] [INFO] [tools_search] Query: "探测 电离 现象 设备" -> Bing/IQS (auto)
+[14:34:20] [INFO] [agent_loop] Round 4, elapsed 77s, tokens 15348
+[14:34:38] [INFO] [agent_loop] Calling tool: search
+[14:34:38] [INFO] [tools_search] Query: "探测 流星 电离 现象 设备" -> Google/Serper (LLM:google)
+[14:34:39] [INFO] [tools_search] Query: "探测 流星 电离 设备" -> Bing/IQS (auto)
+[14:34:40] [INFO] [agent_loop] Round 5, elapsed 97s, tokens 19459
+[14:34:52] [INFO] [agent_loop] Calling tool: visit
+[14:35:23] [INFO] [tools_visit] Visit: "https://wapbaike.baidu.com/view/966223.htm?fr=aladdin" -> Jina Reader
+[14:35:57] [INFO] [agent_loop] Round 6, elapsed 174s, tokens 21263
+[14:36:02] [INFO] [agent_loop] Calling tool: visit
+[14:36:14] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E6%B5%81%E6%98%9F%E9%9B%B7%E8%BE%BE%E8%A7%82%E6%B5%8B/9208712" -> Jina Reader
+[14:36:41] [INFO] [agent_loop] Round 7, elapsed 218s, tokens 22762
+[14:36:45] [INFO] [agent_loop] Round 8, elapsed 222s, tokens 23150
+[14:36:54] [INFO] [agent_loop] Round 9, elapsed 231s, tokens 23485
+[14:36:59] [INFO] [agent_loop] Round 10, elapsed 236s, tokens 23853
+[14:37:09] [INFO] [agent_loop] Round 11, elapsed 245s, tokens 24209
+[14:37:13] [INFO] [agent_loop] Round 12, elapsed 250s, tokens 24565
+[14:37:18] [WARNING] [agent_loop] Token limit reached at round 12

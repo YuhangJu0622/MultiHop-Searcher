@@ -17,23 +17,26 @@ from agent.tools.tools_visit import visit_pages
 logger = get_logger()
 
 
-NODESK_GATEWAY_KEY = os.getenv("NODESK_GATEWAY_KEY", "")
-NODESK_BASE_URL = os.getenv("NODESK_BASE_URL", "")
+AGENT_BASE_URL = os.getenv("AGENT_BASE_URL", "")
+AGENT_API_KEY = os.getenv("AGENT_API_KEY", "")
 AGENT_MODEL = os.getenv("AGENT_MODEL", "qwen3.5-plus")
 
+_IS_NODESK = "nodesk" in AGENT_BASE_URL.lower()
+
 THINKING_MODELS = {
-    "qwen3.5-plus", "qwen3-30b-a3b-thinking-2507"
+    "qwen3.5-plus", "qwen3-30b-a3b-thinking-2507", "qwen3.7-max-50off",
+    "deepseek-v4-pro-guan", "gpt-5.5", "glm-5.1"
 }
 
 IS_THINKING_MODEL = AGENT_MODEL.lower() in THINKING_MODELS
 MAX_ROUNDS = 100
 TIMEOUT_SECONDS = 540  # 9 minutes (leave 1 min buffer for 10 min limit)
-MAX_TOKENS_ESTIMATE = 500000  # Upgraded from 80K - qwen-plus supports 128K, leave buffer
+MAX_TOKENS_ESTIMATE = 500000  # “qwen2.5-7b”的上下文长度32k，"qwen3.5-plus"的上下文长度1M
 MAX_TOOL_RESULT_CHARS = 15000  # Max chars per tool result to keep context manageable
 
 _client = AsyncOpenAI(
-    base_url=NODESK_BASE_URL,
-    api_key=NODESK_GATEWAY_KEY,
+    base_url=AGENT_BASE_URL,
+    api_key=AGENT_API_KEY,
 )
 
 # Initialize tiktoken encoder for accurate token counting
@@ -164,23 +167,34 @@ async def _call_llm(
     temperature: float = 0.4,
     max_tokens: int = 8192,
 ) -> str:
-    """Call LLM via DashScope OpenAI-compatible API with retries."""
-    extra_body = {
-        "channel": "DMX",
-        "channel_url": "https://www.dmxapi.cn/v1/chat/completions"
-    }
+    """Call LLM via OpenAI-compatible API with retries."""
+    extra_body = {}
+    if _IS_NODESK:
+        extra_body["channel"] = "DMX"
+        extra_body["channel_url"] = "https://www.dmxapi.cn/v1/chat/completions"
     if IS_THINKING_MODEL:
-        extra_body["enable_thinking"] = True
+        model_lower = AGENT_MODEL.lower()
+        if "deepseek" in model_lower:
+            extra_body["thinking"] = {"type": "enabled"}
+            extra_body["reasoning_effort"] = "high"
+        elif "gemini" in model_lower:
+            extra_body["reasoning_effort"] = "medium"
+        elif "gpt" in model_lower:
+            extra_body["reasoning_effort"] = "medium"
+        elif "glm" in model_lower:
+            extra_body["thinking"] = {"type": "enabled"}
+        else:
+            extra_body["enable_thinking"] = True
 
     for attempt in range(3):
         try:
             resp = await _client.chat.completions.create(
                 model=AGENT_MODEL,
                 messages=messages,
-                stop=stop or ["<tool_response>"],
+                stop=stop or ["</tool_call>"],
                 temperature=temperature,
                 max_tokens=max_tokens,
-                extra_body=extra_body,
+                extra_body=extra_body or None,
             )
             msg = resp.choices[0].message
             # qwen3.5 with thinking mode: reasoning is in reasoning_content field
@@ -190,7 +204,7 @@ async def _call_llm(
             content = re.sub(r'^[a-z]*>', '', content.lstrip())
             # Reassemble: wrap reasoning in <think> tags + content
             if IS_THINKING_MODEL and reasoning:
-                full = f"<think>\n{reasoning}\n</think>\n{content}"
+                    full = f"<think>\n{reasoning}\n</think>\n{content}"
             else:
                 full = content
             if full and full.strip():
@@ -217,12 +231,14 @@ async def _async_sleep(seconds: float):
 async def _force_answer(messages: list) -> str:
     """Force the LLM to generate a final answer based on gathered info."""
     force_msg = (
-        "You have reached the limit. Based on ALL information gathered, provide your final answer.\n"
-        "IMPORTANT: Use <think> tags to:\n"
-        "1. Re-read the original question\n"
-        "2. List ALL constraints from the question\n"
-        "3. Choose the candidate that best satisfies ALL constraints\n"
-        "Then answer:\n<think>your final reasoning</think>\n<answer>your answer</answer>"
+    "You have reached the search limit. Tools are now DISABLED — any <tool_call> will be ignored.\n"
+    "Based on ALL information gathered, provide your final answer in the following format:\n"
+    "<think>\n"
+    "[Re-read the original question]\n"
+    "[List ALL constraints from the question]\n"
+    "[Choose the candidate that best satisfies ALL constraints]\n"
+    "</think>\n"
+    "<answer>your concise answer</answer>"
     )
     messages.append({"role": "user", "content": force_msg})
 

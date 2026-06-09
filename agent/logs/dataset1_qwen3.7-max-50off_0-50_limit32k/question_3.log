@@ -1,0 +1,32 @@
+[16:56:20] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1674
+[16:56:36] [INFO] [agent_loop] Calling tool: search
+[16:56:36] [INFO] [tools_search] Query: "Osho Rajneesh book thirty letters spiritual teacher" -> Google/Serper (LLM:google)
+[16:56:38] [INFO] [tools_search] Query: "Rajneesh letters to masters book 30 letters" -> Google/Serper (LLM:google)
+[16:56:40] [INFO] [tools_search] Query: "Osho ashram meditation music composer 1970s" -> Google/Serper (LLM:google)
+[16:56:42] [INFO] [agent_loop] Round 2, elapsed 22s, tokens 5037
+[16:57:20] [INFO] [agent_loop] Calling tool: search
+[16:57:20] [INFO] [tools_search] Query: ""The Eternal Message" Rajneesh thirty letters spiritual teac" -> Google/Serper (LLM:google)
+[16:57:21] [INFO] [tools_search] Query: "Osho "Letters to Masters" book" -> Google/Serper (LLM:google)
+[16:57:23] [INFO] [tools_search] Poor Google results for 'Osho "Letters to Masters" book', trying Bing/IQS fallback
+[16:57:23] [INFO] [tools_search] Query: "Rajneesh book letters addressed to guru teacher" -> Google/Serper (LLM:google)
+[16:57:25] [INFO] [agent_loop] Round 3, elapsed 65s, tokens 11967
+[16:58:01] [INFO] [agent_loop] Calling tool: search
+[16:58:01] [INFO] [tools_search] Query: "FBI file spiritual teacher guru public document" -> Google/Serper (LLM:google)
+[16:58:04] [INFO] [tools_search] Query: "Osho Rajneesh "letters" book addressed to teacher master" -> Google/Serper (LLM:google)
+[16:58:06] [INFO] [tools_search] Query: "Deuter composer Osho ashram meditation music 1970s" -> Google/Serper (LLM:google)
+[16:58:08] [INFO] [agent_loop] Round 4, elapsed 108s, tokens 16427
+[16:58:39] [INFO] [agent_loop] Calling tool: search
+[16:58:39] [INFO] [tools_search] Query: "FBI file spiritual teacher scribd document sharing" -> Google/Serper (LLM:google)
+[16:58:42] [INFO] [tools_search] Query: ""FBI file" guru spiritual teacher pages vault" -> Google/Serper (LLM:google)
+[16:58:44] [INFO] [tools_search] Query: "Osho Rajneesh "A Cup of Tea" letters book" -> Google/Serper (LLM:google)
+[16:58:46] [INFO] [agent_loop] Round 5, elapsed 146s, tokens 20265
+[16:59:09] [INFO] [agent_loop] Calling tool: search
+[16:59:09] [INFO] [tools_search] Query: "FBI file "spiritual teacher" scribd pages" -> Google/Serper (LLM:google)
+[16:59:11] [INFO] [tools_search] Query: "FBI file Maharishi Mahesh Yogi pages" -> Google/Serper (LLM:google)
+[16:59:14] [INFO] [tools_search] Query: "FBI file Neem Karoli Baba pages" -> Google/Serper (LLM:google)
+[16:59:15] [INFO] [agent_loop] Round 6, elapsed 175s, tokens 23716
+[16:59:27] [INFO] [agent_loop] Calling tool: search
+[16:59:27] [INFO] [tools_search] Query: "site:scribd.com FBI file guru spiritual teacher" -> Google/Serper (LLM:google)
+[16:59:31] [INFO] [tools_search] Query: "Osho Rajneesh "Turning In" thirty letters Ma Yoga Mukta Cath" -> Google/Serper (LLM:google)
+[16:59:33] [INFO] [tools_search] Query: ""thirty letters" book guru addressed spiritual teacher FBI" -> Google/Serper (LLM:google)
+[16:59:35] [WARNING] [agent_loop] Token limit reached at round 6

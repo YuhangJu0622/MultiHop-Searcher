@@ -1,0 +1,20 @@
+[11:58:55] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1600
+[11:59:08] [INFO] [agent_loop] Calling tool: search
+[11:59:08] [INFO] [tools_search] Query: "Salem witch trials first accuser young girl" -> Google/Serper (auto)
+[11:59:09] [INFO] [tools_search] Query: "Salem witch trials who started the accusations Betty Parris " -> Google/Serper (auto)
+[11:59:11] [INFO] [agent_loop] Round 2, elapsed 15s, tokens 3683
+[11:59:34] [INFO] [agent_loop] Calling tool: search
+[11:59:34] [INFO] [tools_search] Query: "Salem witch trials who ignited hysteria single accuser" -> Google/Serper (auto)
+[11:59:35] [INFO] [tools_search] Query: "Giles Corey pressed to death Salem witch trials young accuse" -> Google/Serper (auto)
+[11:59:36] [INFO] [agent_loop] Round 3, elapsed 41s, tokens 6043
+[11:59:40] [INFO] [agent_loop] Calling tool: visit
+[11:59:46] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/Salem_witch_trials" -> Jina Reader
+[12:00:26] [INFO] [agent_loop] Round 4, elapsed 91s, tokens 7104
+[12:00:50] [INFO] [agent_loop] Calling tool: search
+[12:00:50] [INFO] [tools_search] Query: "Salem witch trials Betty Parris first accuser who started th" -> Google/Serper (auto)
+[12:00:52] [INFO] [tools_search] Query: "who was the very first accuser in Salem witch trials single " -> Google/Serper (auto)
+[12:00:54] [INFO] [agent_loop] Round 5, elapsed 119s, tokens 9604
+[12:01:04] [INFO] [agent_loop] Calling tool: visit
+[12:01:22] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/Betty_Parris" -> Jina Reader
+[12:01:55] [INFO] [agent_loop] Round 6, elapsed 180s, tokens 10698
+[12:02:23] [INFO] [agent_loop] Got answer at round 6: Betty Parris

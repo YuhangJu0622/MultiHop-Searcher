@@ -1,0 +1,48 @@
+[12:02:19] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1595
+[12:02:29] [INFO] [agent_loop] Calling tool: search
+[12:02:29] [INFO] [tools_search] Query: "aviation incident Mirny Ice Station fire refueling runway co" -> Google/Serper (LLM:google)
+[12:02:30] [INFO] [tools_search] Query: "авиапроисшествие станция Мирный пожар заправка" -> Bing/IQS (LLM:bing)
+[12:02:31] [INFO] [agent_loop] Round 2, elapsed 12s, tokens 9461
+[12:02:42] [INFO] [agent_loop] Calling tool: visit
+[12:02:47] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/crash/ground-fire-avia-14pt-mirny-3-killed" -> Jina Reader
+[12:03:09] [INFO] [agent_loop] Round 3, elapsed 49s, tokens 10205
+[12:03:23] [INFO] [agent_loop] Calling tool: search
+[12:03:23] [INFO] [tools_search] Query: "Mirny Ice Station aircraft takeoff accident waterlogged runw" -> Google/Serper (LLM:google)
+[12:03:24] [INFO] [tools_search] Query: "авиакатастрофа станция Мирный взлёт мокрая полоса попутный в" -> Bing/IQS (LLM:bing)
+[12:03:25] [INFO] [agent_loop] Round 4, elapsed 66s, tokens 15734
+[12:03:30] [INFO] [agent_loop] Calling tool: visit
+[12:03:34] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/city/mirny-ice-station-queen-mary-land" -> Jina Reader
+[12:04:29] [INFO] [agent_loop] Round 5, elapsed 129s, tokens 17725
+[12:04:40] [INFO] [agent_loop] Calling tool: search
+[12:04:40] [INFO] [tools_search] Query: "Mirny Antarctica aviation accident runway cones stall tailwi" -> Google/Serper (LLM:google)
+[12:04:41] [INFO] [tools_search] Query: "станция Мирный Антарктида авиапроисшествие конусы взлётная п" -> Bing/IQS (LLM:bing)
+[12:04:42] [INFO] [agent_loop] Round 6, elapsed 143s, tokens 26136
+[12:04:56] [INFO] [agent_loop] Calling tool: search
+[12:04:56] [INFO] [tools_search] Query: "Авиа 14ПТ Мирный Антарктида пожар заправка конусы полоса" -> Bing/IQS (LLM:bing)
+[12:04:57] [INFO] [tools_search] Query: "Avia 14PT Mirny crash takeoff waterlogged runway stall cones" -> Google/Serper (LLM:google)
+[12:04:59] [INFO] [agent_loop] Round 7, elapsed 159s, tokens 27906
+[12:05:13] [INFO] [agent_loop] Calling tool: search
+[12:05:13] [INFO] [tools_search] Query: "антарктида Мирный самолёт пожар при заправке взлёт попутный " -> Bing/IQS (LLM:bing)
+[12:05:13] [INFO] [tools_search] Query: "Antarctica Mirny station aircraft fire refueling takeoff tai" -> Google/Serper (LLM:google)
+[12:05:15] [INFO] [agent_loop] Round 8, elapsed 176s, tokens 33281
+[12:05:30] [INFO] [agent_loop] Calling tool: search
+[12:05:30] [INFO] [tools_search] Query: "Avia-14 CCCP-52066 Мирный катастрофа подробности экипаж" -> Bing/IQS (LLM:bing)
+[12:05:31] [INFO] [tools_search] Query: "Антарктида Мирный авиация 1989 катастрофа пожар взлёт ошибка" -> Google/Serper (LLM:google)
+[12:05:32] [INFO] [agent_loop] Round 9, elapsed 193s, tokens 40318
+[12:05:44] [INFO] [agent_loop] Calling tool: visit
+[12:05:52] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/country/antarctica?page=1" -> Jina Reader
+[12:06:23] [INFO] [agent_loop] Round 10, elapsed 244s, tokens 41596
+[12:06:37] [INFO] [agent_loop] Calling tool: search
+[12:06:37] [INFO] [tools_search] Query: "wikipedia Mirny Station aviation accident aircraft fire" -> Google/Serper (LLM:google)
+[12:06:38] [INFO] [tools_search] Query: ""Mirny" "runway cones" OR "traffic cones" aircraft stall Ant" -> Bing/IQS (LLM:bing)
+[12:06:39] [INFO] [agent_loop] Round 11, elapsed 260s, tokens 45309
+[12:06:47] [INFO] [agent_loop] Calling tool: visit
+[12:06:48] [INFO] [tools_visit] Visit: "https://ir.canterbury.ac.nz/server/api/core/bitstreams/75e487f6-5881-4a83-80c2-fa70752fed65/content" -> httpx (Jina failed: [visit] Jina HTTP 451 for https://ir.canterbury.ac.nz/server/api/core/bitstreams/75e487f6-5881-4a83-80c2-fa70752fed65/content)
+[12:06:49] [INFO] [agent_loop] Round 12, elapsed 270s, tokens 45690
+[12:06:59] [INFO] [agent_loop] Calling tool: search
+[12:06:59] [INFO] [tools_search] Query: "Авиа 14ПТ Мирный Антарктида 1989 расследование пожар заправк" -> Bing/IQS (LLM:bing)
+[12:06:59] [INFO] [tools_search] Query: "Mirny Antarctica 1989 Avia 14 aircraft fire refueling takeof" -> Google/Serper (LLM:google)
+[12:07:01] [INFO] [agent_loop] Round 13, elapsed 281s, tokens 48127
+[12:46:48] [INFO] [agent_loop] Calling tool: visit
+[12:47:00] [INFO] [tools_visit] Visit: "https://rosap.ntl.bts.gov/view/dot/33846/dot_33846_DS1.pdf" -> Jina Reader
+[12:47:29] [WARNING] [agent_loop] Timeout after 2709s at round 14

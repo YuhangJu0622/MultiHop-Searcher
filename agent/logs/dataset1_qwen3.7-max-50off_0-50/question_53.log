@@ -1,0 +1,21 @@
+[12:05:41] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1797
+[12:05:52] [INFO] [agent_loop] Calling tool: search
+[12:05:52] [INFO] [tools_search] Query: "head of government scandal relative property overseas educat" -> Google/Serper (LLM:google)
+[12:05:53] [INFO] [tools_search] Query: "政府首脑 亲属财产 舆论风波 留学海外 宪法 90年代" -> Bing/IQS (LLM:bing)
+[12:05:55] [INFO] [tools_search] Query: "prime minister scandal family wealth property overseas unive" -> Google/Serper (LLM:google)
+[12:05:56] [INFO] [agent_loop] Round 2, elapsed 15s, tokens 6225
+[12:06:18] [INFO] [agent_loop] Calling tool: search
+[12:06:18] [INFO] [tools_search] Query: "Mongolia prime minister scandal relative property wealth" -> Google/Serper (LLM:google)
+[12:06:19] [INFO] [tools_search] Query: "蒙古国总理 亲属 财产 丑闻" -> Bing/IQS (LLM:bing)
+[12:06:21] [INFO] [tools_search] Query: "Mongolia PM family wealth scandal constitution 2019 amendmen" -> Google/Serper (LLM:google)
+[12:06:24] [INFO] [agent_loop] Round 3, elapsed 43s, tokens 10526
+[12:06:34] [INFO] [agent_loop] Calling tool: search
+[12:06:34] [INFO] [tools_search] Query: "Luvsannamsrain Oyun-Erdene education Harvard overseas univer" -> Google/Serper (LLM:google)
+[12:06:35] [INFO] [tools_search] Query: "奥云额尔登 留学 海外 学历" -> Bing/IQS (LLM:bing)
+[12:06:36] [INFO] [tools_search] Query: "Mongolia former president mineral corruption investigation" -> Google/Serper (LLM:google)
+[12:06:37] [INFO] [agent_loop] Round 4, elapsed 56s, tokens 15176
+[12:06:46] [INFO] [agent_loop] Calling tool: search
+[12:06:46] [INFO] [tools_search] Query: "Mongolia former president Elbegdorj mining corruption invest" -> Google/Serper (LLM:google)
+[12:06:47] [INFO] [tools_search] Query: "蒙古国前总统 矿产 腐败 调查" -> Bing/IQS (LLM:bing)
+[12:06:48] [INFO] [tools_search] Query: "Mongolia constitution 1992 article cited Oyun-Erdene scandal" -> Google/Serper (LLM:google)
+[12:06:49] [INFO] [agent_loop] Round 5, elapsed 69s, tokens 19782

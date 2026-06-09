@@ -1,0 +1,50 @@
+[11:11:29] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1766
+[11:11:51] [INFO] [agent_loop] Calling tool: search
+[11:11:51] [INFO] [tools_search] Query: "1971 mainframe computer university labs software giant found" -> Google/Serper (LLM:google)
+[11:11:52] [INFO] [tools_search] Query: "大型计算机 1971年 大学实验室 微软创始人" -> Bing/IQS (LLM:bing)
+[11:11:53] [INFO] [tools_search] Query: "九一三事件 1971 计算机 大学" -> Bing/IQS (LLM:bing)
+[11:11:55] [INFO] [agent_loop] Round 2, elapsed 26s, tokens 8369
+[11:12:14] [INFO] [agent_loop] Round 3, elapsed 45s, tokens 8970
+[11:12:17] [INFO] [agent_loop] Calling tool: search
+[11:12:17] [INFO] [tools_search] Query: "1976 NASA reusable spacecraft named after sci-fi new astrona" -> Google/Serper (LLM:google)
+[11:12:18] [INFO] [tools_search] Query: "space shuttle enterprise 1976 naming star trek new astronaut" -> Google/Serper (LLM:google)
+[11:12:20] [INFO] [agent_loop] Round 4, elapsed 51s, tokens 10772
+[11:12:24] [INFO] [agent_loop] Calling tool: search
+[11:12:24] [INFO] [tools_search] Query: "NASA mission specialist astronaut category created 1976" -> Google/Serper (LLM:google)
+[11:12:26] [INFO] [tools_search] Query: "1971 PDP-11 university labs Bill Gates Paul Allen" -> Google/Serper (LLM:google)
+[11:12:27] [INFO] [agent_loop] Round 5, elapsed 58s, tokens 12703
+[11:12:55] [INFO] [agent_loop] Calling tool: search
+[11:12:55] [INFO] [tools_search] Query: "1971 mainframe computer deployed university labs widely PDP-" -> Google/Serper (LLM:google)
+[11:12:56] [INFO] [agent_loop] Round 6, elapsed 87s, tokens 14948
+[11:13:02] [INFO] [agent_loop] Calling tool: search
+[11:13:02] [INFO] [tools_search] Query: "NASA mission specialist astronaut category established 1976 " -> Google/Serper (LLM:google)
+[11:13:03] [INFO] [agent_loop] Round 7, elapsed 94s, tokens 16025
+[11:13:20] [INFO] [agent_loop] Calling tool: search
+[11:13:20] [INFO] [tools_search] Query: "Enterprise 1976 astronaut category created space shuttle" -> Google/Serper (LLM:google)
+[11:13:21] [INFO] [agent_loop] Round 8, elapsed 112s, tokens 17577
+[11:14:10] [INFO] [agent_loop] Calling tool: visit
+[11:14:20] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/Space_Shuttle_Enterprise" -> Jina Reader
+[11:14:51] [INFO] [agent_loop] Round 9, elapsed 202s, tokens 20861
+[11:14:55] [INFO] [agent_loop] Calling tool: search
+[11:14:55] [INFO] [tools_search] Query: "NASA created mission specialist category 1976 1977 Space Shu" -> Google/Serper (LLM:google)
+[11:14:58] [INFO] [agent_loop] Round 10, elapsed 209s, tokens 21851
+[11:15:02] [INFO] [agent_loop] Calling tool: visit
+[11:15:08] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/NASA_Astronaut_Group_8" -> Jina Reader
+[11:15:44] [INFO] [agent_loop] Round 11, elapsed 254s, tokens 23109
+[11:15:51] [INFO] [agent_loop] Calling tool: search
+[11:15:51] [INFO] [tools_search] Query: "Bill Gates Paul Allen PDP-10 university deployment 1971" -> Google/Serper (LLM:google)
+[11:15:52] [INFO] [agent_loop] Round 12, elapsed 263s, tokens 24301
+[11:16:12] [INFO] [agent_loop] Calling tool: search
+[11:16:12] [INFO] [tools_search] Query: "1971年 大型计算机 大学实验室 部署 PDP-10" -> Bing/IQS (LLM:bing)
+[11:16:13] [INFO] [agent_loop] Round 13, elapsed 284s, tokens 28083
+[11:16:41] [INFO] [agent_loop] Round 14, elapsed 312s, tokens 29348
+[11:16:53] [INFO] [agent_loop] Calling tool: search
+[11:16:53] [INFO] [tools_search] Query: "九一三事件 文化大革命 转折点" -> Bing/IQS (LLM:bing)
+[11:16:54] [INFO] [agent_loop] Round 15, elapsed 325s, tokens 30786
+[11:17:27] [INFO] [agent_loop] Calling tool: search
+[11:17:27] [INFO] [tools_search] Query: "Space Shuttle Enterprise named after Star Trek 1976 astronau" -> Google/Serper (LLM:google)
+[11:17:28] [INFO] [agent_loop] Round 16, elapsed 359s, tokens 33314
+[11:17:47] [INFO] [agent_loop] Calling tool: search
+[11:17:47] [INFO] [tools_search] Query: "九一三事件 转折点 文化大革命 转折" -> Bing/IQS (LLM:bing)
+[11:17:49] [INFO] [agent_loop] Round 17, elapsed 379s, tokens 36415
+[11:18:01] [INFO] [agent_loop] Got answer at round 17: 九一三事件

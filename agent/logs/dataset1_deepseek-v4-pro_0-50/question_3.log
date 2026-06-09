@@ -1,0 +1,38 @@
+[10:40:52] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1674
+[10:41:09] [INFO] [agent_loop] Calling tool: search
+[10:41:09] [INFO] [tools_search] Query: ""thirty letters" guru book compiled" -> Google/Serper (LLM:google)
+[10:41:10] [INFO] [tools_search] Query: ""30 letters" spiritual teacher guru book" -> Google/Serper (LLM:google)
+[10:41:11] [INFO] [tools_search] Query: "controversial guru 1970s commune 30 letters book" -> Google/Serper (LLM:google)
+[10:41:13] [INFO] [agent_loop] Round 2, elapsed 21s, tokens 5398
+[10:41:37] [INFO] [agent_loop] Round 3, elapsed 45s, tokens 6377
+[10:42:14] [INFO] [agent_loop] Calling tool: search
+[10:42:14] [INFO] [tools_search] Query: ""Thirty Letters" book guru" -> Google/Serper (LLM:google)
+[10:42:16] [INFO] [tools_search] Query: "meditation music composer ashram 1970s" -> Google/Serper (LLM:google)
+[10:42:17] [INFO] [tools_search] Query: "FBI file spiritual teacher public document sharing" -> Google/Serper (LLM:google)
+[10:42:19] [INFO] [agent_loop] Round 4, elapsed 87s, tokens 10835
+[10:43:09] [INFO] [agent_loop] Round 5, elapsed 138s, tokens 13254
+[10:44:04] [INFO] [agent_loop] Calling tool: search
+[10:44:04] [INFO] [tools_search] Query: ""thirty letters" book guru compiled" -> Google/Serper (LLM:google)
+[10:44:06] [INFO] [tools_search] Query: ""30 letters" book compiled guru" -> Google/Serper (LLM:google)
+[10:44:07] [INFO] [tools_search] Query: "meditation music composer ashram 1970s deuter" -> Google/Serper (LLM:google)
+[10:44:08] [INFO] [agent_loop] Round 6, elapsed 197s, tokens 18460
+[10:44:13] [INFO] [agent_loop] Round 7, elapsed 201s, tokens 18601
+[10:44:17] [INFO] [agent_loop] Calling tool: visit
+[10:44:28] [INFO] [tools_visit] Visit: "https://www.oshonews.com/2020/05/16/recording-the-music-for-oshos-active-meditations/" -> Jina Reader
+[10:44:55] [INFO] [agent_loop] Round 8, elapsed 243s, tokens 19688
+[10:45:46] [INFO] [agent_loop] Calling tool: search
+[10:45:46] [INFO] [tools_search] Query: ""thirty letters" Rajneesh Osho" -> Google/Serper (LLM:google)
+[10:45:47] [INFO] [tools_search] Query: ""30 letters" Osho book" -> Google/Serper (LLM:google)
+[10:45:48] [INFO] [tools_search] Query: "Osho letters compiled book thirty" -> Google/Serper (LLM:google)
+[10:45:49] [INFO] [tools_search] Query: "FBI Vault spiritual teacher guru" -> Google/Serper (LLM:google)
+[10:45:51] [INFO] [agent_loop] Round 9, elapsed 299s, tokens 25313
+[10:47:05] [INFO] [agent_loop] Calling tool: visit
+[10:47:12] [INFO] [tools_visit] Visit: "https://oshosourcebook.com/bibliography-1942-1974/" -> Jina Reader
+[10:47:12] [INFO] [tools_visit] Visit: "https://oshosourcebook.com/part-three/" -> Jina Reader
+[10:47:52] [INFO] [agent_loop] Round 10, elapsed 420s, tokens 30631
+[10:49:51] [INFO] [agent_loop] Calling tool: search
+[10:49:51] [INFO] [tools_search] Query: ""thirty letters" "spiritual teacher" compiled" -> Google/Serper (LLM:google)
+[10:49:52] [INFO] [tools_search] Query: ""FBI file" spiritual teacher pages" -> Google/Serper (LLM:google)
+[10:49:55] [INFO] [tools_search] Query: "Osho "30 letters" "Ma Yoga" FBI" -> Google/Serper (LLM:google)
+[10:49:57] [INFO] [tools_search] Poor Google results for 'Osho "30 letters" "Ma Yoga" FBI', trying Bing/IQS fallback
+[10:49:58] [WARNING] [agent_loop] Timeout after 546s at round 11

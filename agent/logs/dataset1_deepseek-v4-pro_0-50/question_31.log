@@ -1,0 +1,43 @@
+[11:46:19] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1831
+[11:46:57] [INFO] [agent_loop] Calling tool: search
+[11:46:57] [INFO] [tools_search] Query: "国家文物局 人才项目管理办法 2024" -> Bing/IQS (LLM:bing)
+[11:46:58] [INFO] [tools_search] Query: "国家文物局 人才项目管理办法 2023" -> Bing/IQS (LLM:bing)
+[11:47:00] [INFO] [tools_search] Query: "国家文物局 人才项目管理办法 2022" -> Bing/IQS (LLM:bing)
+[11:47:01] [INFO] [agent_loop] Round 2, elapsed 43s, tokens 11196
+[11:47:09] [INFO] [agent_loop] Round 3, elapsed 50s, tokens 11569
+[11:47:13] [INFO] [agent_loop] Calling tool: search
+[11:47:13] [INFO] [tools_search] Query: "SVOM satellite 2024 observation results gamma-ray burst" -> Google/Serper (LLM:google)
+[11:47:14] [INFO] [tools_search] Query: "中法天文卫星 SVOM 2024 观测成果" -> Bing/IQS (LLM:bing)
+[11:47:16] [INFO] [agent_loop] Round 4, elapsed 57s, tokens 14319
+[11:47:32] [INFO] [agent_loop] Calling tool: search
+[11:47:32] [INFO] [tools_search] Query: "开启 自然资源 陆海统筹 新时代 海洋卫星" -> Bing/IQS (LLM:bing)
+[11:47:33] [INFO] [tools_search] Query: "长征二号丙 海洋卫星 陆海统筹" -> Bing/IQS (LLM:bing)
+[11:47:35] [INFO] [agent_loop] Round 5, elapsed 76s, tokens 19487
+[11:48:08] [INFO] [agent_loop] Round 6, elapsed 110s, tokens 21637
+[11:48:11] [INFO] [agent_loop] Round 7, elapsed 112s, tokens 21783
+[11:48:25] [INFO] [agent_loop] Round 8, elapsed 127s, tokens 22498
+[11:48:41] [INFO] [agent_loop] Calling tool: search
+[11:48:41] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[11:48:42] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[11:48:43] [INFO] [agent_loop] Round 9, elapsed 144s, tokens 25315
+[11:48:55] [INFO] [agent_loop] Calling tool: search
+[11:48:55] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[11:48:56] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[11:48:57] [INFO] [agent_loop] Round 10, elapsed 158s, tokens 28233
+[11:49:22] [INFO] [agent_loop] Calling tool: search
+[11:49:22] [INFO] [tools_search] Query: "国家文物局 打击文物犯罪 专项行动 2018" -> Bing/IQS (LLM:bing)
+[11:49:23] [INFO] [tools_search] Query: "全国打击文物犯罪专项行动 2018" -> Bing/IQS (LLM:bing)
+[11:49:24] [INFO] [agent_loop] Round 11, elapsed 185s, tokens 33046
+[11:49:48] [INFO] [agent_loop] Round 12, elapsed 209s, tokens 34637
+[11:50:28] [INFO] [agent_loop] Round 13, elapsed 250s, tokens 36951
+[11:50:35] [INFO] [agent_loop] Calling tool: search
+[11:50:35] [INFO] [tools_search] Query: "2020年 全国打击文物犯罪专项行动" -> Bing/IQS (LLM:bing)
+[11:50:37] [INFO] [agent_loop] Round 14, elapsed 258s, tokens 38742
+[11:51:02] [INFO] [agent_loop] Calling tool: search
+[11:51:02] [INFO] [tools_search] Query: "海洋一号C 开启 自然资源 陆海统筹 新时代" -> Bing/IQS (LLM:bing)
+[11:51:04] [INFO] [tools_search] Query: "海洋一号D 开启 自然资源 陆海统筹 新时代" -> Bing/IQS (LLM:bing)
+[11:51:05] [INFO] [agent_loop] Round 15, elapsed 286s, tokens 43661
+[11:51:26] [INFO] [agent_loop] Calling tool: visit
+[11:51:39] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E6%B5%B7%E6%B4%8B%E4%B8%80%E5%8F%B7D%E5%8D%AB%E6%98%9F" -> Jina Reader
+[11:51:58] [INFO] [agent_loop] Round 16, elapsed 339s, tokens 45679
+[11:52:32] [INFO] [agent_loop] Got answer at round 16: 2018

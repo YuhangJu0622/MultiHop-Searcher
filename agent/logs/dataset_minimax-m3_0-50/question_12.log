@@ -1,0 +1,12 @@
+[11:38:08] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1706
+[11:41:39] [INFO] [agent_loop] Calling tool: search
+[11:41:39] [INFO] [tools_search] Query: "三民主义青年团 秘密组织 下属" -> Google/Serper (LLM:google)
+[11:41:40] [INFO] [tools_search] Query: "以主义为名 青年社团 秘密组织 中国 机构 世界大战 技术合作" -> Bing/IQS (LLM:bing)
+[11:41:42] [INFO] [tools_search] Query: "迁往台湾 1949 民航 资产 人员 变动 继承机构" -> Bing/IQS (auto)
+[11:41:43] [INFO] [agent_loop] Round 2, elapsed 215s, tokens 17333
+[11:44:05] [INFO] [agent_loop] Calling tool: search
+[11:44:05] [INFO] [tools_search] Query: "轮流主讲 政治理论 业务知识 台湾 机构" -> Google/Serper (LLM:google)
+[11:44:06] [INFO] [tools_search] Query: "三青团 下属 秘密组织 机构 技术合作 美国 二战" -> Bing/IQS (LLM:bing)
+[11:44:08] [INFO] [tools_search] Query: "复兴社 秘密组织 三民主义 机构 二战 美国 合作" -> Bing/IQS (auto)
+[11:44:09] [INFO] [agent_loop] Round 3, elapsed 361s, tokens 31041
+[11:47:31] [WARNING] [agent_loop] Timeout after 563s at round 4

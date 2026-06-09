@@ -1,0 +1,35 @@
+[12:47:05] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1624
+[12:47:13] [INFO] [agent_loop] Calling tool: search
+[12:47:13] [INFO] [tools_search] Query: "第一届学生 数学竞赛国家队" -> Bing/IQS (LLM:bing)
+[12:47:14] [INFO] [tools_search] Query: "2005年创办 中学 数学竞赛 国家队" -> Google/Serper (LLM:google)
+[12:47:17] [INFO] [tools_search] Query: "2018年改名 中学 数学竞赛" -> Bing/IQS (LLM:bing)
+[12:47:19] [INFO] [agent_loop] Round 2, elapsed 14s, tokens 8467
+[12:47:45] [INFO] [agent_loop] Round 3, elapsed 40s, tokens 9046
+[12:47:54] [INFO] [agent_loop] Calling tool: search
+[12:47:54] [INFO] [tools_search] Query: "query1" -> Google/Serper (LLM:google)
+[12:47:57] [INFO] [tools_search] Query: "query2" -> Bing/IQS (LLM:bing)
+[12:47:59] [INFO] [agent_loop] Round 4, elapsed 54s, tokens 12034
+[12:48:30] [INFO] [agent_loop] Calling tool: search
+[12:48:30] [INFO] [tools_search] Query: "首届毕业生 数学竞赛国家队" -> Google/Serper (LLM:google)
+[12:48:31] [INFO] [tools_search] Query: "2018年 更名为 中学" -> Bing/IQS (LLM:bing)
+[12:48:32] [INFO] [tools_search] Query: "第一届学生 入选国家集训队 数学" -> Google/Serper (LLM:google)
+[12:48:33] [INFO] [agent_loop] Round 5, elapsed 89s, tokens 18706
+[12:48:50] [INFO] [agent_loop] Round 6, elapsed 105s, tokens 19440
+[12:49:01] [INFO] [agent_loop] Calling tool: search
+[12:49:01] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[12:49:02] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[12:49:02] [INFO] [agent_loop] Round 7, elapsed 118s, tokens 21928
+[12:49:26] [INFO] [agent_loop] Round 8, elapsed 142s, tokens 22712
+[12:49:35] [INFO] [agent_loop] Round 9, elapsed 150s, tokens 23090
+[12:51:16] [INFO] [agent_loop] Calling tool: search
+[12:51:16] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[12:51:17] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[12:51:18] [INFO] [agent_loop] Round 10, elapsed 253s, tokens 30494
+[12:51:58] [INFO] [agent_loop] Calling tool: search
+[12:51:58] [INFO] [tools_search] Query: "第一届学生 数学竞赛国家队" -> Bing/IQS (LLM:bing)
+[12:51:59] [INFO] [tools_search] Query: "2005年创办 中学 数学竞赛 国家队" -> Google/Serper (LLM:google)
+[12:52:01] [INFO] [tools_search] Query: "2018年改名 中学 数学竞赛" -> Bing/IQS (LLM:bing)
+[12:52:02] [INFO] [agent_loop] Round 11, elapsed 298s, tokens 38619
+[12:53:35] [INFO] [agent_loop] Round 12, elapsed 391s, tokens 43593
+[12:53:55] [INFO] [agent_loop] Round 13, elapsed 410s, tokens 43894
+[12:56:54] [WARNING] [agent_loop] Timeout after 589s at round 14

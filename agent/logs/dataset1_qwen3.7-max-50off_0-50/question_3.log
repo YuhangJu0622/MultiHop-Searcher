@@ -1,0 +1,30 @@
+[10:55:19] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1674
+[10:55:30] [INFO] [agent_loop] Calling tool: search
+[10:55:30] [INFO] [tools_search] Query: "Osho Rajneesh book thirty letters spiritual teacher" -> Google/Serper (LLM:google)
+[10:55:31] [INFO] [tools_search] Query: "Osho Rajneesh letters book 30 letters compiled" -> Google/Serper (LLM:google)
+[10:55:33] [INFO] [tools_search] Query: "composer meditation music Osho ashram 1970s" -> Google/Serper (LLM:google)
+[10:55:34] [INFO] [agent_loop] Round 2, elapsed 15s, tokens 4878
+[10:56:09] [INFO] [agent_loop] Calling tool: search
+[10:56:09] [INFO] [tools_search] Query: ""The Eternal Message" Rajneesh thirty letters Ma Yoga Bhakti" -> Google/Serper (LLM:google)
+[10:56:11] [INFO] [tools_search] Query: "Osho Rajneesh letters to spiritual teacher book thirty" -> Google/Serper (LLM:google)
+[10:56:13] [INFO] [tools_search] Query: "FBI file spiritual teacher Osho Rajneesh document sharing" -> Google/Serper (LLM:google)
+[10:56:14] [INFO] [agent_loop] Round 3, elapsed 55s, tokens 8797
+[10:57:39] [INFO] [agent_loop] Calling tool: search
+[10:57:39] [INFO] [tools_search] Query: "Scribd FBI file spiritual teacher pages" -> Google/Serper (LLM:google)
+[10:57:41] [INFO] [tools_search] Query: ""Ma Yoga Bhakti" OR "Ma Ananda Pratima" FBI" -> Google/Serper (LLM:google)
+[10:57:42] [INFO] [tools_search] Query: "Osho "Turning In" thirty letters addressed to" -> Google/Serper (LLM:google)
+[10:57:44] [INFO] [agent_loop] Round 4, elapsed 145s, tokens 15238
+[10:58:57] [INFO] [agent_loop] Calling tool: search
+[10:58:57] [INFO] [tools_search] Query: ""Catherine Venizelos" "Ma Yoga Mukta" spiritual teacher" -> Google/Serper (LLM:google)
+[10:58:58] [INFO] [tools_search] Query: ""Ma Yoga Bhakti" spiritual teacher Osho" -> Google/Serper (LLM:google)
+[10:59:00] [INFO] [tools_search] Query: "Bhagwan Shree Rajneesh FBI file Scribd pages number" -> Google/Serper (LLM:google)
+[10:59:02] [INFO] [tools_search] Query: "Osho Rajneesh FBI file MuckRock pages" -> Google/Serper (LLM:google)
+[10:59:03] [INFO] [agent_loop] Round 5, elapsed 224s, tokens 22791
+[11:01:59] [INFO] [agent_loop] Calling tool: visit
+[11:02:09] [INFO] [tools_visit] Visit: "https://archive.org/details/BhagwanShreeRajneesh" -> Jina Reader
+[11:02:10] [INFO] [tools_visit] Visit: "https://www.muckrock.com/foi/united-states-of-america-10/fbi-bhagwan-shree-rajneesh-52310/" -> Jina Reader
+[11:02:18] [INFO] [tools_visit] Visit: "https://sannyasnews.org/now/archives/4700" -> Jina Reader
+[11:03:14] [INFO] [agent_loop] Round 6, elapsed 475s, tokens 35279
+[11:09:37] [INFO] [agent_loop] Calling tool: visit
+[11:09:38] [INFO] [tools_visit] Visit: "https://www.scribd.com/document/329642328/Bhagwan-Shree-Rajneesh-FBI-File" -> httpx (Jina failed: [visit] Jina HTTP 451 for https://www.scribd.com/document/329642328/Bhagwan-Shree-Rajneesh-FBI-File)
+[11:09:46] [WARNING] [agent_loop] Timeout after 867s at round 7

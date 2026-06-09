@@ -1,0 +1,25 @@
+[11:56:50] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1819
+[11:57:04] [INFO] [agent_loop] Calling tool: search
+[11:57:04] [INFO] [tools_search] Query: "智翼 农业科技 无人机" -> Google/Serper (LLM:google)
+[11:57:06] [INFO] [tools_search] Query: "智翼 农业 飞手 创业公司" -> Google/Serper (LLM:google)
+[11:57:07] [INFO] [tools_search] Query: "China men badminton Thomas Cup first win year" -> Google/Serper (LLM:google)
+[11:57:10] [INFO] [agent_loop] Round 2, elapsed 20s, tokens 6552
+[11:57:24] [INFO] [agent_loop] Calling tool: search
+[11:57:24] [INFO] [tools_search] Query: ""智翼" 农业科技 无人机公司 飞手" -> Google/Serper (LLM:google)
+[11:57:27] [INFO] [tools_search] Query: ""智翼" 农业 创始人 无人机" -> Google/Serper (LLM:google)
+[11:57:29] [INFO] [tools_search] Query: "极飞科技 创始人 彭斌 出生地" -> Google/Serper (LLM:google)
+[11:57:30] [INFO] [agent_loop] Round 3, elapsed 41s, tokens 12315
+[11:58:24] [INFO] [agent_loop] Calling tool: search
+[11:58:24] [INFO] [tools_search] Query: "彭斌 极飞科技 出生 福建 哪个市 县" -> Google/Serper (LLM:google)
+[11:58:25] [INFO] [tools_search] Query: "福建三明 神明 身份证 信仰" -> Google/Serper (LLM:google)
+[11:58:26] [INFO] [tools_search] Query: "极飞科技 创办 2007 哪个城市 成立" -> Google/Serper (LLM:google)
+[11:58:28] [INFO] [agent_loop] Round 4, elapsed 98s, tokens 20216
+[12:01:09] [INFO] [agent_loop] Calling tool: search
+[12:01:09] [INFO] [tools_search] Query: "妈祖 身份证 神明 福建" -> Google/Serper (LLM:google)
+[12:01:11] [INFO] [tools_search] Query: "天空舞者 风筝 传统文化" -> Google/Serper (LLM:google)
+[12:01:12] [INFO] [tools_search] Query: "彭斌 福建三明 哪个县 出生地" -> Google/Serper (LLM:google)
+[12:01:14] [INFO] [agent_loop] Round 5, elapsed 265s, tokens 35121
+[12:02:15] [INFO] [agent_loop] Calling tool: search
+[12:02:15] [INFO] [tools_search] Query: "极飞科技 2007年 创办 广州 前身 XAIRCRAFT" -> Google/Serper (LLM:google)
+[12:02:17] [INFO] [agent_loop] Round 6, elapsed 327s, tokens 39564
+[12:02:42] [INFO] [agent_loop] Got answer at round 6: 广州

@@ -1,0 +1,13 @@
+[11:37:49] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1835
+[11:38:34] [INFO] [agent_loop] Calling tool: search
+[11:38:34] [INFO] [tools_search] Query: "关于加强国家档案工作的决定 1956" -> Bing/IQS (LLM:bing)
+[11:38:35] [INFO] [tools_search] Query: "钱学森 1956 年 发表 监禁 经历 文章" -> Bing/IQS (LLM:bing)
+[11:38:36] [INFO] [tools_search] Query: "Adam Matthew 数字 化 英国 外交部 档案 南亚 独立 日本" -> Google/Serper (LLM:google)
+[11:38:38] [INFO] [agent_loop] Round 2, elapsed 49s, tokens 12187
+[11:39:00] [INFO] [agent_loop] Round 3, elapsed 72s, tokens 13797
+[11:39:04] [INFO] [agent_loop] Calling tool: search
+[11:39:04] [INFO] [tools_search] Query: "钱学森 1956 发表 文章 监禁 美国" -> Bing/IQS (LLM:bing)
+[11:39:05] [INFO] [tools_search] Query: ""我在美国" 钱学森 1956" -> Google/Serper (LLM:google)
+[11:39:06] [INFO] [tools_search] Query: "国务院 关于加强国家档案工作的决定 1956" -> Bing/IQS (LLM:bing)
+[11:39:07] [INFO] [agent_loop] Round 4, elapsed 79s, tokens 19710
+[11:39:35] [INFO] [agent_loop] Got answer at round 4: 1956

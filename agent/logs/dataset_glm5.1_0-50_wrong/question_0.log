@@ -1,0 +1,32 @@
+[11:33:22] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1777
+[11:33:34] [INFO] [agent_loop] Round 2, elapsed 12s, tokens 2311
+[11:33:37] [INFO] [agent_loop] Round 3, elapsed 15s, tokens 2437
+[11:33:40] [INFO] [agent_loop] Round 4, elapsed 18s, tokens 2553
+[11:33:43] [INFO] [agent_loop] Round 5, elapsed 22s, tokens 2676
+[11:33:47] [INFO] [agent_loop] Round 6, elapsed 25s, tokens 2812
+[11:33:50] [INFO] [agent_loop] Round 7, elapsed 28s, tokens 2938
+[11:33:53] [INFO] [agent_loop] Round 8, elapsed 31s, tokens 3061
+[11:34:01] [INFO] [agent_loop] Round 9, elapsed 39s, tokens 3188
+[11:34:12] [INFO] [agent_loop] Round 10, elapsed 50s, tokens 3356
+[11:34:17] [INFO] [agent_loop] Round 11, elapsed 55s, tokens 3495
+[11:34:38] [INFO] [agent_loop] Round 12, elapsed 76s, tokens 4355
+[11:34:48] [INFO] [agent_loop] Round 13, elapsed 86s, tokens 4501
+[11:34:59] [INFO] [agent_loop] Round 14, elapsed 97s, tokens 4646
+[11:35:10] [INFO] [agent_loop] Round 15, elapsed 108s, tokens 4776
+[11:35:19] [INFO] [agent_loop] Round 16, elapsed 117s, tokens 4982
+[11:35:29] [INFO] [agent_loop] Calling tool: search
+[11:35:29] [INFO] [tools_search] Query: "query1" -> Google/Serper (LLM:google)
+[11:35:30] [INFO] [tools_search] Query: "query2" -> Bing/IQS (LLM:bing)
+[11:35:31] [INFO] [agent_loop] Round 17, elapsed 129s, tokens 7964
+[11:35:40] [INFO] [agent_loop] Round 18, elapsed 138s, tokens 8154
+[11:35:49] [INFO] [agent_loop] Round 19, elapsed 147s, tokens 8348
+[11:36:05] [INFO] [agent_loop] Round 20, elapsed 163s, tokens 8498
+[11:36:17] [INFO] [agent_loop] Round 21, elapsed 175s, tokens 8705
+[11:36:22] [INFO] [agent_loop] Calling tool: search
+[11:36:22] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[11:36:24] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[11:36:25] [INFO] [agent_loop] Round 22, elapsed 183s, tokens 11152
+[11:36:30] [INFO] [agent_loop] Round 23, elapsed 188s, tokens 11339
+[11:36:35] [INFO] [agent_loop] Round 24, elapsed 193s, tokens 11530
+[11:36:41] [INFO] [agent_loop] Round 25, elapsed 199s, tokens 11707
+[11:36:53] [INFO] [agent_loop] Round 26, elapsed 211s, tokens 11829

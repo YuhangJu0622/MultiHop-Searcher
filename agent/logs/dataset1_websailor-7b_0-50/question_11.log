@@ -1,0 +1,19 @@
+[14:37:18] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1627
+[14:37:24] [INFO] [agent_loop] Calling tool: search
+[14:37:24] [INFO] [tools_search] Query: "became President between 1960 2000 studied law oldest univer" -> Google/Serper (LLM:google)
+[14:37:25] [INFO] [tools_search] Query: "married about 25 years before elected President" -> Bing/IQS (LLM:bing)
+[14:37:26] [INFO] [tools_search] Query: "born city population 2011 more than 65,000 less than 130,000" -> Google/Serper (auto)
+[14:37:27] [INFO] [tools_search] Query: "elected President same year iconic video game debuted" -> Google/Serper (auto)
+[14:37:29] [INFO] [agent_loop] Round 2, elapsed 11s, tokens 8363
+[14:37:35] [INFO] [agent_loop] Calling tool: search
+[14:37:35] [INFO] [tools_search] Query: "became President between 1960 2000 studied law oldest univer" -> Google/Serper (LLM:google)
+[14:37:37] [INFO] [tools_search] Query: "married about 25 years before elected President" -> Bing/IQS (LLM:bing)
+[14:37:38] [INFO] [tools_search] Query: "born city population 2011 more than 65,000 less than 130,000" -> Google/Serper (auto)
+[14:37:39] [INFO] [tools_search] Query: "elected President same year iconic video game debuted" -> Google/Serper (auto)
+[14:37:41] [INFO] [agent_loop] Round 3, elapsed 23s, tokens 16744
+[14:37:55] [INFO] [agent_loop] Calling tool: search
+[14:37:55] [INFO] [tools_search] Query: "became President between 1960 2000 studied law oldest univer" -> Google/Serper (LLM:google)
+[14:37:57] [INFO] [tools_search] Query: "married about 25 years before elected President" -> Bing/IQS (LLM:bing)
+[14:37:58] [INFO] [tools_search] Query: "born city population 2011 more than 65,000 less than 130,000" -> Google/Serper (auto)
+[14:37:59] [INFO] [tools_search] Query: "elected President same year iconic video game debuted" -> Google/Serper (auto)
+[14:38:00] [WARNING] [agent_loop] Token limit reached at round 3

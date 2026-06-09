@@ -1,0 +1,29 @@
+============================================================
+Results: /Users/edy/PythonProject/Research-Agent---1st-place-in-Alibaba-Cloud-Data-AI-Competition/agent/logs/dataset1_qwen3.7-max-50off_0-50/results_qwen3.7-max.jsonl
+Reference: agent/data/data_stage_1.jsonl
+============================================================
+
+[Exact Match] Accuracy: 36/51 = 70.59%
+[Semantic]    Accuracy: 38/51 = 74.51%
+              (LLM saved 2 answers that failed exact match)
+
+Avg time: 388.8s  |  Total time: 19827s
+
+--- 真正的错题 (Semantic Wrong: 13) ---
+  Q50: predicted='Ming Tsai'  expected='Adrianne Calvo'
+  Q31: predicted='2020'  expected='2018'
+  Q17: predicted='<think>\n省略思考内容\n</think>'  expected='今日俄罗斯'
+  Q42: predicted='Munhwa Broadcasting Corporation'  expected='Korean Broadcasting System'
+  Q5: predicted='Mashable'  expected='Phoenix New Times'
+  Q20: predicted='Girolamo Savonarola, OP'  expected='Jean Tisserand, O.F.M.'
+  Q2: predicted='radar'  expected='FM radio'
+  Q26: predicted='<think>\n省略思考内容\n</think>'  expected='Kit Rodriguez'
+  Q11: predicted='<think>\n省略思考内容\n</think>'  expected='Francesco Cossiga'
+  Q45: predicted='Stamp Yearbook'  expected='2024 Stamp Yearbook'
+  Q28: predicted='<think>\n省略大量思考内容'  expected="You're the Worst"
+  Q41: predicted='2018 Press Releases'  expected='Federal Reserve Board - 2018 Press Releases'
+  Q34: predicted="St. Catherine's School"  expected='Convent of Our Lady of Mercy'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 2) ---
+  Q7: predicted='Washington Union Station'  expected='Union Station'
+  Q24: predicted='天风姤'  expected='姤卦'

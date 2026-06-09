@@ -1,0 +1,46 @@
+[12:02:33] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1790
+[12:02:45] [INFO] [agent_loop] Calling tool: search
+[12:02:45] [INFO] [tools_search] Query: "clean energy company listed early 2020s East Asia business 2" -> Google/Serper (LLM:google)
+[12:02:46] [INFO] [tools_search] Query: "清洁能源公司 上市 2020年代 业务遍及全球近两百个国家 人道主义援助 国际组织" -> Bing/IQS (LLM:bing)
+[12:02:48] [INFO] [tools_search] Query: "UN specialized agency digital learning displaced youth Afric" -> Google/Serper (LLM:google)
+[12:02:49] [INFO] [agent_loop] Round 2, elapsed 16s, tokens 5816
+[12:03:01] [INFO] [agent_loop] Calling tool: search
+[12:03:01] [INFO] [tools_search] Query: "清洁能源公司 上市 业务遍及全球近200个国家 接待 联合国 代表团 人道主义" -> Bing/IQS (LLM:bing)
+[12:03:03] [INFO] [tools_search] Query: "EcoFlow listed IPO 2020s clean energy 200 countries" -> Google/Serper (LLM:google)
+[12:03:04] [INFO] [tools_search] Query: "UNHCR digital learning displaced youth Africa private sector" -> Google/Serper (LLM:google)
+[12:03:06] [INFO] [tools_search] Query: "联合国专门机构 数字化学习 非洲 流离失所 青年 私营部门合作" -> Bing/IQS (LLM:bing)
+[12:03:07] [INFO] [agent_loop] Round 3, elapsed 34s, tokens 12911
+[12:03:36] [INFO] [agent_loop] Calling tool: search
+[12:03:36] [INFO] [tools_search] Query: ""业务遍及全球" "近两百个" 清洁能源 上市" -> Bing/IQS (LLM:bing)
+[12:03:38] [INFO] [tools_search] Query: ""业务遍及" "近200个" 清洁能源 公司" -> Bing/IQS (LLM:bing)
+[12:03:39] [INFO] [tools_search] Query: "Vodafone Foundation UNHCR Instant Network Schools digital le" -> Google/Serper (LLM:google)
+[12:03:40] [INFO] [tools_search] Query: "联合国难民署 数字化学习 非洲 私营部门 2010年代" -> Bing/IQS (LLM:bing)
+[12:03:42] [INFO] [agent_loop] Round 4, elapsed 69s, tokens 22474
+[12:04:23] [INFO] [agent_loop] Calling tool: search
+[12:04:23] [INFO] [tools_search] Query: "清洁能源公司 接待 联合国难民署 代表团 人道主义援助 技术" -> Bing/IQS (LLM:bing)
+[12:04:25] [INFO] [tools_search] Query: "clean energy company received UNHCR delegation humanitarian " -> Google/Serper (LLM:google)
+[12:04:26] [INFO] [tools_search] Query: "联合国 监督机构 负责人 中国 2020年代" -> Bing/IQS (LLM:bing)
+[12:04:27] [INFO] [tools_search] Query: "UN oversight body chair Chinese national 2020s" -> Google/Serper (LLM:google)
+[12:04:29] [INFO] [agent_loop] Round 5, elapsed 116s, tokens 31527
+[12:04:47] [INFO] [agent_loop] Calling tool: search
+[12:04:47] [INFO] [tools_search] Query: "隆基绿能 上市时间 业务遍及 多少个国家" -> Bing/IQS (LLM:bing)
+[12:04:48] [INFO] [tools_search] Query: "LONGi Green Energy listed 2020s countries business" -> Google/Serper (LLM:google)
+[12:04:49] [INFO] [tools_search] Query: "隆基绿能 联合国难民署 代表团 访问 接待" -> Bing/IQS (LLM:bing)
+[12:04:50] [INFO] [tools_search] Query: "隆基绿能 全球业务 国家 数量" -> Bing/IQS (LLM:bing)
+[12:04:52] [INFO] [agent_loop] Round 6, elapsed 139s, tokens 40406
+[12:05:16] [INFO] [agent_loop] Calling tool: search
+[12:05:16] [INFO] [tools_search] Query: "天合光能 联合国难民署 代表团 人道主义" -> Bing/IQS (LLM:bing)
+[12:05:17] [INFO] [tools_search] Query: "晶科能源 联合国难民署 代表团 人道主义" -> Bing/IQS (LLM:bing)
+[12:05:18] [INFO] [tools_search] Query: "清洁能源公司 上市 2020 2021 2022 业务遍及 近200个国家" -> Bing/IQS (LLM:bing)
+[12:05:20] [INFO] [tools_search] Query: "Trina Solar JinkoSolar UNHCR humanitarian delegation clean e" -> Google/Serper (LLM:google)
+[12:05:21] [INFO] [agent_loop] Round 7, elapsed 168s, tokens 50459
+[12:05:29] [INFO] [agent_loop] Calling tool: search
+[12:05:29] [INFO] [tools_search] Query: "晶科能源 科创板 上市 2022 业务遍及 国家" -> Bing/IQS (LLM:bing)
+[12:05:30] [INFO] [tools_search] Query: "JinkoSolar business countries regions global coverage 200" -> Google/Serper (LLM:google)
+[12:05:33] [INFO] [tools_search] Query: "晶科能源 联合国难民署 代表团 访问 Raouf Mazou" -> Bing/IQS (LLM:bing)
+[12:05:34] [INFO] [agent_loop] Round 8, elapsed 181s, tokens 56042
+[12:06:04] [INFO] [agent_loop] Calling tool: search
+[12:06:04] [INFO] [tools_search] Query: "联合国难民署 全称 中文" -> Bing/IQS (LLM:bing)
+[12:06:05] [INFO] [tools_search] Query: "UNHCR full Chinese name 联合国难民事务高级专员公署" -> Google/Serper (LLM:google)
+[12:06:08] [INFO] [agent_loop] Round 9, elapsed 215s, tokens 61138
+[12:06:28] [INFO] [agent_loop] Got answer at round 9: 联合国难民事务高级专员公署

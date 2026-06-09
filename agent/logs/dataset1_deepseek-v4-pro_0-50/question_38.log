@@ -1,0 +1,38 @@
+[12:47:05] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1819
+[12:47:42] [INFO] [agent_loop] Calling tool: search
+[12:47:42] [INFO] [tools_search] Query: "北京 国家级 博物馆 元谋人 展览 长期" -> Bing/IQS (LLM:bing)
+[12:47:43] [INFO] [tools_search] Query: "中国国家博物馆 元谋人 展览 长期" -> Bing/IQS (LLM:bing)
+[12:47:45] [INFO] [agent_loop] Round 2, elapsed 40s, tokens 8187
+[12:48:04] [INFO] [agent_loop] Calling tool: search
+[12:48:04] [INFO] [tools_search] Query: "中国国家博物馆 技术安全 高级职员 籍贯" -> Bing/IQS (LLM:bing)
+[12:48:05] [INFO] [tools_search] Query: "中国国家博物馆 安全保卫 部门 主任 1970年代" -> Bing/IQS (LLM:bing)
+[12:48:07] [INFO] [agent_loop] Round 3, elapsed 62s, tokens 12670
+[12:48:36] [INFO] [agent_loop] Round 4, elapsed 92s, tokens 14437
+[12:48:53] [INFO] [agent_loop] Calling tool: search
+[12:48:53] [INFO] [tools_search] Query: "Chinese ancient human fossil cover Nature Science journal re" -> Google/Serper (LLM:google)
+[12:48:54] [INFO] [tools_search] Query: "中国古人类 复原像 封面 科学 期刊 Nature" -> Bing/IQS (LLM:bing)
+[12:48:55] [INFO] [agent_loop] Round 5, elapsed 111s, tokens 18095
+[12:49:09] [INFO] [agent_loop] Calling tool: search
+[12:49:09] [INFO] [tools_search] Query: "南京人 化石 同位素 测年 先进技术 期刊封面" -> Bing/IQS (LLM:bing)
+[12:49:11] [INFO] [tools_search] Query: "南京直立人 复原像 封面 科学期刊" -> Bing/IQS (LLM:bing)
+[12:49:12] [INFO] [agent_loop] Round 6, elapsed 127s, tokens 22655
+[12:49:26] [INFO] [agent_loop] Round 7, elapsed 142s, tokens 23095
+[12:49:32] [INFO] [agent_loop] Round 8, elapsed 147s, tokens 23297
+[12:49:36] [INFO] [agent_loop] Calling tool: search
+[12:49:36] [INFO] [tools_search] Query: "..." -> Google/Serper (LLM:...)
+[12:49:37] [INFO] [tools_search] Poor Google results for '...', trying Bing/IQS fallback
+[12:49:38] [INFO] [tools_search] Query: "..." -> Google/Serper (LLM:...)
+[12:49:42] [INFO] [tools_search] Poor Google results for '...', trying Bing/IQS fallback
+[12:49:43] [INFO] [agent_loop] Round 9, elapsed 158s, tokens 26263
+[12:50:09] [INFO] [agent_loop] Calling tool: visit
+[12:50:20] [INFO] [tools_visit] Visit: "https://www.chnmuseum.cn/yj/zjxz/zzzzgjzj/201908/t20190815_142762.shtml" -> Jina Reader
+[12:50:35] [INFO] [agent_loop] Round 10, elapsed 210s, tokens 27087
+[12:50:47] [INFO] [agent_loop] Calling tool: search
+[12:50:47] [INFO] [tools_search] Query: "北京猿人 年代 测定 铝铍 同位素 测年 先进技术" -> Bing/IQS (LLM:bing)
+[12:50:49] [INFO] [tools_search] Query: "Peking Man Zhoukoudian dating isotopic analysis advanced tec" -> Google/Serper (LLM:google)
+[12:50:50] [INFO] [agent_loop] Round 11, elapsed 225s, tokens 31106
+[12:51:07] [INFO] [agent_loop] Calling tool: search
+[12:51:07] [INFO] [tools_search] Query: "Nature 2009 cover Peking Man reconstruction" -> Google/Serper (LLM:google)
+[12:51:10] [INFO] [tools_search] Query: "自然 杂志 封面 北京猿人 复原 2009" -> Bing/IQS (LLM:bing)
+[12:51:11] [INFO] [agent_loop] Round 12, elapsed 247s, tokens 35714
+[12:52:58] [INFO] [agent_loop] Got answer at round 12: 北京人

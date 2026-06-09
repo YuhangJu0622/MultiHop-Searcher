@@ -1,0 +1,33 @@
+[11:33:22] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1661
+[11:33:29] [INFO] [agent_loop] Calling tool: search
+[11:33:29] [INFO] [tools_search] Query: "2000年 中国大陆 卫视 动漫 盗贼 美女 警察" -> Bing/IQS (LLM:bing)
+[11:33:30] [INFO] [tools_search] Query: "anime thief beauty police aired China 2000 satellite TV" -> Google/Serper (LLM:google)
+[11:33:32] [INFO] [tools_search] Query: "2000年初 卫视播出 动画 盗贼 警察 美女" -> Bing/IQS (LLM:bing)
+[11:33:33] [INFO] [agent_loop] Round 2, elapsed 11s, tokens 7001
+[11:33:41] [INFO] [agent_loop] Round 3, elapsed 19s, tokens 7326
+[11:33:46] [INFO] [agent_loop] Round 4, elapsed 24s, tokens 7539
+[11:33:50] [INFO] [agent_loop] Round 5, elapsed 28s, tokens 7670
+[11:33:53] [INFO] [agent_loop] Round 6, elapsed 31s, tokens 7788
+[11:34:00] [INFO] [agent_loop] Round 7, elapsed 38s, tokens 7912
+[11:34:06] [INFO] [agent_loop] Round 8, elapsed 44s, tokens 8004
+[11:34:09] [INFO] [agent_loop] Round 9, elapsed 47s, tokens 8096
+[11:34:19] [INFO] [agent_loop] Round 10, elapsed 57s, tokens 8203
+[11:34:31] [INFO] [agent_loop] Round 11, elapsed 69s, tokens 8320
+[11:34:40] [INFO] [agent_loop] Round 12, elapsed 78s, tokens 8518
+[11:34:48] [INFO] [agent_loop] Round 13, elapsed 86s, tokens 8624
+[11:35:01] [INFO] [agent_loop] Round 14, elapsed 99s, tokens 8742
+[11:35:06] [INFO] [agent_loop] Round 15, elapsed 104s, tokens 8942
+[11:35:14] [INFO] [agent_loop] Round 16, elapsed 111s, tokens 9057
+[11:35:22] [INFO] [agent_loop] Calling tool: search
+[11:35:22] [INFO] [tools_search] Query: "圣少女 中国 配音" -> Bing/IQS (LLM:bing)
+[11:35:23] [INFO] [agent_loop] Round 17, elapsed 121s, tokens 11087
+[11:35:33] [INFO] [agent_loop] Round 18, elapsed 131s, tokens 11399
+[11:35:41] [INFO] [agent_loop] Round 19, elapsed 139s, tokens 11513
+[11:35:48] [INFO] [agent_loop] Round 20, elapsed 146s, tokens 11656
+[11:35:55] [INFO] [agent_loop] Round 21, elapsed 153s, tokens 11756
+[11:36:05] [INFO] [agent_loop] Round 22, elapsed 163s, tokens 11888
+[11:36:12] [INFO] [agent_loop] Round 23, elapsed 170s, tokens 12036
+[11:36:22] [INFO] [agent_loop] Round 24, elapsed 179s, tokens 12224
+[11:36:29] [INFO] [agent_loop] Round 25, elapsed 187s, tokens 12402
+[11:36:46] [INFO] [agent_loop] Round 26, elapsed 204s, tokens 12497
+[11:36:54] [INFO] [agent_loop] Round 27, elapsed 212s, tokens 12683

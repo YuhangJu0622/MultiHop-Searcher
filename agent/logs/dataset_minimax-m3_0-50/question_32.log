@@ -1,0 +1,23 @@
+[11:53:31] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1844
+[11:53:45] [INFO] [agent_loop] Calling tool: search
+[11:53:45] [INFO] [tools_search] Query: "space mission map hundreds of millions galaxies 2024 2025 20" -> Google/Serper (LLM:google)
+[11:53:47] [INFO] [tools_search] Query: "中国北方 能源大省 土地复垦 环境影响评价 公众参与 2024 2025" -> Bing/IQS (LLM:bing)
+[11:53:48] [INFO] [agent_loop] Round 2, elapsed 17s, tokens 5752
+[11:54:17] [INFO] [agent_loop] Calling tool: search
+[11:54:17] [INFO] [tools_search] Query: "山西省 大同 土地复垦 环境影响评价 公众参与 2025" -> Google/Serper (LLM:google)
+[11:54:18] [INFO] [tools_search] Query: "内蒙古 土地复垦 环境影响评价 公众参与公示 2025" -> Bing/IQS (LLM:bing)
+[11:54:20] [INFO] [tools_search] Query: "山西 林业 防护林 退化林 修复 速生树种 固沙" -> Bing/IQS (auto)
+[11:54:21] [INFO] [agent_loop] Round 3, elapsed 50s, tokens 13807
+[11:56:02] [INFO] [agent_loop] Calling tool: search
+[11:56:02] [INFO] [tools_search] Query: "晋北沙区 杨树 退化林 修复 固沙 树种" -> Google/Serper (LLM:google)
+[11:56:04] [INFO] [tools_search] Query: "山西 防护林 杨树 遗传多样性 适应性 海拔 跨地域 样本采集" -> Bing/IQS (LLM:bing)
+[11:56:05] [INFO] [tools_search] Query: "小叶杨 Populus simonii 遗传 适应性 海拔 样本采集 研究" -> Bing/IQS (auto)
+[11:56:06] [INFO] [agent_loop] Round 4, elapsed 155s, tokens 24873
+[11:57:10] [INFO] [agent_loop] Calling tool: search
+[11:57:10] [INFO] [tools_search] Query: "山西杨树局 小叶杨 退化林 修复 晋北沙区 固沙" -> Google/Serper (LLM:google)
+[11:57:11] [INFO] [tools_search] Query: "太原市林业科学研究所 小叶杨 种质资源 2024 跨区域 海拔" -> Bing/IQS (LLM:bing)
+[11:57:12] [INFO] [agent_loop] Round 5, elapsed 221s, tokens 32309
+[11:57:33] [INFO] [agent_loop] Calling tool: search
+[11:57:33] [INFO] [tools_search] Query: "Populus simonii Carr full Latin scientific name botanical au" -> Google/Serper (LLM:google)
+[11:57:36] [INFO] [agent_loop] Round 6, elapsed 244s, tokens 34557
+[11:58:02] [INFO] [agent_loop] Got answer at round 6: Populus simonii Carr.

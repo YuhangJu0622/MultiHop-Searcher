@@ -1,0 +1,16 @@
+[17:05:05] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1746
+[17:05:51] [INFO] [agent_loop] Calling tool: search
+[17:05:51] [INFO] [tools_search] Query: "以主义为名青年社团 秘密组织 情报机构" -> Bing/IQS (LLM:bing)
+[17:05:53] [INFO] [tools_search] Query: "三民主义青年团 秘密组织 特务" -> Bing/IQS (LLM:bing)
+[17:05:55] [INFO] [tools_search] Query: "1949年 民航资产人员归属变动 两航起义" -> Bing/IQS (LLM:bing)
+[17:05:56] [INFO] [agent_loop] Round 2, elapsed 51s, tokens 9681
+[17:06:22] [INFO] [agent_loop] Calling tool: search
+[17:06:22] [INFO] [tools_search] Query: "军统 前身 复兴社 三民主义 青年社团" -> Bing/IQS (LLM:bing)
+[17:06:24] [INFO] [tools_search] Query: "保密局 台湾 轮流主讲 政治理论 业务知识" -> Bing/IQS (LLM:bing)
+[17:06:25] [INFO] [tools_search] Query: "军统 中美合作所 技术合作 西方大国" -> Bing/IQS (LLM:bing)
+[17:06:27] [INFO] [agent_loop] Round 3, elapsed 82s, tokens 17566
+[17:07:03] [INFO] [agent_loop] Calling tool: search
+[17:07:03] [INFO] [tools_search] Query: "国民政府军事委员会调查统计局 全称 军统" -> Bing/IQS (LLM:bing)
+[17:07:05] [INFO] [tools_search] Query: "保密局 台湾 轮流主讲 政治学习" -> Bing/IQS (LLM:bing)
+[17:07:07] [INFO] [tools_search] Query: "国防部保密局 1949 迁台 台湾" -> Bing/IQS (LLM:bing)
+[17:07:08] [WARNING] [agent_loop] Token limit reached at round 3

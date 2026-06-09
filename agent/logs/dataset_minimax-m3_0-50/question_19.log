@@ -1,0 +1,28 @@
+[11:42:47] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1669
+[11:46:03] [INFO] [agent_loop] Calling tool: search
+[11:46:03] [INFO] [tools_search] Query: "accidental discovery substance changed history life health A" -> Google/Serper (LLM:google)
+[11:46:05] [INFO] [tools_search] Query: "意外发现 物质 改变历史 生命健康 非洲 广泛应用" -> Bing/IQS (LLM:bing)
+[11:46:06] [INFO] [agent_loop] Round 2, elapsed 199s, tokens 13068
+[11:46:13] [INFO] [agent_loop] Calling tool: search
+[11:46:13] [INFO] [tools_search] Query: "Alexander Fleming penicillin name green mountains character " -> Google/Serper (LLM:google)
+[11:46:14] [INFO] [tools_search] Query: "青霉素 中国 正式投产 年份" -> Bing/IQS (LLM:bing)
+[11:46:15] [INFO] [tools_search] Query: "弗莱明 名字 绿色山脉 联想" -> Bing/IQS (auto)
+[11:46:17] [INFO] [agent_loop] Round 3, elapsed 210s, tokens 18360
+[11:47:42] [INFO] [agent_loop] Calling tool: search
+[11:47:42] [INFO] [tools_search] Query: "弗莱明 绿山墙 安妮 联想" -> Google/Serper (LLM:google)
+[11:47:44] [INFO] [tools_search] Query: "小人物 发现 物质 绿色山脉 名字 联想 中国 投产" -> Bing/IQS (LLM:bing)
+[11:47:45] [INFO] [tools_search] Query: "penicillin China production year 1953 official" -> Google/Serper (auto)
+[11:47:48] [INFO] [agent_loop] Round 4, elapsed 301s, tokens 27635
+[11:48:21] [INFO] [agent_loop] Calling tool: search
+[11:48:21] [INFO] [tools_search] Query: "小人物 意外发现 物质 改变历史 生命健康 遥远大陆 绿色山脉 名字 联想 投产" -> Google/Serper (LLM:google)
+[11:48:23] [INFO] [tools_search] Query: "弗莱明 绿山墙 安妮 名字 联想 住在绿色山脉" -> Bing/IQS (LLM:bing)
+[11:48:24] [INFO] [agent_loop] Round 5, elapsed 337s, tokens 32768
+[11:50:35] [INFO] [agent_loop] Calling tool: search
+[11:50:35] [INFO] [tools_search] Query: "Alexander Fleming name reminds green mountains character who" -> Google/Serper (LLM:google)
+[11:50:37] [INFO] [tools_search] Query: "弗莱明 名字 联想到 人物 绿色 山" -> Bing/IQS (LLM:bing)
+[11:50:39] [INFO] [tools_search] Query: "青霉素 1953 中国 正式投产 上海第三制药厂" -> Bing/IQS (auto)
+[11:50:40] [INFO] [agent_loop] Round 6, elapsed 473s, tokens 44496
+[11:53:15] [INFO] [agent_loop] Calling tool: search
+[11:53:15] [INFO] [tools_search] Query: "弗莱明 安妮 绿山墙 名字 联想 人物 住在" -> Google/Serper (LLM:google)
+[11:53:17] [INFO] [tools_search] Query: "屠呦呦 名字 联想 绿色 山脉 人物 住在" -> Bing/IQS (LLM:bing)
+[11:53:18] [WARNING] [agent_loop] Timeout after 632s at round 7

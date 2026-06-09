@@ -1,0 +1,17 @@
+[11:23:58] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1662
+[11:24:04] [INFO] [agent_loop] Calling tool: search
+[11:24:04] [INFO] [tools_search] Query: "sparkling wine named after Russia summit dinner arms reducti" -> Google/Serper (LLM:google)
+[11:24:06] [INFO] [tools_search] Query: "winery created sparkling wine referencing Soviet Union diplo" -> Google/Serper (LLM:google)
+[11:24:07] [INFO] [tools_search] Query: "sparkling wine inspired by arms reduction treaty late 20th c" -> Google/Serper (LLM:google)
+[11:24:10] [INFO] [agent_loop] Round 2, elapsed 11s, tokens 4829
+[11:24:23] [INFO] [agent_loop] Calling tool: search
+[11:24:23] [INFO] [tools_search] Query: "Schramsberg sparkling wine Nixon China summit dinner" -> Google/Serper (LLM:google)
+[11:24:25] [INFO] [tools_search] Query: "Russian River Valley sparkling wine White House summit Reaga" -> Google/Serper (LLM:google)
+[11:24:27] [INFO] [tools_search] Query: "Korbel sparkling wine Russian arms treaty summit" -> Google/Serper (LLM:google)
+[11:24:29] [INFO] [agent_loop] Round 3, elapsed 31s, tokens 7895
+[11:24:42] [INFO] [agent_loop] Calling tool: visit
+[11:24:47] [INFO] [tools_visit] Visit: "https://www.atlasobscura.com/articles/wine-white-house" -> httpx (Jina failed: [visit] Jina HTTP 451 for https://www.atlasobscura.com/articles/wine-white-house)
+[11:24:51] [INFO] [tools_visit] Visit: "https://vintusny.com/iron-horse-vineyards-has-history-on-its-side/" -> Jina Reader
+[11:24:58] [INFO] [tools_visit] Visit: "https://ironhorsevineyards.com/harvest-wrap-up-and-our-connection-to-king-charles/" -> Jina Reader
+[11:25:11] [INFO] [agent_loop] Round 4, elapsed 73s, tokens 9541
+[11:25:23] [INFO] [agent_loop] Got answer at round 4: Ronald Reagan

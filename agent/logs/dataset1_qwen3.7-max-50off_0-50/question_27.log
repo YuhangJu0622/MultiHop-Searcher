@@ -1,0 +1,25 @@
+[11:28:16] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1835
+[11:28:32] [INFO] [agent_loop] Calling tool: search
+[11:28:32] [INFO] [tools_search] Query: "Adam Matthew Digital Foreign Office archives digitized" -> Google/Serper (LLM:google)
+[11:28:33] [INFO] [tools_search] Query: "UK Foreign Office Files Middle East Suez Canal Ottoman Empir" -> Google/Serper (LLM:google)
+[11:28:36] [INFO] [tools_search] Query: "钱学森 归国 发表文章 监禁经历" -> Bing/IQS (LLM:bing)
+[11:28:37] [INFO] [tools_search] Query: "关于加强国家档案工作的决定 颁布年份" -> Bing/IQS (LLM:bing)
+[11:28:39] [INFO] [agent_loop] Round 2, elapsed 23s, tokens 7681
+[11:29:02] [INFO] [agent_loop] Calling tool: search
+[11:29:02] [INFO] [tools_search] Query: "钱学森 1956年 发表文章 美国 监禁 拘留 经历" -> Bing/IQS (LLM:bing)
+[11:29:03] [INFO] [tools_search] Query: "Qian Xuesen 1956 article imprisonment detention United State" -> Google/Serper (LLM:google)
+[11:29:05] [INFO] [tools_search] Query: "Foreign Office Files Middle East Adam Matthew 1839-1969 cove" -> Google/Serper (LLM:google)
+[11:29:06] [INFO] [agent_loop] Round 3, elapsed 50s, tokens 12650
+[11:29:18] [INFO] [agent_loop] Round 4, elapsed 62s, tokens 13480
+[11:29:21] [INFO] [agent_loop] Calling tool: search
+[11:29:21] [INFO] [tools_search] Query: "钱学森 1956 文章 美国 拘留 软禁 经历 发表" -> Bing/IQS (LLM:bing)
+[11:29:22] [INFO] [tools_search] Query: "钱学森 归国后 发表 文章 美国 迫害 监禁" -> Bing/IQS (LLM:bing)
+[11:29:23] [INFO] [tools_search] Query: "Adam Matthew Digital 成立时间 创办" -> Bing/IQS (LLM:bing)
+[11:29:25] [INFO] [agent_loop] Round 5, elapsed 69s, tokens 20214
+[11:29:53] [INFO] [agent_loop] Round 6, elapsed 97s, tokens 21865
+[11:29:56] [INFO] [agent_loop] Calling tool: search
+[11:29:56] [INFO] [tools_search] Query: "钱学森 1956 发表 文章 美国 拘留 经历" -> Bing/IQS (LLM:bing)
+[11:29:57] [INFO] [tools_search] Query: "1956年 国务院 关于加强国家档案工作的决定 4月16日" -> Bing/IQS (LLM:bing)
+[11:29:59] [INFO] [tools_search] Query: "钱学森 1956 人民日报 文章" -> Bing/IQS (LLM:bing)
+[11:30:01] [INFO] [agent_loop] Round 7, elapsed 105s, tokens 29056
+[11:30:14] [INFO] [agent_loop] Got answer at round 7: 1956

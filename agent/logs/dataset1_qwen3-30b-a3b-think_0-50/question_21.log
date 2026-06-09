@@ -1,0 +1,16 @@
+[14:38:50] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1628
+[14:40:06] [INFO] [agent_loop] Calling tool: search
+[14:40:06] [INFO] [tools_search] Query: "elliptic curve popular in digital currency" -> Google/Serper (LLM:google)
+[14:40:21] [WARNING] [tools_search] Serper request failed: _ssl.c:1112: The handshake operation timed out
+[14:40:21] [WARNING] [tools_search] All Serper keys exhausted or failed, falling back to IQS
+[14:40:22] [INFO] [tools_search] Query: "数字货币中常用的椭圆曲线" -> Bing/IQS (LLM:bing)
+[14:40:23] [INFO] [agent_loop] Round 2, elapsed 93s, tokens 11803
+[14:41:06] [INFO] [agent_loop] Calling tool: search
+[14:41:06] [INFO] [tools_search] Query: "enterprise identity management system secp256k1" -> Google/Serper (LLM:google)
+[14:41:09] [INFO] [tools_search] Query: "企业身份管理使用secp256k1" -> Bing/IQS (LLM:bing)
+[14:41:10] [INFO] [agent_loop] Round 3, elapsed 140s, tokens 15508
+[14:41:44] [INFO] [agent_loop] Calling tool: search
+[14:41:44] [INFO] [tools_search] Query: "Azure Active Directory secp256k1" -> Google/Serper (LLM:google)
+[14:41:45] [INFO] [tools_search] Query: "Azure AD 使用 secp256k1" -> Bing/IQS (LLM:bing)
+[14:41:47] [INFO] [agent_loop] Round 4, elapsed 177s, tokens 19432
+[14:42:05] [INFO] [agent_loop] Got answer at round 4: Azure Active Directory

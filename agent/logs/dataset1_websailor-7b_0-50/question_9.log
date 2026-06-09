@@ -1,0 +1,17 @@
+[14:36:33] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1595
+[14:36:36] [INFO] [agent_loop] Calling tool: search
+[14:36:36] [INFO] [tools_search] Query: "欧洲 高等教育 机构 中世纪 研究 学术 会议" -> Google/Serper (LLM:google)
+[14:36:37] [INFO] [tools_search] Query: "空间 望远镜 新 行星 红矮星 发现" -> Google/Serper (LLM:google)
+[14:36:39] [INFO] [agent_loop] Round 2, elapsed 5s, tokens 5572
+[14:36:45] [INFO] [agent_loop] Calling tool: search
+[14:36:45] [INFO] [tools_search] Query: "2025 欧洲 高等教育 机构 中世纪 学术 会议" -> Google/Serper (LLM:google)
+[14:36:47] [INFO] [tools_search] Query: "2025 中世纪 研究 学术 会议 欧洲" -> Google/Serper (LLM:google)
+[14:36:48] [INFO] [tools_search] Query: "欧洲 高等 教育 机构 中世纪 会议 2025" -> Bing/IQS (auto)
+[14:36:49] [INFO] [agent_loop] Round 3, elapsed 16s, tokens 11085
+[14:36:59] [INFO] [agent_loop] Calling tool: visit
+[14:37:09] [INFO] [tools_visit] Visit: "https://www.thepaper.cn/newsDetail_forward_31205132" -> Jina Reader
+[14:37:29] [INFO] [agent_loop] Round 4, elapsed 56s, tokens 12037
+[14:37:35] [INFO] [agent_loop] Calling tool: visit
+[14:37:47] [INFO] [tools_visit] Visit: "https://www.sohu.com/a/915045488_260616" -> httpx (Jina failed: [visit] Jina HTTP 451 for https://www.sohu.com/a/915045488_260616)
+[14:38:03] [INFO] [agent_loop] Round 5, elapsed 90s, tokens 13088
+[14:38:10] [INFO] [agent_loop] Calling tool: visit

@@ -1,0 +1,19 @@
+[11:54:20] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1618
+[11:54:41] [INFO] [agent_loop] Calling tool: search
+[11:54:41] [INFO] [tools_search] Query: "chef "brunch" "ocean" "seafood" "simplified recipes"" -> Google/Serper (LLM:google)
+[11:54:43] [INFO] [tools_search] Poor Google results for 'chef "brunch" "ocean" "seafood" "simplified recipes"', trying Bing/IQS fallback
+[11:54:45] [INFO] [tools_search] Query: "chef "brunch event" "ocean vistas" "seafood"" -> Google/Serper (LLM:google)
+[11:54:46] [INFO] [tools_search] Query: "chef hosted television program "simplified recipes" brunch s" -> Google/Serper (LLM:google)
+[11:54:47] [INFO] [agent_loop] Round 2, elapsed 27s, tokens 7486
+[11:54:55] [INFO] [agent_loop] Calling tool: search
+[11:54:55] [INFO] [tools_search] Query: ""Caribbean Paleo" cookbook author chef" -> Google/Serper (LLM:google)
+[11:54:57] [INFO] [tools_search] Query: "chef "simplified recipes" television program brunch "ocean" " -> Google/Serper (LLM:google)
+[11:54:58] [INFO] [tools_search] Query: "chef trained "prestigious cooking institution" "simplified r" -> Google/Serper (LLM:google)
+[11:55:00] [INFO] [tools_search] Poor Google results for 'chef trained "prestigious cooking institution" "simplified recipes" television brunch seafood ocean', trying Bing/IQS fallback
+[11:55:01] [INFO] [agent_loop] Round 3, elapsed 40s, tokens 14730
+[11:55:21] [INFO] [agent_loop] Calling tool: search
+[11:55:21] [INFO] [tools_search] Query: ""Simply Ming" brunch seafood ocean vistas" -> Google/Serper (LLM:google)
+[11:55:23] [INFO] [tools_search] Query: "Ming Tsai brunch event seafood restaurant ocean view" -> Google/Serper (LLM:google)
+[11:55:26] [INFO] [tools_search] Query: "chef "simplified recipes" TV show brunch "ocean" restaurant " -> Google/Serper (LLM:google)
+[11:55:27] [INFO] [agent_loop] Round 4, elapsed 67s, tokens 19108
+[12:05:21] [WARNING] [agent_loop] Timeout after 661s at round 5

@@ -1,0 +1,45 @@
+[11:34:36] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1621
+[11:34:43] [INFO] [agent_loop] Calling tool: search
+[11:34:43] [INFO] [tools_search] Query: "2000年初 动漫 卫视播出 盗贼 美女 警察 大陆版" -> Google/Serper (LLM:google)
+[11:34:45] [INFO] [tools_search] Query: "2000年代 动画 盗贼 美女 警察 中国大陆 卫视" -> Bing/IQS (LLM:bing)
+[11:34:46] [INFO] [agent_loop] Round 2, elapsed 10s, tokens 6106
+[11:35:07] [INFO] [agent_loop] Calling tool: search
+[11:35:07] [INFO] [tools_search] Query: "圣少女 动画 卫视 播出 中国大陆 配音" -> Google/Serper (LLM:google)
+[11:35:08] [INFO] [tools_search] Query: "怪盗圣少女 大陆版 配音演员 男主角" -> Bing/IQS (LLM:bing)
+[11:35:09] [INFO] [agent_loop] Round 3, elapsed 33s, tokens 11120
+[11:35:39] [INFO] [agent_loop] Calling tool: search
+[11:35:39] [INFO] [tools_search] Query: "武向彤 配音演员 贞观之治" -> Google/Serper (LLM:google)
+[11:35:40] [INFO] [tools_search] Query: "贞观之治 2007 电视剧 配音演员 名单" -> Bing/IQS (LLM:bing)
+[11:35:42] [INFO] [agent_loop] Round 4, elapsed 66s, tokens 16078
+[11:36:09] [INFO] [agent_loop] Calling tool: visit
+[11:36:14] [INFO] [tools_visit] Visit: "https://zh.wikipedia.org/wiki/%E8%B4%9E%E8%A7%82%E4%B9%8B%E6%B2%BB_(%E7%94%B5%E8%A7%86%E5%89%A7)" -> Jina Reader
+[11:36:46] [INFO] [agent_loop] Round 5, elapsed 130s, tokens 18475
+[11:36:57] [INFO] [agent_loop] Calling tool: visit
+[11:37:09] [INFO] [tools_visit] Visit: "https://m.douban.com/group/topic/263075904/" -> Jina Reader
+[11:37:16] [INFO] [tools_visit] Visit: "https://m.douban.com/movie/review/10113232/" -> httpx (Jina failed: [visit] Jina HTTP 503 for https://m.douban.com/movie/review/10113232/)
+[11:37:28] [INFO] [agent_loop] Round 6, elapsed 172s, tokens 19581
+[11:38:12] [INFO] [agent_loop] Calling tool: visit
+[11:38:16] [INFO] [tools_visit] Visit: "https://zh.wikipedia.org/zh-hans/%E6%80%AA%E7%9B%9CSaint_Tail" -> Jina Reader
+[11:38:21] [INFO] [tools_visit] Visit: "http://lggzs.com/thread-4222-1-1.html" -> Jina Reader
+[11:39:43] [INFO] [agent_loop] Round 7, elapsed 307s, tokens 26554
+[11:40:16] [INFO] [agent_loop] Calling tool: search
+[11:40:16] [INFO] [tools_search] Query: "武向彤 配音 电视剧 作品 全部" -> Google/Serper (LLM:google)
+[11:40:17] [INFO] [tools_search] Query: "猫眼三姐妹 动画 卫视 播出 中国大陆 配音 男主角" -> Bing/IQS (LLM:bing)
+[11:40:18] [INFO] [tools_search] Query: "鲁邦三世 动画 卫视 播出 中国大陆 2000年 配音" -> Bing/IQS (auto)
+[11:40:20] [INFO] [agent_loop] Round 8, elapsed 344s, tokens 34440
+[11:40:37] [INFO] [agent_loop] Calling tool: visit
+[11:41:00] [INFO] [tools_visit] Visit: "https://zh.moegirl.org.cn/%E6%AD%A6%E5%90%91%E5%BD%A4" -> Jina Reader
+[11:41:24] [INFO] [agent_loop] Round 9, elapsed 408s, tokens 35938
+[11:41:58] [INFO] [agent_loop] Calling tool: search
+[11:41:58] [INFO] [tools_search] Query: "猫眼三姐妹 国语配音 大陆版 配音演员 名单 全部" -> Google/Serper (LLM:google)
+[11:42:01] [INFO] [tools_search] Query: "猫眼三姐妹 内海俊夫 配音 中国大陆" -> Bing/IQS (LLM:bing)
+[11:42:02] [INFO] [agent_loop] Round 10, elapsed 446s, tokens 42461
+[11:42:42] [INFO] [agent_loop] Calling tool: search
+[11:42:42] [INFO] [tools_search] Query: "盗贼 美女 警察 动画 卫视 2000年代 中国大陆 男主角 配音 贞观之治" -> Google/Serper (LLM:google)
+[11:42:43] [INFO] [tools_search] Query: "鲁邦三世 中国大陆 卫视 播出 配音 国语" -> Bing/IQS (LLM:bing)
+[11:42:44] [INFO] [agent_loop] Round 11, elapsed 488s, tokens 48942
+[11:44:02] [INFO] [agent_loop] Calling tool: search
+[11:44:02] [INFO] [tools_search] Query: "翟巍 配音 动画 怪盗 盗贼" -> Google/Serper (LLM:google)
+[11:44:03] [INFO] [tools_search] Query: "符冲 配音 动画 怪盗 盗贼" -> Bing/IQS (LLM:bing)
+[11:44:04] [INFO] [tools_search] Query: "吴磊 配音 动画 怪盗 盗贼" -> Bing/IQS (auto)
+[11:44:05] [WARNING] [agent_loop] Timeout after 569s at round 12

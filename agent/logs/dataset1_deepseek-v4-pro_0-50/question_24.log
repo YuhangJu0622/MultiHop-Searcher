@@ -1,0 +1,76 @@
+[11:33:21] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1848
+[11:33:53] [INFO] [agent_loop] Calling tool: search
+[11:33:53] [INFO] [tools_search] Query: "国产动画长片 星象系统 二十八宿 欧洲动画节 提名" -> Google/Serper (LLM:google)
+[11:33:55] [INFO] [tools_search] Query: "Chinese animated feature film 28 mansions European animation" -> Bing/IQS (LLM:bing)
+[11:33:56] [INFO] [tools_search] Query: "" -> Bing/IQS (LLM:bing)
+[11:33:56] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:33:56] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:33:57] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:33:57] [INFO] [tools_search] Poor Bing/IQS results for '', trying Google fallback
+[11:33:57] [WARNING] [tools_search] Serper key 4 exhausted (HTTP 400), rotating
+[11:33:59] [WARNING] [tools_search] Serper key 0 exhausted (HTTP 400), rotating
+[11:34:01] [WARNING] [tools_search] Serper key 1 exhausted (HTTP 400), rotating
+[11:34:01] [WARNING] [tools_search] Serper key 2 exhausted (HTTP 400), rotating
+[11:34:02] [WARNING] [tools_search] Serper key 3 exhausted (HTTP 400), rotating
+[11:34:02] [WARNING] [tools_search] All Serper keys exhausted or failed, falling back to IQS
+[11:34:02] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:34:02] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:34:03] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:34:03] [INFO] [agent_loop] Round 2, elapsed 41s, tokens 10653
+[11:35:05] [INFO] [agent_loop] Early answer blocked at round 2, requesting verification
+[11:35:05] [INFO] [agent_loop] Round 3, elapsed 104s, tokens 15244
+[11:35:35] [INFO] [agent_loop] Calling tool: search
+[11:35:35] [INFO] [tools_search] Query: "落凡尘 二十八星宿 青龙七宿 动画电影 2024" -> Bing/IQS (LLM:bing)
+[11:35:36] [INFO] [tools_search] Query: "落凡尘 昂西 安纳西 动画节 提名" -> Bing/IQS (LLM:bing)
+[11:35:37] [INFO] [tools_search] Query: "" -> Bing/IQS (LLM:bing)
+[11:35:37] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:38] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:38] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:38] [INFO] [tools_search] Poor Bing/IQS results for '', trying Google fallback
+[11:35:39] [WARNING] [tools_search] Serper key 2 exhausted (HTTP 400), rotating
+[11:35:40] [WARNING] [tools_search] Serper key 3 exhausted (HTTP 400), rotating
+[11:35:41] [WARNING] [tools_search] Serper key 4 exhausted (HTTP 400), rotating
+[11:35:41] [WARNING] [tools_search] Serper key 0 exhausted (HTTP 400), rotating
+[11:35:42] [WARNING] [tools_search] Serper key 1 exhausted (HTTP 400), rotating
+[11:35:42] [WARNING] [tools_search] All Serper keys exhausted or failed, falling back to IQS
+[11:35:42] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:42] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:43] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:43] [INFO] [agent_loop] Round 4, elapsed 141s, tokens 20613
+[11:35:52] [INFO] [agent_loop] Calling tool: search
+[11:35:52] [INFO] [tools_search] Query: "10世纪末 绢本 星图 海外 大学 收藏 二十八宿" -> Bing/IQS (LLM:bing)
+[11:35:53] [INFO] [tools_search] Query: "tenth century silk star map university overseas 28 mansions" -> Google/Serper (LLM:google)
+[11:35:55] [INFO] [tools_search] Query: "" -> Bing/IQS (LLM:bing)
+[11:35:56] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:56] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:56] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:35:56] [INFO] [tools_search] Poor Bing/IQS results for '', trying Google fallback
+[11:35:57] [WARNING] [tools_search] Serper key 1 exhausted (HTTP 400), rotating
+[11:35:58] [WARNING] [tools_search] Serper key 2 exhausted (HTTP 400), rotating
+[11:35:58] [WARNING] [tools_search] Serper key 3 exhausted (HTTP 400), rotating
+[11:35:59] [WARNING] [tools_search] Serper key 4 exhausted (HTTP 400), rotating
+[11:36:00] [WARNING] [tools_search] Serper key 0 exhausted (HTTP 400), rotating
+[11:36:00] [WARNING] [tools_search] All Serper keys exhausted or failed, falling back to IQS
+[11:36:00] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:01] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:01] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:01] [INFO] [agent_loop] Round 5, elapsed 160s, tokens 25341
+[11:36:33] [INFO] [agent_loop] Calling tool: search
+[11:36:33] [INFO] [tools_search] Query: "10世纪末 绢本 舆图 二十八宿 海外" -> Bing/IQS (LLM:bing)
+[11:36:34] [INFO] [tools_search] Query: "end of 10th century silk map star chart university collectio" -> Google/Serper (LLM:google)
+[11:36:36] [INFO] [tools_search] Query: "" -> Bing/IQS (LLM:bing)
+[11:36:36] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:37] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:37] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:37] [INFO] [tools_search] Poor Bing/IQS results for '', trying Google fallback
+[11:36:37] [WARNING] [tools_search] Serper key 3 exhausted (HTTP 400), rotating
+[11:36:38] [WARNING] [tools_search] Serper key 4 exhausted (HTTP 400), rotating
+[11:36:39] [WARNING] [tools_search] Serper key 0 exhausted (HTTP 400), rotating
+[11:36:39] [WARNING] [tools_search] Serper key 1 exhausted (HTTP 400), rotating
+[11:36:40] [WARNING] [tools_search] Serper key 2 exhausted (HTTP 400), rotating
+[11:36:40] [WARNING] [tools_search] All Serper keys exhausted or failed, falling back to IQS
+[11:36:41] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:41] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:41] [WARNING] [tools_search] IQS error 400: {"errorCode":"MissingParameter","errorMessage":"Required parameter 'query' is not found.","code":"MissingParameter","message":"Required parameter 'query' is not found."}
+[11:36:41] [INFO] [agent_loop] Round 6, elapsed 200s, tokens 29361
+[11:37:49] [INFO] [agent_loop] Got answer at round 6: 姤卦

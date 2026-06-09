@@ -1,0 +1,26 @@
+[16:56:20] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1821
+[16:56:47] [INFO] [agent_loop] Calling tool: search
+[16:56:47] [INFO] [tools_search] Query: "Peter Jenniskens 2003 EH1 Quadrantids comet C/1490 Y1" -> Google/Serper (LLM:google)
+[16:56:49] [INFO] [tools_search] Query: "Quadrantids meteor shower ionization detection device" -> Google/Serper (LLM:google)
+[16:56:51] [INFO] [tools_search] Query: "北半球三大流星雨 象限仪座 雷达 电离" -> Bing/IQS (LLM:bing)
+[16:56:52] [INFO] [agent_loop] Round 2, elapsed 32s, tokens 6259
+[16:57:14] [INFO] [agent_loop] Calling tool: search
+[16:57:14] [INFO] [tools_search] Query: "meteor ionization trail detection radar radio" -> Google/Serper (LLM:google)
+[16:57:16] [INFO] [tools_search] Query: "流星 电离 探测 雷达 设备" -> Bing/IQS (LLM:bing)
+[16:57:17] [INFO] [tools_search] Query: "spaceweather.com Quadrantids radar ping ion trail" -> Google/Serper (LLM:google)
+[16:57:20] [INFO] [agent_loop] Round 3, elapsed 60s, tokens 10897
+[16:57:49] [INFO] [agent_loop] Calling tool: search
+[16:57:49] [INFO] [tools_search] Query: "Peter Jenniskens Perseids dust trail prediction" -> Google/Serper (LLM:google)
+[16:57:51] [INFO] [tools_search] Query: "meteor shower ionization detection common device radar radio" -> Google/Serper (LLM:google)
+[16:57:57] [INFO] [tools_search] Query: "Quadrantids meteor radar detection ionization" -> Google/Serper (LLM:google)
+[16:58:01] [INFO] [agent_loop] Round 4, elapsed 101s, tokens 14392
+[16:58:46] [INFO] [agent_loop] Calling tool: search
+[16:58:46] [INFO] [tools_search] Query: "Peter Jenniskens Perseids dust trail prediction August" -> Google/Serper (LLM:google)
+[16:58:48] [INFO] [tools_search] Query: "meteor ionization trail detection radar common device Englis" -> Google/Serper (LLM:google)
+[16:58:50] [INFO] [tools_search] Query: "Quadrantids GRAVES radar ionization detection" -> Google/Serper (LLM:google)
+[16:58:52] [INFO] [agent_loop] Round 5, elapsed 152s, tokens 18411
+[16:59:49] [INFO] [agent_loop] Calling tool: search
+[16:59:49] [INFO] [tools_search] Query: "Quadrantids meteor shower radar detection ionization common " -> Google/Serper (LLM:google)
+[16:59:52] [INFO] [tools_search] Query: "流星雨 电离 雷达 探测 常见设备" -> Bing/IQS (LLM:bing)
+[16:59:53] [INFO] [tools_search] Query: "meteor shower ionization trail radar radio detection device " -> Google/Serper (LLM:google)
+[16:59:55] [WARNING] [agent_loop] Token limit reached at round 5

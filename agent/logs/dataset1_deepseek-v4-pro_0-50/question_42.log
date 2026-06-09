@@ -1,0 +1,79 @@
+[12:47:05] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1789
+[12:47:45] [INFO] [agent_loop] Calling tool: search
+[12:47:45] [INFO] [tools_search] Query: "哔哩哔哩 弹幕 人物身后 穿行 技术" -> Bing/IQS (LLM:bing)
+[12:47:46] [INFO] [tools_search] Query: "bilibili 智能防挡弹幕 技术" -> Google/Serper (LLM:google)
+[12:47:47] [INFO] [agent_loop] Round 2, elapsed 43s, tokens 7795
+[12:48:01] [INFO] [agent_loop] Calling tool: search
+[12:48:01] [INFO] [tools_search] Query: "哔哩哔哩 体育赛事 索赔 联盟 起诉" -> Bing/IQS (LLM:bing)
+[12:48:02] [INFO] [tools_search] Query: "bilibili sued sports league broadcasting rights" -> Google/Serper (LLM:google)
+[12:48:04] [INFO] [agent_loop] Round 3, elapsed 59s, tokens 10517
+[12:48:26] [INFO] [agent_loop] Calling tool: search
+[12:48:26] [INFO] [tools_search] Query: "哔哩哔哩 被 NHK 起诉" -> Bing/IQS (LLM:bing)
+[12:48:27] [INFO] [tools_search] Query: "Bilibili sued by NHK" -> Google/Serper (LLM:google)
+[12:48:29] [INFO] [agent_loop] Round 4, elapsed 84s, tokens 14366
+[12:48:50] [INFO] [agent_loop] Calling tool: search
+[12:48:50] [INFO] [tools_search] Query: "NHK 起诉 哔哩哔哩" -> Bing/IQS (LLM:bing)
+[12:48:51] [INFO] [tools_search] Query: "NHK bilibili lawsuit" -> Google/Serper (LLM:google)
+[12:48:52] [INFO] [agent_loop] Round 5, elapsed 108s, tokens 18653
+[12:49:14] [INFO] [agent_loop] Calling tool: search
+[12:49:14] [INFO] [tools_search] Query: "韩国MBC 独家网络传播权 上海" -> Bing/IQS (LLM:bing)
+[12:49:15] [INFO] [tools_search] Query: "MBC 节目 独家 授权 上海" -> Google/Serper (LLM:google)
+[12:49:18] [INFO] [agent_loop] Round 6, elapsed 133s, tokens 23575
+[12:49:47] [INFO] [agent_loop] Calling tool: search
+[12:49:47] [INFO] [tools_search] Query: "KBS 起诉 哔哩哔哩" -> Bing/IQS (LLM:bing)
+[12:49:48] [INFO] [tools_search] Query: "KBS bilibili lawsuit" -> Google/Serper (LLM:google)
+[12:49:50] [INFO] [agent_loop] Round 7, elapsed 165s, tokens 27372
+[12:50:12] [INFO] [agent_loop] Calling tool: search
+[12:50:12] [INFO] [tools_search] Query: "KBS 独家网络传播权 上海" -> Bing/IQS (LLM:bing)
+[12:50:13] [INFO] [tools_search] Query: "KBS 节目 网络传播权 授权 上海" -> Google/Serper (LLM:google)
+[12:50:14] [INFO] [agent_loop] Round 8, elapsed 190s, tokens 31486
+[12:50:31] [INFO] [agent_loop] Calling tool: search
+[12:50:31] [INFO] [tools_search] Query: "NHK 起诉 B站 著作权" -> Bing/IQS (LLM:bing)
+[12:50:32] [INFO] [tools_search] Query: "日本放送协会 起诉 哔哩哔哩" -> Google/Serper (LLM:google)
+[12:50:35] [INFO] [agent_loop] Round 9, elapsed 210s, tokens 35778
+[12:50:43] [INFO] [agent_loop] Calling tool: search
+[12:50:43] [INFO] [tools_search] Query: "MBC 公共广播机构" -> Bing/IQS (LLM:bing)
+[12:50:44] [INFO] [tools_search] Query: "韩国文化广播公司 公共广播" -> Google/Serper (LLM:google)
+[12:50:45] [INFO] [agent_loop] Round 10, elapsed 221s, tokens 39916
+[12:50:57] [INFO] [agent_loop] Calling tool: search
+[12:50:57] [INFO] [tools_search] Query: "MBC 东方明珠 独家 网络传播权" -> Bing/IQS (LLM:bing)
+[12:50:58] [INFO] [tools_search] Query: "MBC 授权 上海 公司 独家" -> Google/Serper (LLM:google)
+[12:51:00] [INFO] [agent_loop] Round 11, elapsed 235s, tokens 44224
+[12:51:18] [INFO] [agent_loop] Round 12, elapsed 253s, tokens 45037
+[12:51:21] [INFO] [agent_loop] Calling tool: search
+[12:51:21] [INFO] [tools_search] Query: "KBS 公共广播机构" -> Bing/IQS (LLM:bing)
+[12:51:22] [INFO] [tools_search] Query: "韩国放送公社 公共广播" -> Google/Serper (LLM:google)
+[12:51:23] [INFO] [agent_loop] Round 13, elapsed 258s, tokens 48489
+[12:51:51] [INFO] [agent_loop] Calling tool: search
+[12:51:51] [INFO] [tools_search] Query: "KBS 独家 网络传播权 上海" -> Bing/IQS (LLM:bing)
+[12:51:53] [INFO] [tools_search] Query: "KBS 节目 网络传播权 上海" -> Google/Serper (LLM:google)
+[12:51:54] [INFO] [agent_loop] Round 14, elapsed 289s, tokens 52699
+[12:52:27] [INFO] [agent_loop] Round 15, elapsed 322s, tokens 54113
+[12:52:32] [INFO] [agent_loop] Calling tool: search
+[12:52:32] [INFO] [tools_search] Query: "KBS 授权 上海 公司 节目" -> Bing/IQS (LLM:bing)
+[12:52:33] [INFO] [tools_search] Query: "KBS 上海 公司 版权 韩剧" -> Google/Serper (LLM:google)
+[12:52:35] [INFO] [agent_loop] Round 16, elapsed 330s, tokens 57882
+[12:52:52] [INFO] [agent_loop] Calling tool: search
+[12:52:52] [INFO] [tools_search] Query: "NHK sues Bilibili" -> Google/Serper (LLM:google)
+[12:52:53] [INFO] [tools_search] Query: "Japan Broadcasting Corporation sues Bilibili" -> Google/Serper (LLM:google)
+[12:52:55] [INFO] [agent_loop] Round 17, elapsed 350s, tokens 60765
+[12:53:18] [INFO] [agent_loop] Calling tool: search
+[12:53:18] [INFO] [tools_search] Query: "MBC exclusive online distribution rights Shanghai" -> Google/Serper (LLM:google)
+[12:53:19] [INFO] [tools_search] Query: "MBC 独家网络传播权 上海 东方明珠" -> Bing/IQS (LLM:bing)
+[12:53:21] [INFO] [agent_loop] Round 18, elapsed 376s, tokens 64617
+[12:53:44] [INFO] [agent_loop] Calling tool: visit
+[12:53:55] [INFO] [tools_visit] Visit: "https://www.jiemian.com/article/6580111.html" -> Jina Reader
+[12:54:09] [INFO] [agent_loop] Round 19, elapsed 425s, tokens 66149
+[12:54:29] [INFO] [agent_loop] Calling tool: search
+[12:54:29] [INFO] [tools_search] Query: "MBC 东方明珠 2015 独家 版权" -> Bing/IQS (LLM:bing)
+[12:54:30] [INFO] [tools_search] Query: "MBC 百视通 独家 版权 上海" -> Google/Serper (LLM:google)
+[12:54:32] [INFO] [agent_loop] Round 20, elapsed 447s, tokens 70719
+[12:54:55] [INFO] [agent_loop] Calling tool: search
+[12:54:55] [INFO] [tools_search] Query: "NHK 起诉 上海宽娱" -> Bing/IQS (LLM:bing)
+[12:54:56] [INFO] [tools_search] Query: "韩国放送公社 起诉 B站 英文全称" -> Google/Serper (LLM:google)
+[12:54:59] [INFO] [agent_loop] Round 21, elapsed 474s, tokens 75639
+[12:55:14] [INFO] [agent_loop] Round 22, elapsed 490s, tokens 76162
+[12:55:40] [INFO] [agent_loop] Calling tool: visit
+[12:55:43] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/Munhwa_Broadcasting_Corporation" -> Jina Reader
+[12:56:01] [INFO] [agent_loop] Round 23, elapsed 536s, tokens 77164
+[12:56:17] [WARNING] [agent_loop] Timeout after 552s at round 24

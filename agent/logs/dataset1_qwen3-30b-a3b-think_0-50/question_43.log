@@ -1,0 +1,10 @@
+[14:48:32] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1630
+[14:49:55] [INFO] [agent_loop] Calling tool: search
+[14:49:55] [INFO] [tools_search] Query: "acclaimed debut feature film young girl traditional festival" -> Google/Serper (LLM:google)
+[14:49:56] [INFO] [tools_search] Query: "debut film child actress festival purchase" -> Google/Serper (LLM:google)
+[14:49:58] [INFO] [agent_loop] Round 2, elapsed 86s, tokens 12014
+[14:50:23] [INFO] [agent_loop] Calling tool: search
+[14:50:23] [INFO] [tools_search] Query: "Ananya debut film young girl festival purchase" -> Google/Serper (LLM:google)
+[14:50:25] [INFO] [tools_search] Query: "Ananya South Asian documentary" -> Google/Serper (LLM:google)
+[14:50:27] [INFO] [agent_loop] Round 3, elapsed 115s, tokens 16057
+[14:51:03] [INFO] [agent_loop] Got answer at round 3: Ananya Panday

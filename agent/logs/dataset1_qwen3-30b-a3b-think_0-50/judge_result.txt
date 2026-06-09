@@ -1,0 +1,50 @@
+============================================================
+
+[Exact Match] Accuracy: 11/50 = 22.00%
+[Semantic]    Accuracy: 14/50 = 28.00%
+              (LLM saved 3 answers that failed exact match)
+
+Avg time: 117.8s  |  Total time: 5889s
+
+--- 真正的错题 (Semantic Wrong: 36) ---
+  Q10: predicted='张翰和王凯'  expected='雷佳音和易烊千玺'
+  Q19: predicted='1972'  expected='1953'
+  Q2: predicted='radar'  expected='FM radio'
+  Q4: predicted='The Dating App Podcast'  expected='Slow Love'
+  Q11: predicted='Patrick Hillery'  expected='Francesco Cossiga'
+  Q22: predicted='汤浅健二'  expected='永守重信'
+  Q6: predicted='李世民'  expected='长孙无忌'
+  Q9: predicted='GJ 486'  expected='TWA 7'
+  Q14: predicted='毒木圣经'  expected='I Survived I Kissed Dating Goodbye'
+  Q5: predicted='The Washington Post'  expected='Phoenix New Times'
+  Q1: predicted='Richard Morse'  expected='James Lockhart'
+  Q3: predicted='147'  expected='591'
+  Q12: predicted='中国共产主义青年团秘密支部'  expected='国民政府军事委员会调查统计局'
+  Q20: predicted='Johann Geiler von Kaisersberg, OFM'  expected='Jean Tisserand, O.F.M.'
+  Q7: predicted='Shanghai Railway Station'  expected='Union Station'
+  Q21: predicted='Azure Active Directory'  expected='Hyperledger Fabric'
+  Q0: predicted='Life Technologies Limited'  expected='RepRap Professional Limited'
+  Q15: predicted='1983'  expected='1979'
+  Q23: predicted='George H. W. Bush'  expected='Ronald Reagan'
+  Q28: predicted='How I Met Your Mother'  expected="You're the Worst"
+  Q18: predicted='义和团运动纪念碑'  expected='远东苏维埃政权战士纪念碑'
+  Q31: predicted='2024'  expected='2018'
+  Q32: predicted='Haloxylon ammodendron'  expected='Populus simonii Carrière'
+  Q39: predicted='深圳'  expected='广州'
+  Q38: predicted='大理人'  expected='北京人'
+  Q42: predicted='Munhwa Broadcasting Corporation'  expected='Korean Broadcasting System'
+  Q35: predicted='1975'  expected='1995'
+  Q48: predicted='13'  expected='1'
+  Q8: predicted='Inhibition of ferroptosis and iron accumulation alleviates pulmonary fibrosis'  expected='Inhibition of ferroptosis and iron accumulation alleviates pulmonary fibrosis in a bleomycin model'
+  Q47: predicted='深圳中学'  expected='乐清市知临中学'
+  Q43: predicted='Ananya Panday'  expected='Aida Mohammadkhani'
+  Q40: predicted='Meteorological Magazine'  expected='Monthly Weather Review'
+  Q46: predicted='Jessica Hecht'  expected='Aarti Bajaj'
+  Q41: predicted='Media Releases'  expected='Federal Reserve Board - 2018 Press Releases'
+  Q34: predicted="St. Mary's School"  expected='Convent of Our Lady of Mercy'
+  Q45: predicted='Annual of American Philately'  expected='2024 Stamp Yearbook'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 3) ---
+  Q30: predicted='2.40'  expected='2.4'
+  Q24: predicted='姤'  expected='姤卦'
+  Q25: predicted='Beeb'  expected='BBC Micro'

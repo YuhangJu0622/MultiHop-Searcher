@@ -1,0 +1,8 @@
+[14:38:38] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1709
+[14:39:03] [INFO] [agent_loop] Calling tool: search
+[14:39:03] [INFO] [tools_search] Query: "青蒿素 发现者" -> Bing/IQS (LLM:bing)
+[14:39:04] [INFO] [tools_search] Query: "artemisinin discoverer" -> Google/Serper (LLM:google)
+[14:39:15] [WARNING] [tools_search] Serper request failed: EOF occurred in violation of protocol (_ssl.c:1129)
+[14:39:15] [WARNING] [tools_search] All Serper keys exhausted or failed, falling back to IQS
+[14:39:16] [INFO] [agent_loop] Round 2, elapsed 38s, tokens 9345
+[14:41:01] [INFO] [agent_loop] Got answer at round 2: 1972

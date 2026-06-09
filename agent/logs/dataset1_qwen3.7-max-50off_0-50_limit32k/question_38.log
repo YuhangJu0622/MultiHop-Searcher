@@ -1,0 +1,17 @@
+[17:26:15] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1819
+[17:26:38] [INFO] [agent_loop] Calling tool: search
+[17:26:38] [INFO] [tools_search] Query: "中国国家博物馆 技术安全 高级职员 籍贯" -> Bing/IQS (LLM:bing)
+[17:26:39] [INFO] [tools_search] Query: "National Museum of China ancient human exhibition Yuanmou Ma" -> Google/Serper (LLM:google)
+[17:26:43] [INFO] [tools_search] Query: "中国国家博物馆 长期展览 古人类遗骸 西南 百万年" -> Bing/IQS (LLM:bing)
+[17:26:44] [INFO] [agent_loop] Round 2, elapsed 28s, tokens 8257
+[17:27:23] [INFO] [agent_loop] Calling tool: search
+[17:27:23] [INFO] [tools_search] Query: "北京人 同位素分析 年代测定 封面 科学期刊" -> Bing/IQS (LLM:bing)
+[17:27:24] [INFO] [tools_search] Query: "Peking Man isotope dating Nature Science cover" -> Google/Serper (LLM:google)
+[17:27:27] [INFO] [tools_search] Query: "周口店北京人 铝铍同位素 年代测定 期刊封面" -> Bing/IQS (LLM:bing)
+[17:27:28] [INFO] [agent_loop] Round 3, elapsed 73s, tokens 16054
+[17:28:07] [INFO] [agent_loop] Calling tool: search
+[17:28:07] [INFO] [tools_search] Query: "北京猿人 Nature 封面 2009" -> Bing/IQS (LLM:bing)
+[17:28:09] [INFO] [tools_search] Query: "Peking Man Nature cover 2009 Shen Guanjun" -> Google/Serper (LLM:google)
+[17:28:11] [INFO] [tools_search] Query: "李鹏 中国国家博物馆 安全保卫部 技防" -> Bing/IQS (LLM:bing)
+[17:28:12] [INFO] [agent_loop] Round 4, elapsed 117s, tokens 23703
+[17:28:48] [INFO] [agent_loop] Got answer at round 4: 北京人

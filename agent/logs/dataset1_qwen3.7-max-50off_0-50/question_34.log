@@ -1,0 +1,90 @@
+[11:33:33] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1636
+[11:33:37] [INFO] [agent_loop] Calling tool: search
+[11:33:37] [INFO] [tools_search] Query: "school founded 1990s merged girls boys school Latin name coe" -> Google/Serper (LLM:google)
+[11:33:39] [INFO] [tools_search] Query: "new school formed 1990s combining girls school boys school L" -> Google/Serper (LLM:google)
+[11:33:41] [INFO] [tools_search] Query: "coeducational school created 1990s merger girls boys Latin n" -> Google/Serper (LLM:google)
+[11:33:43] [INFO] [agent_loop] Round 2, elapsed 10s, tokens 4391
+[11:33:52] [INFO] [agent_loop] Calling tool: search
+[11:33:52] [INFO] [tools_search] Query: "school merger 1990 1991 1992 1993 girls boys coeducational L" -> Google/Serper (LLM:google)
+[11:33:54] [INFO] [tools_search] Query: "1994 1995 1996 1997 school merger girls boys Latin name" -> Google/Serper (LLM:google)
+[11:33:56] [INFO] [tools_search] Query: "1998 1999 school merger girls boys coeducational Latin name" -> Google/Serper (LLM:google)
+[11:33:58] [INFO] [tools_search] Query: "school founded 1990s merged single-sex schools Latin motto n" -> Google/Serper (LLM:google)
+[11:33:59] [INFO] [agent_loop] Round 3, elapsed 26s, tokens 8262
+[11:34:07] [INFO] [agent_loop] Calling tool: search
+[11:34:07] [INFO] [tools_search] Query: ""founded" "1990s" "merged" "girls" "boys" "Latin" school nam" -> Google/Serper (LLM:google)
+[11:34:09] [INFO] [tools_search] Poor Google results for '"founded" "1990s" "merged" "girls" "boys" "Latin" school name', trying Bing/IQS fallback
+[11:34:10] [INFO] [tools_search] Query: "school merger 1990s coeducational Latin name UK Australia Ca" -> Google/Serper (LLM:google)
+[11:34:11] [INFO] [tools_search] Query: ""new school" "1990s" merger girls boys Latin name coeducatio" -> Google/Serper (LLM:google)
+[11:34:13] [INFO] [tools_search] Query: "school formed combining girls boys school Latin name 1990s" -> Google/Serper (LLM:google)
+[11:34:15] [INFO] [agent_loop] Round 4, elapsed 42s, tokens 13389
+[11:34:27] [INFO] [agent_loop] Calling tool: search
+[11:34:27] [INFO] [tools_search] Query: "school Latin name "Collegium" merger girls boys 1990s" -> Google/Serper (LLM:google)
+[11:34:29] [INFO] [tools_search] Query: ""Nova" school merger girls boys 1990s coeducational" -> Google/Serper (LLM:google)
+[11:34:30] [INFO] [tools_search] Query: "school named "Sancta" or "Sanctus" merger girls boys 1990s" -> Google/Serper (LLM:google)
+[11:34:33] [INFO] [tools_search] Query: "school merger 1990s Latin name town 19th century history" -> Google/Serper (LLM:google)
+[11:34:35] [INFO] [agent_loop] Round 5, elapsed 62s, tokens 17595
+[11:34:40] [INFO] [agent_loop] Calling tool: search
+[11:34:40] [INFO] [tools_search] Query: ""Schola Nova" school merger girls boys 1990s" -> Google/Serper (LLM:google)
+[11:34:41] [INFO] [tools_search] Query: "Schola Nova school founded 1990 merged" -> Google/Serper (LLM:google)
+[11:34:42] [INFO] [tools_search] Query: ""Schola Nova" coeducational school history" -> Google/Serper (LLM:google)
+[11:34:43] [INFO] [agent_loop] Round 6, elapsed 70s, tokens 20951
+[11:34:50] [INFO] [agent_loop] Calling tool: visit
+[11:34:54] [INFO] [tools_visit] Visit: "https://www.scholanova.be/en" -> Jina Reader
+[11:35:07] [INFO] [agent_loop] Round 7, elapsed 93s, tokens 21642
+[11:35:14] [INFO] [agent_loop] Calling tool: search
+[11:35:14] [INFO] [tools_search] Query: ""Schola Nova" Surrey school merger girls boys" -> Google/Serper (LLM:google)
+[11:35:16] [INFO] [tools_search] Query: "Surrey school merger 1990s girls boys coeducational Latin na" -> Google/Serper (LLM:google)
+[11:35:18] [INFO] [tools_search] Query: "school merger Surrey 1990 1991 1992 girls boys Latin name" -> Google/Serper (LLM:google)
+[11:35:21] [INFO] [tools_search] Query: "Reigate school merger girls boys 1990s Latin name" -> Google/Serper (LLM:google)
+[11:35:23] [INFO] [agent_loop] Round 8, elapsed 110s, tokens 24904
+[11:35:29] [INFO] [agent_loop] Calling tool: search
+[11:35:29] [INFO] [tools_search] Query: ""Schola Nova" school England merger 1990 girls boys" -> Google/Serper (LLM:google)
+[11:35:32] [INFO] [tools_search] Query: "school merger 1992 England girls boys Latin name coeducation" -> Google/Serper (LLM:google)
+[11:35:33] [INFO] [tools_search] Query: ""formed in 1992" girls school boys school coeducational Lati" -> Google/Serper (LLM:google)
+[11:35:34] [INFO] [tools_search] Query: "UK school merger 1990s Latin name town 19th century" -> Google/Serper (LLM:google)
+[11:35:36] [INFO] [agent_loop] Round 9, elapsed 122s, tokens 28901
+[11:35:54] [INFO] [agent_loop] Calling tool: visit
+[11:35:56] [INFO] [tools_visit] Visit: "https://trompettelejournalunderground.ch/amphtml/news/articles/7le1mqg95pwi" -> Jina Reader
+[11:35:56] [INFO] [tools_visit] Visit: "https://sandro-nastasi.de/amphtml/news/articles/u2o5qzsjhgl6" -> Jina Reader
+[11:35:57] [INFO] [tools_visit] Visit: "https://7qy62mz2kw8-amphtml.bernard-dato.fr/" -> Jina Reader
+[11:36:04] [INFO] [agent_loop] Round 10, elapsed 151s, tokens 30531
+[11:36:11] [INFO] [agent_loop] Calling tool: search
+[11:36:11] [INFO] [tools_search] Query: "Surrey school merger 1992 girls boys coeducational" -> Google/Serper (LLM:google)
+[11:36:13] [INFO] [tools_search] Query: ""Lyndhurst" school merger girls boys 1990s" -> Google/Serper (LLM:google)
+[11:36:14] [INFO] [tools_search] Query: ""Ardingly" school merger girls boys 1990s" -> Google/Serper (LLM:google)
+[11:36:15] [INFO] [tools_search] Query: "Crawley school merger girls boys 1990s Latin name" -> Google/Serper (LLM:google)
+[11:36:18] [INFO] [agent_loop] Round 11, elapsed 164s, tokens 34472
+[11:36:25] [INFO] [agent_loop] Calling tool: search
+[11:36:25] [INFO] [tools_search] Query: ""Schola Nova" school England history merger" -> Google/Serper (LLM:google)
+[11:36:27] [INFO] [tools_search] Query: "school merger 1990s England "girls' school" "boys' school" L" -> Google/Serper (LLM:google)
+[11:36:28] [INFO] [tools_search] Query: ""Nova Schola" school merger England 1990s" -> Google/Serper (LLM:google)
+[11:36:29] [INFO] [tools_search] Query: "England school formed 1990s merger girls boys Latin name tow" -> Google/Serper (LLM:google)
+[11:36:32] [INFO] [agent_loop] Round 12, elapsed 178s, tokens 38642
+[11:36:48] [INFO] [agent_loop] Calling tool: search
+[11:36:48] [INFO] [tools_search] Query: "school merger 1990s "girls' school" "boys' school" "new scho" -> Google/Serper (LLM:google)
+[11:36:49] [INFO] [tools_search] Query: ""Collegium" school England merger 1990s girls boys" -> Google/Serper (LLM:google)
+[11:36:50] [INFO] [tools_search] Query: ""Academia" school England merger 1990s girls boys" -> Google/Serper (LLM:google)
+[11:36:52] [INFO] [tools_search] Query: "school formed 1991 1992 1993 merger girls boys Latin name En" -> Google/Serper (LLM:google)
+[11:36:54] [INFO] [agent_loop] Round 13, elapsed 200s, tokens 41886
+[11:37:05] [INFO] [agent_loop] Calling tool: search
+[11:37:05] [INFO] [tools_search] Query: ""Collegium" school England formed 1990s merger girls boys" -> Google/Serper (LLM:google)
+[11:37:06] [INFO] [tools_search] Query: "school merger 1990s England "new school" Latin name "girls' " -> Google/Serper (LLM:google)
+[11:37:08] [INFO] [tools_search] Query: ""Schola" school England merger 1990s girls boys coeducationa" -> Google/Serper (LLM:google)
+[11:37:10] [INFO] [tools_search] Query: "England independent school merger 1990s girls boys Latin nam" -> Google/Serper (LLM:google)
+[11:37:11] [INFO] [agent_loop] Round 14, elapsed 218s, tokens 45734
+[11:37:19] [INFO] [agent_loop] Calling tool: search
+[11:37:19] [INFO] [tools_search] Query: ""King Edward VII and Queen Mary School" KEQMS history merger" -> Google/Serper (LLM:google)
+[11:37:21] [INFO] [tools_search] Query: "KEQMS Lytham girls school boys school merger 1999" -> Google/Serper (LLM:google)
+[11:37:22] [INFO] [tools_search] Query: "school merger 1990s England "Latin name" coeducational town" -> Google/Serper (LLM:google)
+[11:37:24] [INFO] [tools_search] Query: ""Queen Mary School" Lytham girls school history" -> Google/Serper (LLM:google)
+[11:37:25] [INFO] [agent_loop] Round 15, elapsed 232s, tokens 49607
+[11:37:37] [INFO] [agent_loop] Round 16, elapsed 243s, tokens 50285
+[11:37:50] [INFO] [agent_loop] Calling tool: search
+[11:37:50] [INFO] [tools_search] Query: ""Schola Nova" school Surrey England history merger girls boy" -> Google/Serper (LLM:google)
+[11:37:52] [INFO] [tools_search] Query: "Surrey school merger 1990 1991 1992 girls boys coeducational" -> Google/Serper (LLM:google)
+[11:37:54] [INFO] [tools_search] Query: "school merger England 1990s "new school" Latin name town 19t" -> Google/Serper (LLM:google)
+[11:37:55] [INFO] [tools_search] Query: ""given the Latin name" school merger 1990s girls boys" -> Google/Serper (LLM:google)
+[11:37:56] [INFO] [agent_loop] Round 17, elapsed 263s, tokens 53467
+[11:47:52] [INFO] [agent_loop] Calling tool: visit
+[11:47:55] [INFO] [tools_visit] Visit: "https://15i5gxd-amphtml.trompettelejournalunderground.ch/" -> Jina Reader
+[11:48:01] [WARNING] [agent_loop] Timeout after 868s at round 18

@@ -1,0 +1,28 @@
+============================================================
+
+[Exact Match] Accuracy: 29/46 = 63.04%
+[Semantic]    Accuracy: 33/46 = 71.74%
+              (LLM saved 4 answers that failed exact match)
+
+Avg time: 465.0s  |  Total time: 21389s
+
+--- 真正的错题 (Semantic Wrong: 13) ---
+  Q48: predicted='0'  expected='1'
+  Q42: predicted='Munhwa Broadcasting Corporation'  expected='Korean Broadcasting System'
+  Q35: predicted='1971'  expected='1995'
+  Q17: predicted='中央广播电视总台'  expected='今日俄罗斯'
+  Q44: predicted='Betty Parris'  expected='Abigail Williams'
+  Q6: predicted='<think>\n省略大量思考内容\n</think>'  expected='长孙无忌'
+  Q28: predicted='<think>\n省略大量思考内容</think>'  expected="You're the Worst"
+  Q38: predicted='龙人'  expected='北京人'
+  Q2: predicted='radio'  expected='FM radio'
+  Q45: predicted='Stamp Yearbook'  expected='2024 Stamp Yearbook'
+  Q18: predicted='十月革命英雄纪念碑'  expected='远东苏维埃政权战士纪念碑'
+  Q34: predicted="St Mary's College"  expected='Convent of Our Lady of Mercy'
+  Q0: predicted='<think>\n省略大量思考内容</think>'  expected='RepRap Professional Limited'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 4) ---
+  Q30: predicted='2.40'  expected='2.4'
+  Q7: predicted='Washington Union Station'  expected='Union Station'
+  Q24: predicted='姤'  expected='姤卦'
+  Q32: predicted='Populus simonii Carr.'  expected='Populus simonii Carrière'

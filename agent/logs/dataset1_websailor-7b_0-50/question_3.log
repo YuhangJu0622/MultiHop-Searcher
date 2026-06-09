@@ -1,0 +1,20 @@
+[14:33:03] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1634
+[14:33:17] [INFO] [agent_loop] Calling tool: search
+[14:33:17] [INFO] [tools_search] Query: "三十 封 信 精神 教师" -> Google/Serper (LLM:google)
+[14:33:19] [INFO] [tools_search] Query: "捐赠 1970s 精神 教师" -> Google/Serper (LLM:google)
+[14:33:20] [INFO] [tools_search] Query: "作曲家 冥想 音乐 ashram" -> Bing/IQS (auto)
+[14:33:22] [INFO] [tools_search] Query: "争议 大师 三十 封 信" -> Bing/IQS (auto)
+[14:33:23] [INFO] [tools_search] Query: "mid 1970s 冥想 音乐 ashram" -> Bing/IQS (auto)
+[14:33:24] [INFO] [agent_loop] Round 2, elapsed 21s, tokens 11456
+[14:33:51] [INFO] [agent_loop] Calling tool: search
+[14:33:51] [INFO] [tools_search] Query: "争议 大师 三十 封 信 精神 教师" -> Google/Serper (LLM:google)
+[14:33:53] [INFO] [tools_search] Query: "争议 大师 三十 封 信 捐赠 1970s" -> Google/Serper (LLM:google)
+[14:33:54] [INFO] [tools_search] Query: "争议 大师 三十 封 信 公社" -> Bing/IQS (auto)
+[14:33:56] [INFO] [tools_search] Query: "作曲家 冥想 音乐 ashram 争议 大师" -> Bing/IQS (auto)
+[14:33:57] [INFO] [agent_loop] Round 3, elapsed 54s, tokens 19704
+[14:34:25] [INFO] [agent_loop] Calling tool: search
+[14:34:25] [INFO] [tools_search] Query: "争议 大师 三十 封 信 精神 教师" -> Google/Serper (LLM:google)
+[14:34:27] [INFO] [tools_search] Query: "争议 大师 三十 封 信 捐赠 1970s" -> Google/Serper (LLM:google)
+[14:34:28] [INFO] [tools_search] Query: "争议 大师 三十 封 信 公社" -> Bing/IQS (auto)
+[14:34:29] [INFO] [tools_search] Query: "作曲家 冥想 音乐 ashram 争议 大师" -> Bing/IQS (auto)
+[14:34:30] [WARNING] [agent_loop] Token limit reached at round 3

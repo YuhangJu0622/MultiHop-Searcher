@@ -1,0 +1,13 @@
+[11:37:43] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1627
+[11:37:55] [INFO] [agent_loop] Calling tool: search
+[11:37:55] [INFO] [tools_search] Query: "iconic video game debut year 1980 1981 1985 1986 1991 1993 1" -> Google/Serper (auto)
+[11:37:56] [INFO] [tools_search] Query: "president elected 1980 studied law oldest university married" -> Google/Serper (auto)
+[11:37:58] [INFO] [agent_loop] Round 2, elapsed 15s, tokens 3835
+[11:41:10] [INFO] [agent_loop] Calling tool: search
+[11:41:10] [INFO] [tools_search] Query: "Francesco Cossiga president Italy 1985 married wife law univ" -> Google/Serper (auto)
+[11:41:11] [INFO] [tools_search] Query: "Sassari Italy population 2011 census" -> Google/Serper (auto)
+[11:41:13] [INFO] [agent_loop] Round 3, elapsed 210s, tokens 12987
+[11:41:26] [INFO] [agent_loop] Calling tool: visit
+[11:41:29] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/Francesco_Cossiga" -> Jina Reader
+[11:41:58] [INFO] [agent_loop] Round 4, elapsed 255s, tokens 14274
+[11:42:12] [INFO] [agent_loop] Got answer at round 4: Francesco Cossiga

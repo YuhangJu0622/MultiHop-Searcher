@@ -1,0 +1,16 @@
+[14:37:09] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1668
+[14:37:14] [INFO] [agent_loop] Calling tool: search
+[14:37:14] [INFO] [tools_search] Query: "本名 功率 单位 作家" -> Google/Serper (LLM:google)
+[14:37:15] [INFO] [tools_search] Query: "35岁 全职 作家 业余 创作" -> Bing/IQS (LLM:bing)
+[14:37:17] [INFO] [tools_search] Query: "超过10部 小说 改编 电视剧 话剧" -> Bing/IQS (auto)
+[14:37:18] [INFO] [agent_loop] Round 2, elapsed 9s, tokens 8037
+[14:37:21] [INFO] [agent_loop] Calling tool: search
+[14:37:21] [INFO] [tools_search] Query: "瓦特 本名 作家" -> Google/Serper (LLM:google)
+[14:37:22] [INFO] [tools_search] Query: "瓦特 作家 本名" -> Bing/IQS (LLM:bing)
+[14:37:24] [INFO] [agent_loop] Round 3, elapsed 15s, tokens 12203
+[14:37:33] [INFO] [agent_loop] Calling tool: search
+[14:37:33] [INFO] [tools_search] Query: "瓦特 作家 中国" -> Google/Serper (LLM:google)
+[14:37:34] [INFO] [tools_search] Query: "功率 单位 作家" -> Bing/IQS (LLM:bing)
+[14:37:35] [INFO] [agent_loop] Round 4, elapsed 26s, tokens 15323
+[14:37:51] [INFO] [agent_loop] Calling tool: visit
+[14:38:00] [INFO] [tools_visit] Visit: "https://zh.wikipedia.org/zh-hans/%E6%A1%90%E5%8D%8E" -> Jina Reader

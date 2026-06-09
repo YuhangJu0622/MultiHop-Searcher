@@ -1,0 +1,8 @@
+[11:20:43] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1790
+[11:20:59] [INFO] [agent_loop] Calling tool: search
+[11:20:59] [INFO] [tools_search] Query: "clean energy company listed 2020 global nearly 200 countries" -> Google/Serper (LLM:google)
+[11:21:01] [INFO] [tools_search] Query: "清洁能源 公司 上市 2020 全球 近200个国家 地区 接待 联合国 代表团 人道主义援助 技术" -> Bing/IQS (LLM:bing)
+[11:21:02] [INFO] [agent_loop] Round 2, elapsed 19s, tokens 5092
+[11:21:16] [INFO] [agent_loop] Early answer blocked at round 2, requesting verification
+[11:21:16] [INFO] [agent_loop] Round 3, elapsed 33s, tokens 5276
+[11:21:35] [INFO] [agent_loop] Got answer at round 3: 联合国难民事务高级专员公署

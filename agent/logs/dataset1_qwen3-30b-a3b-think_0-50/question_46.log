@@ -1,0 +1,6 @@
+[14:49:09] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1697
+[14:51:03] [INFO] [agent_loop] Calling tool: search
+[14:51:03] [INFO] [tools_search] Query: "movie industry individual married divorced twice late 1990s " -> Google/Serper (LLM:google)
+[14:51:05] [INFO] [tools_search] Query: "电影行业人士 90年代末至2010年代中期 两次婚姻 欧洲配偶" -> Bing/IQS (LLM:bing)
+[14:51:07] [INFO] [agent_loop] Round 2, elapsed 118s, tokens 17491
+[14:51:23] [INFO] [agent_loop] Got answer at round 2: Jessica Hecht

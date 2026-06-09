@@ -1,0 +1,13 @@
+[11:12:36] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1709
+[11:16:44] [INFO] [agent_loop] Calling tool: search
+[11:16:44] [INFO] [tools_search] Query: "青霉素 中国 正式投产 年份" -> Bing/IQS (LLM:bing)
+[11:16:46] [INFO] [tools_search] Query: "意外发现 改变历史 物质 生命健康 小人物" -> Bing/IQS (LLM:bing)
+[11:16:48] [INFO] [tools_search] Query: "penicillin China first production year history" -> Google/Serper (LLM:google)
+[11:16:49] [INFO] [agent_loop] Round 2, elapsed 253s, tokens 21037
+[11:18:41] [INFO] [agent_loop] Round 3, elapsed 365s, tokens 28534
+[11:18:44] [INFO] [agent_loop] Calling tool: search
+[11:18:44] [INFO] [tools_search] Query: "弗莱明 名字 联想 绿色山脉 人物" -> Bing/IQS (LLM:bing)
+[11:18:45] [INFO] [tools_search] Query: ""小人物" "改变历史" "物质" "生命健康" "绿色山脉"" -> Bing/IQS (LLM:bing)
+[11:18:47] [INFO] [tools_search] Query: "弗莱明 青霉素 中国 1953 投产" -> Bing/IQS (LLM:bing)
+[11:18:48] [INFO] [agent_loop] Round 4, elapsed 372s, tokens 35069
+[11:24:58] [INFO] [agent_loop] Got answer at round 4: 1953

@@ -1,0 +1,28 @@
+[11:22:53] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1622
+[11:23:04] [INFO] [agent_loop] Calling tool: search
+[11:23:04] [INFO] [tools_search] Query: ""resided and worked" "upper floor" palace statesman" -> Google/Serper (LLM:google)
+[11:23:05] [INFO] [tools_search] Query: ""upper floor" "resided and worked" "palace" "president"" -> Google/Serper (LLM:google)
+[11:23:07] [INFO] [tools_search] Poor Google results for '"upper floor" "resided and worked" "palace" "president"', trying Bing/IQS fallback
+[11:23:08] [INFO] [tools_search] Query: ""designed by" "Italian descent" architect palace "late 18th " -> Google/Serper (LLM:google)
+[11:23:09] [INFO] [tools_search] Poor Google results for '"designed by" "Italian descent" architect palace "late 18th century"', trying Bing/IQS fallback
+[11:23:10] [INFO] [agent_loop] Round 2, elapsed 18s, tokens 10931
+[11:23:29] [INFO] [agent_loop] Calling tool: search
+[11:23:29] [INFO] [tools_search] Query: ""lived and worked" "upper floor" "palace" "first president"" -> Google/Serper (LLM:google)
+[11:23:31] [INFO] [tools_search] Poor Google results for '"lived and worked" "upper floor" "palace" "first president"', trying Bing/IQS fallback
+[11:23:32] [INFO] [tools_search] Query: ""resided and worked" "upper floor" "palace" "first president" -> Google/Serper (LLM:google)
+[11:23:33] [INFO] [tools_search] Poor Google results for '"resided and worked" "upper floor" "palace" "first president"', trying Bing/IQS fallback
+[11:23:34] [INFO] [tools_search] Query: ""upper floor" "worked and lived" "palace" "first president"" -> Google/Serper (LLM:google)
+[11:23:35] [INFO] [tools_search] Poor Google results for '"upper floor" "worked and lived" "palace" "first president"', trying Bing/IQS fallback
+[11:23:36] [INFO] [agent_loop] Round 3, elapsed 43s, tokens 15969
+[11:23:45] [INFO] [agent_loop] Calling tool: search
+[11:23:45] [INFO] [tools_search] Query: ""upper floor" "Masaryk" palace lived worked" -> Google/Serper (LLM:google)
+[11:23:47] [INFO] [tools_search] Query: ""Tomáš Garrigue Masaryk" "upper floor" palace" -> Google/Serper (LLM:google)
+[11:23:48] [INFO] [tools_search] Query: ""first president of Czechoslovakia" "upper floor" palace" -> Google/Serper (LLM:google)
+[11:23:49] [INFO] [agent_loop] Round 4, elapsed 57s, tokens 18983
+[11:23:57] [INFO] [agent_loop] Calling tool: search
+[11:23:57] [INFO] [tools_search] Query: ""Hrzán Palace" "Masaryk" "lived" "worked"" -> Google/Serper (LLM:google)
+[11:23:59] [INFO] [tools_search] Poor Google results for '"Hrzán Palace" "Masaryk" "lived" "worked"', trying Bing/IQS fallback
+[11:23:59] [INFO] [tools_search] Query: ""Hrzán Palace" architect "Italian" Masaryk" -> Google/Serper (LLM:google)
+[11:24:01] [INFO] [tools_search] Query: ""Liechtenstein Palace" Prague Masaryk lived worked architect" -> Google/Serper (LLM:google)
+[11:24:03] [INFO] [agent_loop] Round 5, elapsed 70s, tokens 23423
+[11:24:13] [INFO] [agent_loop] Got answer at round 5: Tomáš Garrigue Masaryk

@@ -1,0 +1,31 @@
+[11:34:36] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1634
+[11:35:00] [INFO] [agent_loop] Round 2, elapsed 24s, tokens 2238
+[11:35:13] [INFO] [agent_loop] Calling tool: search
+[11:35:13] [INFO] [tools_search] Query: "book of thirty letters controversial guru spiritual teacher" -> Google/Serper (LLM:google)
+[11:35:16] [INFO] [tools_search] Query: "guru thirty letters compiled book spiritual master" -> Google/Serper (LLM:google)
+[11:35:18] [INFO] [agent_loop] Round 3, elapsed 42s, tokens 4075
+[11:36:31] [INFO] [agent_loop] Calling tool: search
+[11:36:31] [INFO] [tools_search] Query: "controversial guru book thirty letters spiritual teacher com" -> Google/Serper (LLM:google)
+[11:36:32] [INFO] [tools_search] Query: ""thirty letters" book guru spiritual teacher India" -> Google/Serper (LLM:google)
+[11:36:35] [INFO] [agent_loop] Round 4, elapsed 119s, tokens 7549
+[11:37:03] [INFO] [agent_loop] Calling tool: search
+[11:37:03] [INFO] [tools_search] Query: "spiritual teacher FBI file pages public document sharing pla" -> Google/Serper (LLM:google)
+[11:37:04] [INFO] [tools_search] Query: "guru FBI vault file pages meditation music ashram 1970s" -> Google/Serper (LLM:google)
+[11:37:05] [INFO] [agent_loop] Round 5, elapsed 149s, tokens 10283
+[11:39:14] [INFO] [agent_loop] Calling tool: search
+[11:39:14] [INFO] [tools_search] Query: ""thirty letters" book spiritual master compiled guru India a" -> Google/Serper (LLM:google)
+[11:39:15] [INFO] [tools_search] Query: "composer meditation music guru ashram 1970s commune establis" -> Google/Serper (LLM:google)
+[11:39:17] [INFO] [agent_loop] Round 6, elapsed 281s, tokens 17105
+[11:39:43] [INFO] [agent_loop] Calling tool: visit
+[11:39:51] [INFO] [tools_visit] Visit: "https://oshosourcebook.com/part-three/" -> Jina Reader
+[11:40:11] [INFO] [agent_loop] Round 7, elapsed 335s, tokens 18339
+[11:40:54] [INFO] [agent_loop] Calling tool: search
+[11:40:54] [INFO] [tools_search] Query: "site:vault.fbi.gov spiritual teacher guru" -> Google/Serper (LLM:google)
+[11:40:58] [INFO] [tools_search] Poor Google results for 'site:vault.fbi.gov spiritual teacher guru', trying Bing/IQS fallback
+[11:40:59] [INFO] [tools_search] Query: "FBI file guru spiritual leader vault.fbi.gov pages" -> Google/Serper (LLM:google)
+[11:41:00] [INFO] [agent_loop] Round 8, elapsed 384s, tokens 20663
+[11:43:22] [INFO] [agent_loop] Calling tool: search
+[11:43:22] [INFO] [tools_search] Query: "vault.fbi.gov guru swami spiritual" -> Google/Serper (LLM:google)
+[11:43:24] [INFO] [tools_search] Query: "FBI vault file swami guru pages document" -> Google/Serper (LLM:google)
+[11:43:25] [INFO] [agent_loop] Round 9, elapsed 530s, tokens 27527
+[11:47:12] [WARNING] [agent_loop] Timeout after 756s at round 10

@@ -1,0 +1,3 @@
+[14:38:06] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1724
+[14:38:10] [INFO] [agent_loop] Calling tool: search
+[14:38:10] [INFO] [tools_search] Query: "西方 科学 东方 君主 支持 欧洲 学者 历法 争论" -> Google/Serper (LLM:google)

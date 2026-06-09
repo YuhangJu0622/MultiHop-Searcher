@@ -1,0 +1,17 @@
+[11:56:50] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1779
+[11:58:15] [INFO] [agent_loop] Calling tool: search
+[11:58:15] [INFO] [tools_search] Query: "中国国家博物馆 永久展览 元谋人 距今超过百万年" -> Google/Serper (LLM:google)
+[11:58:16] [INFO] [tools_search] Query: "古人类 复原形象 国际期刊封面 同位素测年 中国" -> Bing/IQS (LLM:bing)
+[11:58:18] [INFO] [agent_loop] Round 2, elapsed 89s, tokens 9755
+[11:59:22] [INFO] [agent_loop] Calling tool: search
+[11:59:22] [INFO] [tools_search] Query: "龙人 Homo longi 哈尔滨 封面 The Innovation 复原图" -> Google/Serper (LLM:google)
+[11:59:23] [INFO] [tools_search] Query: "许昌人 Science 封面 复原形象 同位素测年" -> Bing/IQS (LLM:bing)
+[11:59:24] [INFO] [tools_search] Query: "华龙洞人 封面 国际期刊 复原" -> Bing/IQS (auto)
+[11:59:26] [INFO] [tools_search] Query: "古人类 复原图 期刊封面 中国 同位素" -> Bing/IQS (auto)
+[11:59:27] [INFO] [agent_loop] Round 3, elapsed 157s, tokens 21877
+[12:01:45] [INFO] [agent_loop] Calling tool: search
+[12:01:45] [INFO] [tools_search] Query: "龙人 哈尔滨头骨 铀系测年 U-series 146000" -> Google/Serper (LLM:google)
+[12:01:46] [INFO] [tools_search] Query: "中国国家博物馆 古代中国 基本陈列 元谋人 永久展览" -> Bing/IQS (LLM:bing)
+[12:01:48] [INFO] [tools_search] Query: "The Innovation 龙人 封面 2021年6月" -> Bing/IQS (auto)
+[12:01:49] [INFO] [agent_loop] Round 4, elapsed 300s, tokens 34771
+[12:02:17] [INFO] [agent_loop] Got answer at round 4: 龙人

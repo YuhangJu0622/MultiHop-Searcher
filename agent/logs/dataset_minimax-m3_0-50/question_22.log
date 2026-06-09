@@ -1,0 +1,37 @@
+[11:46:55] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1740
+[11:47:08] [INFO] [agent_loop] Calling tool: search
+[11:47:08] [INFO] [tools_search] Query: "Japanese company acquired heavy industry subsidiary 2020s Eu" -> Google/Serper (LLM:google)
+[11:47:10] [INFO] [tools_search] Query: "日本企业 收购 重工集团 子公司 欧洲储能 2020" -> Bing/IQS (LLM:bing)
+[11:47:12] [INFO] [agent_loop] Round 2, elapsed 16s, tokens 5238
+[11:47:20] [INFO] [agent_loop] Calling tool: search
+[11:47:20] [INFO] [tools_search] Query: "日本公司 收购 重工 子公司 储能 欧洲 专利诉讼 中国" -> Google/Serper (LLM:google)
+[11:47:22] [INFO] [tools_search] Query: "Japanese company acquired subsidiary heavy industry group en" -> Bing/IQS (LLM:bing)
+[11:47:23] [INFO] [agent_loop] Round 3, elapsed 27s, tokens 11654
+[11:48:05] [INFO] [agent_loop] Calling tool: search
+[11:48:05] [INFO] [tools_search] Query: "日本 储能公司 欧洲 收购 重工 中国 专利诉讼 四国" -> Google/Serper (LLM:google)
+[11:48:07] [INFO] [tools_search] Query: "Japan energy storage company acquired heavy industry subsidi" -> Bing/IQS (LLM:bing)
+[11:48:08] [INFO] [agent_loop] Round 4, elapsed 73s, tokens 17875
+[11:49:54] [INFO] [agent_loop] Calling tool: search
+[11:49:54] [INFO] [tools_search] Query: "日本电产 Nidec 储能 欧洲 收购 重工" -> Google/Serper (LLM:google)
+[11:49:55] [INFO] [tools_search] Query: "Nidec energy storage Europe acquisition heavy industry paten" -> Bing/IQS (LLM:bing)
+[11:49:56] [INFO] [agent_loop] Round 5, elapsed 181s, tokens 29646
+[11:51:36] [INFO] [agent_loop] Calling tool: search
+[11:51:36] [INFO] [tools_search] Query: "Nidec 日本电产 专利诉讼 中国" -> Bing/IQS (LLM:bing)
+[11:51:37] [INFO] [tools_search] Query: "Nidec 尼得科 中国 专利 诉讼" -> Google/Serper (LLM:google)
+[11:51:38] [INFO] [agent_loop] Round 6, elapsed 283s, tokens 38738
+[11:51:52] [INFO] [agent_loop] Calling tool: search
+[11:51:52] [INFO] [tools_search] Query: "Nidec 尼得科 社长 岸田 四国 共同 代表取缔役" -> Google/Serper (LLM:google)
+[11:51:54] [INFO] [tools_search] Query: "日本电产 永守重信 共同 CEO 共同代表 四国" -> Bing/IQS (LLM:bing)
+[11:51:55] [INFO] [agent_loop] Round 7, elapsed 300s, tokens 43319
+[11:53:12] [INFO] [agent_loop] Calling tool: search
+[11:53:12] [INFO] [tools_search] Query: "岸田光哉 出身 出生地 四国 香川 爱媛 徳岛 高知" -> Google/Serper (LLM:google)
+[11:53:14] [INFO] [tools_search] Query: "永守重信 出身 出生地 京都 日本电产 创业 共同创始人" -> Bing/IQS (LLM:bing)
+[11:53:15] [INFO] [agent_loop] Round 8, elapsed 380s, tokens 51121
+[11:53:53] [INFO] [agent_loop] Calling tool: search
+[11:53:53] [INFO] [tools_search] Query: "永守重信 论文 感动 技术 奥运 印象 深 刷 体育" -> Google/Serper (LLM:google)
+[11:53:54] [INFO] [tools_search] Query: "永守重信 オリンピック 論文 技術 印象" -> Bing/IQS (LLM:bing)
+[11:53:56] [INFO] [agent_loop] Round 9, elapsed 421s, tokens 56140
+[11:56:21] [INFO] [agent_loop] Calling tool: search
+[11:56:21] [INFO] [tools_search] Query: "永守重信 刷 直流 モータ 技術 オリンピック 刷 東京大会 技術論文" -> Google/Serper (LLM:google)
+[11:56:23] [INFO] [tools_search] Query: "永守重信 创业 灵感 刷 论文 印象 运动会" -> Bing/IQS (LLM:bing)
+[11:56:24] [WARNING] [agent_loop] Timeout after 569s at round 10

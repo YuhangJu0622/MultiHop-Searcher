@@ -1,0 +1,48 @@
+[11:50:17] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1795
+[11:51:04] [INFO] [agent_loop] Calling tool: search
+[11:51:04] [INFO] [tools_search] Query: "European national archives diplomatic files digitized academ" -> Google/Serper (auto)
+[11:51:06] [INFO] [tools_search] Query: "FO 371 Foreign Office files Middle East Suez digitized publi" -> Google/Serper (auto)
+[11:51:07] [INFO] [agent_loop] Round 2, elapsed 49s, tokens 5301
+[11:51:16] [INFO] [agent_loop] Calling tool: search
+[11:51:16] [INFO] [tools_search] Query: "Adam Matthew Digital founded established year publisher" -> Google/Serper (auto)
+[11:51:17] [INFO] [tools_search] Query: "Adam Matthew "Foreign Office" files India Pakistan Afghanist" -> Google/Serper (auto)
+[11:51:19] [INFO] [tools_search] Query: "Adam Matthew Foreign Office Middle East Ottoman Empire Suez " -> Google/Serper (auto)
+[11:51:20] [INFO] [agent_loop] Round 3, elapsed 63s, tokens 7862
+[11:51:47] [INFO] [agent_loop] Calling tool: search
+[11:51:47] [INFO] [tools_search] Query: "钱学森 回国 发表文章 监禁 美国 拘留 经历" -> Bing/IQS (auto)
+[11:51:48] [INFO] [tools_search] Query: "中国 加强国家档案工作 决定 年份 国务院" -> Bing/IQS (auto)
+[11:51:49] [INFO] [tools_search] Query: "钱学森 1955 1956 发表 拘留 美国" -> Bing/IQS (auto)
+[11:51:51] [INFO] [agent_loop] Round 4, elapsed 93s, tokens 14091
+[11:52:13] [INFO] [agent_loop] Calling tool: search
+[11:52:13] [INFO] [tools_search] Query: "钱学森 1956 发表 文章 囚禁 软禁 美国 回忆" -> Bing/IQS (auto)
+[11:52:15] [INFO] [tools_search] Query: "钱学森回国后 第一次发表 监禁 经历 报纸 期刊" -> Bing/IQS (auto)
+[11:52:16] [INFO] [tools_search] Query: ""Confidential Print" Middle East 1839 1969 Adam Matthew Otto" -> Google/Serper (auto)
+[11:52:17] [INFO] [agent_loop] Round 5, elapsed 120s, tokens 21610
+[11:52:33] [INFO] [agent_loop] Calling tool: search
+[11:52:33] [INFO] [tools_search] Query: "钱学森 1956年 发表 文章 记述 拘留 美国 软禁 经历" -> Bing/IQS (auto)
+[11:52:34] [INFO] [tools_search] Query: "Qian Xuesen 1956 article published detention experience Amer" -> Google/Serper (auto)
+[11:52:36] [INFO] [tools_search] Query: "钱学森 "美国迫害" OR "美国拘留" 发表 文章 记述" -> Bing/IQS (auto)
+[11:52:38] [INFO] [agent_loop] Round 6, elapsed 141s, tokens 28289
+[11:52:56] [INFO] [agent_loop] Calling tool: visit
+[11:52:59] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/Qian_Xuesen" -> Jina Reader
+[11:53:39] [INFO] [agent_loop] Round 7, elapsed 202s, tokens 30440
+[11:53:56] [INFO] [agent_loop] Calling tool: search
+[11:53:56] [INFO] [tools_search] Query: "钱学森 1955 发表 文章 监禁 经历 美国 报纸" -> Bing/IQS (auto)
+[11:53:57] [INFO] [tools_search] Query: "钱学森 回国 写文章 回忆 五年 软禁 经历 发表 期刊" -> Bing/IQS (auto)
+[11:53:58] [INFO] [tools_search] Query: "1955 1956 中国科学家 回国 发表 监禁 美国 拘留 软禁" -> Bing/IQS (auto)
+[11:54:00] [INFO] [agent_loop] Round 8, elapsed 222s, tokens 38025
+[11:54:13] [INFO] [agent_loop] Calling tool: visit
+[11:54:25] [INFO] [tools_visit] Visit: "https://m.baike.so.com/doc/4620943-4833424.html" -> Jina Reader
+[11:55:02] [INFO] [agent_loop] Round 9, elapsed 285s, tokens 40112
+[11:55:30] [INFO] [agent_loop] Calling tool: search
+[11:55:30] [INFO] [tools_search] Query: "钱学森年表 1955 1956 1957 撰写 发表 文章 活动" -> Bing/IQS (auto)
+[11:55:31] [INFO] [tools_search] Query: "钱学森回国后 第一次公开 演讲 报告 经历 美国" -> Bing/IQS (auto)
+[11:55:32] [INFO] [tools_search] Query: "Qian Xuesen 1956 published wrote article memoir account dete" -> Google/Serper (auto)
+[11:55:34] [INFO] [agent_loop] Round 10, elapsed 316s, tokens 46523
+[11:56:11] [INFO] [agent_loop] Calling tool: visit
+[11:56:36] [INFO] [tools_visit] Visit: "https://baijiahao.baidu.com/s?id=1652347449648633614" -> Jina Reader
+[11:57:30] [INFO] [agent_loop] Round 11, elapsed 433s, tokens 49475
+[11:57:47] [INFO] [agent_loop] Calling tool: search
+[11:57:47] [INFO] [tools_search] Query: "钱学森 《我在美国的遭遇》 1956年1月6日 人民日报" -> Bing/IQS (auto)
+[11:57:49] [INFO] [agent_loop] Round 12, elapsed 452s, tokens 52441
+[11:58:13] [INFO] [agent_loop] Got answer at round 12: 1956

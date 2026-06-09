@@ -1,0 +1,61 @@
+[10:49:18] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1661
+[10:49:32] [INFO] [agent_loop] Calling tool: search
+[10:49:32] [INFO] [tools_search] Query: "2000年 中国 卫视 播出 动漫 盗贼 美女 警察 男主角 配音" -> Bing/IQS (LLM:bing)
+[10:49:33] [INFO] [tools_search] Query: "2000年初 卫视 动画 小偷 美女 警察 大陆配音" -> Bing/IQS (LLM:bing)
+[10:49:35] [INFO] [agent_loop] Round 2, elapsed 17s, tokens 6952
+[10:49:46] [INFO] [agent_loop] Calling tool: search
+[10:49:46] [INFO] [tools_search] Query: "猫眼三姐妹 中国大陆 卫视 播出 2000年 配音" -> Bing/IQS (LLM:bing)
+[10:49:48] [INFO] [tools_search] Query: "鲁邦三世 中国大陆 卫视 播出 配音" -> Bing/IQS (LLM:bing)
+[10:49:49] [INFO] [agent_loop] Round 3, elapsed 30s, tokens 12154
+[10:49:58] [INFO] [agent_loop] Calling tool: search
+[10:49:58] [INFO] [tools_search] Query: "猫眼三姐妹 国语配音 内海俊夫 配音员" -> Bing/IQS (LLM:bing)
+[10:49:59] [INFO] [tools_search] Query: "Cats Eye 大陆 配音 男主角" -> Google/Serper (LLM:google)
+[10:50:00] [INFO] [agent_loop] Round 4, elapsed 42s, tokens 17113
+[10:50:12] [INFO] [agent_loop] Calling tool: search
+[10:50:12] [INFO] [tools_search] Query: "张欣 配音 贞观之治 2007" -> Bing/IQS (LLM:bing)
+[10:50:14] [INFO] [tools_search] Query: "配音演员 张欣 贞观之治 角色" -> Bing/IQS (LLM:bing)
+[10:50:15] [INFO] [agent_loop] Round 5, elapsed 56s, tokens 22519
+[10:50:28] [INFO] [agent_loop] Calling tool: search
+[10:50:28] [INFO] [tools_search] Query: "2000年 中国大陆 卫视 播出的日本动漫 盗贼 警察 美女" -> Bing/IQS (LLM:bing)
+[10:50:29] [INFO] [tools_search] Query: "2000年 哪些日本动画 大陆 卫视 播出" -> Bing/IQS (LLM:bing)
+[10:50:31] [INFO] [agent_loop] Round 6, elapsed 72s, tokens 28071
+[10:50:37] [INFO] [agent_loop] Calling tool: search
+[10:50:37] [INFO] [tools_search] Query: "鲁邦三世 中国大陆 电视台 播出 2000年" -> Google/Serper (LLM:google)
+[10:50:38] [INFO] [tools_search] Query: "猫眼三姐妹 卫视 播出 2000 上海电视台" -> Bing/IQS (LLM:bing)
+[10:50:40] [INFO] [agent_loop] Round 7, elapsed 81s, tokens 32756
+[10:50:52] [INFO] [agent_loop] Calling tool: search
+[10:50:52] [INFO] [tools_search] Query: "鲁邦三世 中国 电视台 引进 播出 卫视" -> Google/Serper (LLM:google)
+[10:50:53] [INFO] [tools_search] Query: "猫眼三姐妹 国配 内海俊夫 张欣 上海" -> Bing/IQS (LLM:bing)
+[10:50:55] [INFO] [agent_loop] Round 8, elapsed 96s, tokens 37899
+[10:51:11] [INFO] [agent_loop] Calling tool: search
+[10:51:11] [INFO] [tools_search] Query: "猫眼三姐妹 哪个卫视 播出 大陆" -> Bing/IQS (LLM:bing)
+[10:51:13] [INFO] [tools_search] Query: "猫眼三姐妹 中国教育电视台 卫视" -> Bing/IQS (LLM:bing)
+[10:51:15] [INFO] [agent_loop] Round 9, elapsed 116s, tokens 43579
+[10:51:32] [INFO] [agent_loop] Round 10, elapsed 134s, tokens 44468
+[10:51:35] [INFO] [agent_loop] Calling tool: search
+[10:51:35] [INFO] [tools_search] Query: "张欣 配音演员 猫眼三姐妹 内海俊夫" -> Bing/IQS (LLM:bing)
+[10:51:37] [INFO] [tools_search] Query: "张欣 男性配音 上海 猫眼三姐妹" -> Bing/IQS (LLM:bing)
+[10:51:39] [INFO] [agent_loop] Round 11, elapsed 140s, tokens 48030
+[10:51:57] [INFO] [agent_loop] Calling tool: search
+[10:51:57] [INFO] [tools_search] Query: "張欣 配音員 貓眼三姐妹 中國" -> Google/Serper (LLM:google)
+[10:51:58] [INFO] [tools_search] Query: "貓眼 三姐妹 中國配音 張欣 内海俊夫 site:zh.wikipedia.org" -> Google/Serper (LLM:google)
+[10:52:00] [INFO] [agent_loop] Round 12, elapsed 161s, tokens 51733
+[10:52:08] [INFO] [agent_loop] Calling tool: visit
+[10:52:11] [INFO] [tools_visit] Visit: "https://zh.wikipedia.org/zh-cn/%E8%B2%93%E7%9C%BC%E4%B8%89%E5%A7%90%E5%A6%B9" -> Jina Reader
+[10:52:17] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E5%BC%A0%E6%AC%A3/2610589" -> Jina Reader
+[10:52:28] [WARNING] [tools_visit] Summary attempt 1 failed: Error code: 400 - {'error': {'message': 'Input data may contain inappropriate content. For details, see: https://***.com/***/***/***', 'type': 'rix_api_error', 'param': '', 'code': 'data_inspection_failed'}}
+[10:52:39] [WARNING] [tools_visit] Summary attempt 2 failed: Error code: 400 - {'error': {'message': 'Input data may contain inappropriate content. For details, see: https://***.com/***/***/***', 'type': 'rix_api_error', 'param': '', 'code': 'data_inspection_failed'}}
+[10:52:51] [INFO] [agent_loop] Round 13, elapsed 212s, tokens 53406
+[10:53:04] [INFO] [agent_loop] Calling tool: visit
+[10:53:18] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E7%8C%AB%E7%9C%BC%E4%B8%89%E5%A7%90%E5%A6%B9/54341" -> Jina Reader
+[10:53:18] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E7%8C%AB%E7%9C%BC%E4%B8%89%E5%A7%90%E5%A6%B9/1193631" -> Jina Reader
+[10:53:53] [INFO] [agent_loop] Round 14, elapsed 274s, tokens 56103
+[10:54:11] [INFO] [agent_loop] Calling tool: search
+[10:54:11] [INFO] [tools_search] Query: "猫眼三姐妹 国语配音 张欣 上海电影译制厂" -> Bing/IQS (LLM:bing)
+[10:54:12] [INFO] [tools_search] Query: "猫眼三姐妹 普通话配音 内海俊夫 是谁" -> Google/Serper (LLM:google)
+[10:54:17] [INFO] [agent_loop] Round 15, elapsed 298s, tokens 61960
+[10:54:27] [INFO] [agent_loop] Calling tool: search
+[10:54:27] [INFO] [tools_search] Query: "贞观之治 2007 配音演员 长孙无忌 张欣" -> Bing/IQS (LLM:bing)
+[10:54:28] [INFO] [tools_search] Query: "贞观之治 配音表 长孙无忌" -> Google/Serper (LLM:google)
+[10:54:30] [INFO] [agent_loop] Round 16, elapsed 311s, tokens 66169
+[10:54:48] [INFO] [agent_loop] Got answer at round 16: 长孙无忌

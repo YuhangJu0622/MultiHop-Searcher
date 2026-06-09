@@ -1,0 +1,15 @@
+[11:19:08] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1640
+[11:19:16] [INFO] [agent_loop] Calling tool: search
+[11:19:16] [INFO] [tools_search] Query: "special court supernatural wrongdoing North American colony " -> Google/Serper (LLM:google)
+[11:19:18] [INFO] [tools_search] Query: "Giles Corey pressed to death young accuser Salem witch trial" -> Google/Serper (LLM:google)
+[11:19:20] [INFO] [agent_loop] Round 2, elapsed 13s, tokens 3577
+[11:19:33] [INFO] [agent_loop] Calling tool: search
+[11:19:33] [INFO] [tools_search] Query: ""ignited" "Salem witch trials" "young" "accuser"" -> Google/Serper (LLM:google)
+[11:19:35] [INFO] [tools_search] Query: ""testimony" "widespread hysteria" "Salem" "young accuser"" -> Google/Serper (LLM:google)
+[11:19:37] [INFO] [tools_search] Poor Google results for '"testimony" "widespread hysteria" "Salem" "young accuser"', trying Bing/IQS fallback
+[11:19:38] [INFO] [tools_search] Query: ""sparked the Salem witch trials" "young accuser"" -> Google/Serper (LLM:google)
+[11:19:39] [INFO] [tools_search] Poor Google results for '"sparked the Salem witch trials" "young accuser"', trying Bing/IQS fallback
+[11:19:40] [INFO] [agent_loop] Round 3, elapsed 32s, tokens 10977
+[11:19:50] [INFO] [agent_loop] Early answer blocked at round 3, requesting verification
+[11:19:50] [INFO] [agent_loop] Round 4, elapsed 42s, tokens 11142
+[11:20:00] [INFO] [agent_loop] Got answer at round 4: Abigail Williams

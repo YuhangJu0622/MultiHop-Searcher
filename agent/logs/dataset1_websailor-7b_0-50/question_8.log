@@ -1,0 +1,23 @@
+[14:36:01] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1713
+[14:36:08] [INFO] [agent_loop] Calling tool: search
+[14:36:08] [INFO] [tools_search] Query: "异源二聚体 氨基酸 转运 蛋白 抑制剂 半胱氨酸 饥饿 谷胱甘肽 耗竭" -> Bing/IQS (auto)
+[14:36:09] [INFO] [tools_search] Query: "MRC-5 细胞 病毒 污染 负" -> Bing/IQS (auto)
+[14:36:11] [INFO] [tools_search] Query: "自由基 生物学 医学 学会 官方 期刊 论文 标题" -> Bing/IQS (auto)
+[14:36:12] [INFO] [tools_search] Query: "抗癌 细菌 杀伤 药物 模型 MRC-5" -> Bing/IQS (auto)
+[14:36:14] [INFO] [agent_loop] Round 2, elapsed 12s, tokens 11523
+[14:36:19] [INFO] [agent_loop] Calling tool: search
+[14:36:19] [INFO] [tools_search] Query: "异源二聚体 氨基酸 转运 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:21] [INFO] [tools_search] Query: "xCT 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:22] [INFO] [agent_loop] Round 3, elapsed 21s, tokens 16423
+[14:36:32] [INFO] [agent_loop] Calling tool: search
+[14:36:32] [INFO] [tools_search] Query: "异源二聚体 氨基酸 转运 蛋白 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology 肺 纤维化" -> Bing/IQS (auto)
+[14:36:33] [INFO] [agent_loop] Round 4, elapsed 32s, tokens 19360
+[14:36:39] [INFO] [agent_loop] Calling tool: search
+[14:36:39] [INFO] [tools_search] Query: "异源二聚体 氨基酸 转运 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:40] [INFO] [tools_search] Query: "xCT 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:41] [INFO] [agent_loop] Round 5, elapsed 40s, tokens 24277
+[14:36:49] [INFO] [agent_loop] Calling tool: search
+[14:36:49] [INFO] [tools_search] Query: "异源二聚体 氨基酸 转运 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:51] [INFO] [tools_search] Query: "xCT 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:52] [INFO] [tools_search] Query: "肺 纤维化 抑制剂 抗癌 细菌 杀伤 药物 MRC-5 Redox Biology" -> Bing/IQS (auto)
+[14:36:54] [WARNING] [agent_loop] Token limit reached at round 5

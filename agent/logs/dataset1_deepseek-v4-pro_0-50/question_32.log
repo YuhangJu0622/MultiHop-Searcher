@@ -1,0 +1,82 @@
+[11:50:25] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1884
+[11:50:58] [INFO] [agent_loop] Calling tool: search
+[11:50:58] [INFO] [tools_search] Query: "2025年 土地复垦 环境影响评价 公众意见征询 能源" -> Bing/IQS (LLM:bing)
+[11:50:59] [INFO] [tools_search] Query: "mid-2020s land reclamation EIA public comment northern China" -> Google/Serper (LLM:google)
+[11:51:00] [INFO] [agent_loop] Round 2, elapsed 35s, tokens 6925
+[11:51:09] [INFO] [agent_loop] Round 3, elapsed 44s, tokens 7327
+[11:51:12] [INFO] [agent_loop] Calling tool: search
+[11:51:12] [INFO] [tools_search] Query: "数亿星系 地图 任务 发射 2025" -> Bing/IQS (LLM:bing)
+[11:51:14] [INFO] [tools_search] Query: "2025 年 发射 绘制 数亿 星系 地图" -> Google/Serper (LLM:google)
+[11:51:15] [INFO] [agent_loop] Round 4, elapsed 49s, tokens 11806
+[11:51:38] [INFO] [agent_loop] Round 5, elapsed 73s, tokens 13093
+[11:51:41] [INFO] [agent_loop] Round 6, elapsed 76s, tokens 13232
+[11:51:56] [INFO] [agent_loop] Calling tool: search
+[11:51:56] [INFO] [tools_search] Query: "2025年 土地复垦 环境影响评价 公众意见征询 煤矿" -> Bing/IQS (LLM:bing)
+[11:51:57] [INFO] [tools_search] Query: "2025 土地复垦 环评 公众参与 能源 城市" -> Google/Serper (LLM:google)
+[11:51:58] [INFO] [agent_loop] Round 7, elapsed 93s, tokens 18219
+[11:52:08] [INFO] [agent_loop] Calling tool: search
+[11:52:08] [INFO] [tools_search] Query: "综合能源基地 传统能源 可再生能源 生态恢复 重点区域" -> Bing/IQS (LLM:bing)
+[11:52:10] [INFO] [tools_search] Query: "传统与可再生能源 综合能源基地 生态恢复 示范区" -> Google/Serper (LLM:google)
+[11:52:12] [INFO] [agent_loop] Round 8, elapsed 107s, tokens 22708
+[11:52:21] [INFO] [agent_loop] Calling tool: search
+[11:52:21] [INFO] [tools_search] Query: "跨海拔 遗传 多样性 固沙 树种 基因组 重测序" -> Bing/IQS (LLM:bing)
+[11:52:22] [INFO] [tools_search] Query: "population genetics sand-fixing tree altitudinal gradient Ch" -> Google/Serper (LLM:google)
+[11:52:24] [INFO] [agent_loop] Round 9, elapsed 118s, tokens 26521
+[11:52:27] [INFO] [agent_loop] Round 10, elapsed 122s, tokens 26654
+[11:52:34] [INFO] [agent_loop] Round 11, elapsed 129s, tokens 26956
+[11:52:43] [INFO] [agent_loop] Round 12, elapsed 138s, tokens 27335
+[11:52:52] [INFO] [agent_loop] Calling tool: search
+[11:52:52] [INFO] [tools_search] Query: "query1" -> Google/Serper (LLM:google)
+[11:52:53] [INFO] [tools_search] Query: "query2" -> Google/Serper (LLM:google)
+[11:52:55] [INFO] [agent_loop] Round 13, elapsed 150s, tokens 29272
+[11:53:02] [INFO] [agent_loop] Round 14, elapsed 157s, tokens 29586
+[11:53:21] [INFO] [agent_loop] Calling tool: search
+[11:53:21] [INFO] [tools_search] Query: "..." -> Google/Serper (LLM:google)
+[11:53:23] [INFO] [tools_search] Poor Google results for '...', trying Bing/IQS fallback
+[11:53:24] [INFO] [agent_loop] Round 15, elapsed 178s, tokens 31870
+[11:53:52] [INFO] [agent_loop] Calling tool: search
+[11:53:52] [INFO] [tools_search] Query: "2025年 土地复垦 公众参与 能源 城市" -> Bing/IQS (LLM:bing)
+[11:53:53] [INFO] [agent_loop] Round 16, elapsed 208s, tokens 35465
+[11:54:43] [INFO] [agent_loop] Calling tool: search
+[11:54:43] [INFO] [tools_search] Query: "退化林 修复 单一树种 速生 固沙 省级林业" -> Bing/IQS (LLM:bing)
+[11:54:45] [INFO] [tools_search] Query: "population genomics desert tree sand fixation China 2024 202" -> Google/Serper (LLM:google)
+[11:54:46] [INFO] [agent_loop] Round 17, elapsed 261s, tokens 41485
+[11:55:24] [INFO] [agent_loop] Calling tool: search
+[11:55:24] [INFO] [tools_search] Query: "Populus simonii population genomics altitudinal gradient 202" -> Google/Serper (LLM:google)
+[11:55:25] [INFO] [agent_loop] Round 18, elapsed 300s, tokens 44339
+[11:55:52] [INFO] [agent_loop] Round 19, elapsed 326s, tokens 45716
+[11:55:55] [INFO] [agent_loop] Calling tool: search
+[11:55:55] [INFO] [tools_search] Query: "整合传统与可再生能源 综合能源基地" -> Bing/IQS (LLM:bing)
+[11:55:56] [INFO] [tools_search] Query: "传统与可再生能源 综合能源基地 规划" -> Bing/IQS (auto)
+[11:55:58] [INFO] [agent_loop] Round 20, elapsed 332s, tokens 50406
+[11:56:17] [INFO] [agent_loop] Calling tool: search
+[11:56:17] [INFO] [tools_search] Query: ""绘制数亿星系" 任务 计划发射" -> Bing/IQS (LLM:bing)
+[11:56:19] [INFO] [tools_search] Query: ""土地复垦" "环境影响" "公众意见" 2025" -> Bing/IQS (LLM:bing)
+[11:56:20] [INFO] [agent_loop] Round 21, elapsed 355s, tokens 56783
+[11:56:43] [INFO] [agent_loop] Calling tool: search
+[11:56:43] [INFO] [tools_search] Query: "population genomic sand fixation tree China BMC Genomics 202" -> Google/Serper (LLM:google)
+[11:56:45] [INFO] [agent_loop] Round 22, elapsed 380s, tokens 58721
+[11:57:14] [INFO] [agent_loop] Calling tool: search
+[11:57:14] [INFO] [tools_search] Query: "跨地域 跨海拔 遗传样本 适应性 研究" -> Bing/IQS (LLM:bing)
+[11:57:15] [INFO] [tools_search] Query: ""跨海拔" 遗传 样本 固沙" -> Bing/IQS (LLM:bing)
+[11:57:17] [INFO] [agent_loop] Round 23, elapsed 411s, tokens 65264
+[11:57:48] [INFO] [agent_loop] Calling tool: search
+[11:57:48] [INFO] [tools_search] Query: "榆林 退化林 修复 单一树种 速生" -> Bing/IQS (LLM:bing)
+[11:57:50] [INFO] [tools_search] Query: "鄂尔多斯 退化林 修复 单一树种 速生" -> Bing/IQS (LLM:bing)
+[11:57:51] [INFO] [agent_loop] Round 24, elapsed 446s, tokens 72312
+[11:58:19] [INFO] [agent_loop] Calling tool: search
+[11:58:19] [INFO] [tools_search] Query: "巡天空间望远镜 绘制 数亿 星系" -> Bing/IQS (LLM:bing)
+[11:58:21] [INFO] [tools_search] Query: "CSST 星系 地图 数亿" -> Bing/IQS (LLM:bing)
+[11:58:22] [INFO] [agent_loop] Round 25, elapsed 477s, tokens 79032
+[11:58:38] [INFO] [agent_loop] Calling tool: search
+[11:58:38] [INFO] [tools_search] Query: "全基因组测序 固沙 树种 海拔梯度 适应性 2024 2025" -> Bing/IQS (LLM:bing)
+[11:58:40] [INFO] [tools_search] Query: "群体基因组 沙漠 植物 适应 海拔 遗传 2025" -> Google/Serper (LLM:google)
+[11:58:41] [INFO] [agent_loop] Round 26, elapsed 496s, tokens 84332
+[11:59:05] [INFO] [agent_loop] Calling tool: search
+[11:59:05] [INFO] [tools_search] Query: "省林业局 主导 退化林 修复 工程 速生 树种" -> Bing/IQS (LLM:bing)
+[11:59:06] [INFO] [tools_search] Query: "小叶杨 群体基因组 跨海拔 遗传 适应 研究 2024" -> Google/Serper (LLM:google)
+[11:59:08] [INFO] [agent_loop] Round 27, elapsed 523s, tokens 89733
+[11:59:32] [INFO] [agent_loop] Calling tool: search
+[11:59:32] [INFO] [tools_search] Query: ""跨地域" "跨海拔" 遗传样本" -> Bing/IQS (LLM:bing)
+[11:59:33] [INFO] [tools_search] Query: ""综合能源基地" "生态恢复" 重点区域" -> Bing/IQS (LLM:bing)
+[11:59:35] [WARNING] [agent_loop] Timeout after 550s at round 28

@@ -1,0 +1,36 @@
+[11:43:31] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1819
+[11:43:38] [INFO] [agent_loop] Calling tool: search
+[11:43:38] [INFO] [tools_search] Query: "中国国家博物馆 技术安全 高级职员 籍贯 古人类遗址" -> Bing/IQS (LLM:bing)
+[11:43:39] [INFO] [tools_search] Query: "National Museum of China ancient human exhibition southwest " -> Google/Serper (LLM:google)
+[11:43:40] [INFO] [tools_search] Query: "中国国家博物馆 长期展览 古人类遗骸 西南 百万年" -> Bing/IQS (LLM:bing)
+[11:43:42] [INFO] [agent_loop] Round 2, elapsed 10s, tokens 7231
+[11:43:49] [INFO] [agent_loop] Calling tool: search
+[11:43:49] [INFO] [tools_search] Query: "中国国家博物馆 安全保卫 技术安全 处长 1970年代出生" -> Bing/IQS (LLM:bing)
+[11:43:50] [INFO] [tools_search] Query: "中国国家博物馆 安保部 负责人 籍贯" -> Bing/IQS (LLM:bing)
+[11:43:52] [INFO] [tools_search] Query: "National Museum of China security department director born 1" -> Google/Serper (LLM:google)
+[11:43:54] [INFO] [agent_loop] Round 3, elapsed 22s, tokens 12297
+[11:44:11] [INFO] [agent_loop] Calling tool: visit
+[11:44:22] [INFO] [tools_visit] Visit: "https://www.chnmuseum.cn/yj/zjxz/zzzzgjzj/201908/t20190815_142762.shtml" -> Jina Reader
+[11:44:23] [INFO] [tools_visit] Visit: "https://www.chnmuseum.cn/yj/zjxz/zzzgjzj/201807/t20180719_5005.shtml" -> Jina Reader
+[11:44:23] [INFO] [tools_visit] Visit: "https://www.chnmuseum.cn/yj/zjxz/zzzzgjzj/201807/t20180719_4970.shtml" -> Jina Reader
+[11:44:39] [INFO] [agent_loop] Round 4, elapsed 67s, tokens 15215
+[11:45:03] [INFO] [agent_loop] Round 5, elapsed 91s, tokens 17055
+[11:45:06] [INFO] [agent_loop] Calling tool: search
+[11:45:06] [INFO] [tools_search] Query: "古人类遗址 同位素分析技术 年代测定 科学期刊封面" -> Bing/IQS (LLM:bing)
+[11:45:07] [INFO] [tools_search] Query: "ancient human fossil isotope dating journal cover China" -> Google/Serper (LLM:google)
+[11:45:08] [INFO] [tools_search] Query: "古人类 复原形象 科学期刊封面 Nature Science" -> Bing/IQS (LLM:bing)
+[11:45:09] [INFO] [agent_loop] Round 6, elapsed 98s, tokens 22307
+[11:45:45] [INFO] [agent_loop] Calling tool: search
+[11:45:45] [INFO] [tools_search] Query: "龙人 哈尔滨 The Innovation 封面" -> Bing/IQS (LLM:bing)
+[11:45:47] [INFO] [tools_search] Query: "Denisovan Cell cover 2019 facial reconstruction" -> Google/Serper (LLM:google)
+[11:45:48] [INFO] [tools_search] Query: "北京猿人 复原 期刊封面 Nature Science" -> Bing/IQS (LLM:bing)
+[11:45:49] [INFO] [agent_loop] Round 7, elapsed 138s, tokens 29993
+[11:46:10] [INFO] [agent_loop] Calling tool: visit
+[11:46:17] [INFO] [tools_visit] Visit: "https://wap.xinmin.cn/content/31608043.html" -> Jina Reader
+[11:46:30] [INFO] [agent_loop] Round 8, elapsed 179s, tokens 31883
+[11:46:54] [INFO] [agent_loop] Calling tool: search
+[11:46:54] [INFO] [tools_search] Query: "Nature 2009 March cover Peking Man Zhoukoudian Homo erectus" -> Google/Serper (LLM:google)
+[11:46:55] [INFO] [tools_search] Query: "北京猿人 Nature封面 2009 复原形象" -> Bing/IQS (LLM:bing)
+[11:46:57] [INFO] [tools_search] Query: "沈冠军 周口店 北京人 Nature 2009 封面" -> Bing/IQS (LLM:bing)
+[11:46:58] [INFO] [agent_loop] Round 9, elapsed 207s, tokens 38619
+[11:47:19] [INFO] [agent_loop] Got answer at round 9: 北京人

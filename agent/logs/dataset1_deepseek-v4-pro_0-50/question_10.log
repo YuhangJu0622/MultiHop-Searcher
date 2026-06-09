@@ -1,0 +1,14 @@
+[10:55:25] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1708
+[10:55:37] [INFO] [agent_loop] Calling tool: search
+[10:55:37] [INFO] [tools_search] Query: "作家 本名 马力 35岁 全职" -> Bing/IQS (LLM:bing)
+[10:55:39] [INFO] [tools_search] Query: "马力 作家 小说改编 电视剧 2019" -> Bing/IQS (LLM:bing)
+[10:55:41] [INFO] [agent_loop] Round 2, elapsed 16s, tokens 7832
+[10:55:56] [INFO] [agent_loop] Calling tool: search
+[10:55:56] [INFO] [tools_search] Query: "长安十二时辰 男主角 扮演者 雷佳音 易烊千玺 2019" -> Bing/IQS (LLM:bing)
+[10:55:58] [INFO] [tools_search] Query: "马伯庸 2019 改编 电视剧 双男主" -> Bing/IQS (LLM:bing)
+[10:55:59] [INFO] [agent_loop] Round 3, elapsed 34s, tokens 13976
+[10:56:09] [INFO] [agent_loop] Calling tool: search
+[10:56:09] [INFO] [tools_search] Query: "马伯庸 改编 电视剧 大全 2019 年" -> Bing/IQS (LLM:bing)
+[10:56:10] [INFO] [tools_search] Query: "马伯庸 影视改编 列表 2019" -> Google/Serper (LLM:google)
+[10:56:11] [INFO] [agent_loop] Round 4, elapsed 46s, tokens 18962
+[10:56:20] [INFO] [agent_loop] Got answer at round 4: 雷佳音和易烊千玺

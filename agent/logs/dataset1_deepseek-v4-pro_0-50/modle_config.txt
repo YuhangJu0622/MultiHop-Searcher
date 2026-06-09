@@ -1,0 +1,2 @@
+extra_body["thinking"] = {"type": "enabled"}
+extra_body["reasoning_effort"] = "high"

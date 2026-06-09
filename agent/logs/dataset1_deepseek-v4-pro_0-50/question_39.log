@@ -1,0 +1,12 @@
+[12:47:05] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1859
+[12:47:37] [INFO] [agent_loop] Calling tool: search
+[12:47:37] [INFO] [tools_search] Query: "中国男子羽毛球队首次夺得汤姆斯杯 年份" -> Bing/IQS (LLM:bing)
+[12:47:38] [INFO] [tools_search] Query: "China men's badminton team first Thomas Cup win year" -> Google/Serper (LLM:google)
+[12:47:39] [INFO] [agent_loop] Round 2, elapsed 34s, tokens 5706
+[12:47:59] [INFO] [agent_loop] Calling tool: search
+[12:47:59] [INFO] [tools_search] Query: "智翼 无人机 农业 公司" -> Bing/IQS (LLM:bing)
+[12:48:00] [INFO] [tools_search] Query: "智翼 飞翔者 农作物 智慧科技" -> Google/Serper (LLM:google)
+[12:48:01] [INFO] [agent_loop] Round 3, elapsed 56s, tokens 10230
+[12:48:33] [INFO] [agent_loop] Round 4, elapsed 89s, tokens 11152
+[12:48:50] [INFO] [agent_loop] Round 5, elapsed 106s, tokens 11628
+[12:49:04] [INFO] [agent_loop] Got answer at round 5: Wait, I am not ready to answer yet. I need to fix the search call syntax. Let me try again with a co

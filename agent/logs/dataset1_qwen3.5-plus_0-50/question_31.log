@@ -1,0 +1,26 @@
+[16:51:29] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1831
+[16:51:53] [INFO] [agent_loop] Calling tool: search
+[16:51:53] [INFO] [tools_search] Query: "国家文物局 人才项目管理办法 2020 2021 2022 2023" -> Bing/IQS (LLM:bing)
+[16:51:54] [INFO] [tools_search] Query: "国家文物局 人才项目 管理办法 发布" -> Bing/IQS (LLM:bing)
+[16:51:55] [INFO] [agent_loop] Round 2, elapsed 26s, tokens 7043
+[16:52:09] [INFO] [agent_loop] Calling tool: search
+[16:52:09] [INFO] [tools_search] Query: "2024 两国合作 空间探测器 宇宙短暂现象 观测成果" -> Bing/IQS (LLM:bing)
+[16:52:10] [INFO] [tools_search] Query: "2024 国际合作 空间望远镜 瞬变现象 探测" -> Bing/IQS (LLM:bing)
+[16:52:11] [INFO] [tools_search] Query: "2024 space telescope transient phenomena international coope" -> Google/Serper (LLM:google)
+[16:52:12] [INFO] [agent_loop] Round 3, elapsed 43s, tokens 13775
+[16:52:28] [INFO] [agent_loop] Calling tool: search
+[16:52:28] [INFO] [tools_search] Query: "爱因斯坦探针卫星 国际合作 两国 研制" -> Bing/IQS (LLM:bing)
+[16:52:29] [INFO] [tools_search] Query: "Einstein Probe satellite international cooperation ESA" -> Google/Serper (LLM:google)
+[16:52:31] [INFO] [tools_search] Query: "爱因斯坦探针卫星 发射 火箭 型号" -> Bing/IQS (LLM:bing)
+[16:52:32] [INFO] [agent_loop] Round 4, elapsed 62s, tokens 19691
+[16:52:49] [INFO] [agent_loop] Calling tool: search
+[16:52:49] [INFO] [tools_search] Query: "长征二号丙 海洋观测卫星 自然资源 陆海统筹" -> Bing/IQS (LLM:bing)
+[16:52:50] [INFO] [tools_search] Query: "长征二号丙 发射 海洋卫星" -> Bing/IQS (LLM:bing)
+[16:52:51] [INFO] [tools_search] Query: "Long March 2C ocean observation satellite" -> Google/Serper (LLM:google)
+[16:52:52] [INFO] [agent_loop] Round 5, elapsed 83s, tokens 25690
+[16:53:20] [INFO] [agent_loop] Calling tool: search
+[16:53:20] [INFO] [tools_search] Query: "长征二号丙 高可靠性 荣誉 奖项" -> Bing/IQS (LLM:bing)
+[16:53:22] [INFO] [tools_search] Query: "国家文物局 2020 打击文物犯罪 专项行动" -> Bing/IQS (LLM:bing)
+[16:53:24] [INFO] [tools_search] Query: "海洋一号D 开启自然资源陆海统筹新时代" -> Bing/IQS (LLM:bing)
+[16:53:25] [INFO] [agent_loop] Round 6, elapsed 116s, tokens 32241
+[16:54:03] [INFO] [agent_loop] Got answer at round 6: 2020

@@ -1,0 +1,27 @@
+[11:33:22] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1753
+[11:33:44] [INFO] [agent_loop] Round 2, elapsed 22s, tokens 2822
+[11:33:49] [INFO] [agent_loop] Round 3, elapsed 27s, tokens 2965
+[11:33:54] [INFO] [agent_loop] Round 4, elapsed 32s, tokens 3110
+[11:34:01] [INFO] [agent_loop] Round 5, elapsed 38s, tokens 3304
+[11:34:08] [INFO] [agent_loop] Round 6, elapsed 46s, tokens 3470
+[11:34:14] [INFO] [agent_loop] Calling tool: search
+[11:34:14] [INFO] [tools_search] Query: "query1" -> Google/Serper (LLM:google)
+[11:34:15] [INFO] [tools_search] Query: "query2" -> Bing/IQS (LLM:bing)
+[11:34:16] [INFO] [agent_loop] Round 7, elapsed 54s, tokens 6381
+[11:34:35] [INFO] [agent_loop] Round 8, elapsed 73s, tokens 6596
+[11:34:48] [INFO] [agent_loop] Round 9, elapsed 86s, tokens 6728
+[11:34:57] [INFO] [agent_loop] Round 10, elapsed 95s, tokens 6871
+[11:35:02] [INFO] [agent_loop] Round 11, elapsed 100s, tokens 7062
+[11:35:11] [INFO] [agent_loop] Calling tool: search
+[11:35:11] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[11:35:12] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[11:35:13] [INFO] [agent_loop] Round 12, elapsed 111s, tokens 9525
+[11:35:22] [INFO] [agent_loop] Round 13, elapsed 120s, tokens 9880
+[11:35:41] [INFO] [agent_loop] Round 14, elapsed 139s, tokens 10348
+[11:35:48] [INFO] [agent_loop] Round 15, elapsed 146s, tokens 10593
+[11:36:05] [INFO] [agent_loop] Round 16, elapsed 163s, tokens 10816
+[11:36:13] [INFO] [agent_loop] Round 17, elapsed 171s, tokens 11048
+[11:36:39] [INFO] [agent_loop] Calling tool: search
+[11:36:39] [INFO] [tools_search] Query: "English topic query" -> Google/Serper (LLM:google)
+[11:36:40] [INFO] [tools_search] Query: "中文主题查询" -> Bing/IQS (LLM:bing)
+[11:36:41] [INFO] [agent_loop] Round 18, elapsed 199s, tokens 14342

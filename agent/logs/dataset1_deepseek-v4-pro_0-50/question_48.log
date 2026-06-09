@@ -1,0 +1,80 @@
+[12:49:07] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1635
+[12:49:18] [INFO] [agent_loop] Calling tool: search
+[12:49:18] [INFO] [tools_search] Query: "Mirny Ice Station aircraft destroyed fire refueling waterlog" -> Google/Serper (LLM:google)
+[12:49:20] [INFO] [tools_search] Query: "Mirny Antarctic station plane crash fire refueling" -> Google/Serper (LLM:google)
+[12:49:24] [INFO] [agent_loop] Round 2, elapsed 17s, tokens 3823
+[12:49:34] [INFO] [agent_loop] Round 3, elapsed 27s, tokens 4195
+[12:49:47] [INFO] [agent_loop] Calling tool: visit
+[12:50:05] [INFO] [tools_visit] Visit: "https://aviation-safety.net/wikibase/327048" -> Jina Reader
+[12:50:09] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/crash/ground-fire-avia-14pt-mirny-3-killed" -> Jina Reader
+[12:50:23] [INFO] [agent_loop] Round 4, elapsed 75s, tokens 4995
+[12:50:37] [INFO] [agent_loop] Round 5, elapsed 90s, tokens 5411
+[12:50:54] [INFO] [agent_loop] Round 6, elapsed 106s, tokens 5935
+[12:51:16] [INFO] [agent_loop] Round 7, elapsed 129s, tokens 6252
+[12:51:23] [INFO] [agent_loop] Calling tool: search
+[12:51:23] [INFO] [tools_search] Query: ""runway cones" Antarctica crash" -> Google/Serper (LLM:google)
+[12:51:24] [INFO] [tools_search] Query: "waterlogged runway tailwind antarctic accident" -> Google/Serper (LLM:google)
+[12:51:26] [INFO] [tools_search] Query: "collision with runway cones stall takeoff" -> Google/Serper (LLM:google)
+[12:51:27] [INFO] [agent_loop] Round 8, elapsed 140s, tokens 8306
+[12:51:54] [INFO] [agent_loop] Calling tool: search
+[12:51:54] [INFO] [tools_search] Query: "CCCP-52066" -> Google/Serper (LLM:google)
+[12:51:56] [INFO] [tools_search] Query: "Avia 14PT Mirny accident" -> Google/Serper (LLM:google)
+[12:51:58] [INFO] [agent_loop] Round 9, elapsed 170s, tokens 10711
+[12:52:15] [INFO] [agent_loop] Round 10, elapsed 187s, tokens 11021
+[12:52:27] [INFO] [agent_loop] Calling tool: search
+[12:52:27] [INFO] [tools_search] Query: "Mirny Ice Station fire refueling 1989 takeoff accident" -> Google/Serper (LLM:google)
+[12:52:29] [INFO] [tools_search] Query: "CCCP-52066 prior accident" -> Google/Serper (LLM:google)
+[12:52:32] [INFO] [agent_loop] Round 11, elapsed 205s, tokens 13574
+[12:52:43] [INFO] [agent_loop] Round 12, elapsed 216s, tokens 13980
+[12:52:59] [INFO] [agent_loop] Round 13, elapsed 232s, tokens 14657
+[12:53:10] [INFO] [agent_loop] Calling tool: search
+[12:53:10] [INFO] [tools_search] Query: "Mirny waterlogged runway aircraft accident" -> Google/Serper (LLM:google)
+[12:53:12] [INFO] [agent_loop] Round 14, elapsed 244s, tokens 15894
+[12:53:23] [INFO] [agent_loop] Calling tool: search
+[12:53:23] [INFO] [tools_search] Query: "столкновение с конусами ВПП Мирный" -> Bing/IQS (LLM:bing)
+[12:53:25] [INFO] [agent_loop] Round 15, elapsed 257s, tokens 19689
+[12:53:42] [INFO] [agent_loop] Calling tool: search
+[12:53:42] [INFO] [tools_search] Query: "waterlogged ice runway accident Antarctica crash" -> Google/Serper (LLM:google)
+[12:53:44] [INFO] [agent_loop] Round 16, elapsed 276s, tokens 21052
+[12:53:55] [INFO] [agent_loop] Calling tool: visit
+[12:54:04] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/zone/all-antarctica?page=1" -> Jina Reader
+[12:54:36] [INFO] [agent_loop] Round 17, elapsed 328s, tokens 22207
+[12:54:47] [INFO] [agent_loop] Calling tool: search
+[12:54:47] [INFO] [tools_search] Query: ""destroyed in a fire during refueling" Mirny" -> Google/Serper (LLM:google)
+[12:54:49] [INFO] [tools_search] Poor Google results for '"destroyed in a fire during refueling" Mirny', trying Bing/IQS fallback
+[12:54:49] [INFO] [agent_loop] Round 18, elapsed 342s, tokens 23582
+[12:55:02] [INFO] [agent_loop] Round 19, elapsed 355s, tokens 23944
+[12:55:18] [INFO] [agent_loop] Calling tool: search
+[12:55:18] [INFO] [tools_search] Query: "Mirny Ice Station airplane crash takeoff" -> Google/Serper (LLM:google)
+[12:55:19] [INFO] [agent_loop] Round 20, elapsed 372s, tokens 25507
+[12:55:29] [INFO] [agent_loop] Calling tool: visit
+[12:55:35] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/crash/crash-lisunov-li-2-mirny-ice-station-0" -> Jina Reader
+[12:55:48] [INFO] [agent_loop] Round 21, elapsed 401s, tokens 26163
+[12:56:00] [INFO] [agent_loop] Calling tool: search
+[12:56:00] [INFO] [tools_search] Query: "CCCP-52066 авария взлет" -> Bing/IQS (LLM:bing)
+[12:56:01] [INFO] [agent_loop] Round 22, elapsed 414s, tokens 28416
+[12:56:08] [INFO] [agent_loop] Round 23, elapsed 421s, tokens 28670
+[12:56:34] [INFO] [agent_loop] Calling tool: search
+[12:56:34] [INFO] [tools_search] Query: "катастрофа самолета Мирный раскисшая полоса попутный ветер к" -> Bing/IQS (LLM:bing)
+[12:56:35] [INFO] [agent_loop] Round 24, elapsed 448s, tokens 31381
+[12:56:39] [INFO] [agent_loop] Calling tool: search
+[12:56:39] [INFO] [tools_search] Query: ""collision with runway cones"" -> Google/Serper (LLM:google)
+[12:56:41] [INFO] [tools_search] Poor Google results for '"collision with runway cones"', trying Bing/IQS fallback
+[12:56:42] [INFO] [tools_search] Query: ""столкновение с конусами" авиакатастрофа" -> Bing/IQS (LLM:bing)
+[12:56:43] [INFO] [agent_loop] Round 25, elapsed 455s, tokens 37974
+[12:57:04] [INFO] [agent_loop] Calling tool: search
+[12:57:04] [INFO] [tools_search] Query: ""waterlogged runway" collided with cones" -> Google/Serper (LLM:google)
+[12:57:05] [INFO] [tools_search] Query: "hit runway cones aircraft" -> Google/Serper (LLM:google)
+[12:57:06] [INFO] [agent_loop] Round 26, elapsed 479s, tokens 40791
+[12:57:14] [INFO] [agent_loop] Calling tool: search
+[12:57:14] [INFO] [tools_search] Query: "Mirny Il-18 crash" -> Google/Serper (LLM:google)
+[12:57:15] [INFO] [tools_search] Query: "Mirny An-12 crash" -> Google/Serper (LLM:google)
+[12:57:17] [INFO] [agent_loop] Round 27, elapsed 489s, tokens 42936
+[12:57:38] [INFO] [agent_loop] Round 28, elapsed 511s, tokens 43960
+[12:57:50] [INFO] [agent_loop] Calling tool: search
+[12:57:50] [INFO] [tools_search] Query: "CCCP-52066 fire refueling Mirny cause" -> Google/Serper (LLM:google)
+[12:57:51] [INFO] [agent_loop] Round 29, elapsed 524s, tokens 45434
+[12:58:05] [INFO] [agent_loop] Round 30, elapsed 538s, tokens 46048
+[13:14:12] [INFO] [agent_loop] Calling tool: visit
+[13:14:17] [INFO] [tools_visit] Visit: "https://www.baaa-acro.com/crash/crash-ilyushin-ii-76md-mirny-11-killed" -> Jina Reader
+[13:14:42] [WARNING] [agent_loop] Timeout after 1535s at round 31

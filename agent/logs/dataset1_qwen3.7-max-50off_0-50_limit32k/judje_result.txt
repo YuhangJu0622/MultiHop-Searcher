@@ -1,0 +1,29 @@
+============================================================
+
+[Exact Match] Accuracy: 32/50 = 64.00%
+[Semantic]    Accuracy: 36/50 = 72.00%
+              (LLM saved 4 answers that failed exact match)
+
+Avg time: 432.4s  |  Total time: 21622s
+
+--- 真正的错题 (Semantic Wrong: 14) ---
+  Q36: predicted='35'  expected='32'
+  Q48: predicted='0'  expected='1'
+  Q28: predicted='New Girl'  expected="You're the Worst"
+  Q11: predicted='<think>\nLet me think about this problem carefully. 省略大量思考文本. For Miguel de la Madrid\n</think>'  expected='Francesco Cossiga'
+  Q34: predicted="I was unable to find the specific school that matches all the criteria in your question through my searches. The question appears to be asking about a UK school formed in the 1990s (possibly 1992) by merging a girls' and boys' school, where the new coeducational school was given aLatin name, but I could not identify the specific institution or verify the English name of the girls' school from multiple sources."  expected='Convent of Our Lady of Mercy'
+  Q46: predicted='<think>\n省略大量思考文本</think>'  expected='Aarti Bajaj'
+  Q31: predicted='2020'  expected='2018'
+  Q42: predicted='Munhwa Broadcasting Corporation'  expected='Korean Broadcasting System'
+  Q15: predicted='1983'  expected='1979'
+  Q2: predicted='radar'  expected='FM radio'
+  Q41: predicted='2018 Press Releases'  expected='Federal Reserve Board - 2018 Press Releases'
+  Q5: predicted='Vox'  expected='Phoenix New Times'
+  Q45: predicted='Stamp Yearbook'  expected='2024 Stamp Yearbook'
+  Q33: predicted='古罗马'  expected='罗马帝国'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 4) ---
+  Q24: predicted='天风姤'  expected='姤卦'
+  Q7: predicted='Washington Union Station'  expected='Union Station'
+  Q32: predicted='Populus simonii'  expected='Populus simonii Carrière'
+  Q17: predicted='今日俄罗斯通讯社'  expected='今日俄罗斯'

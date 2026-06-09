@@ -1,0 +1,18 @@
+[14:46:26] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1819
+[14:47:25] [INFO] [agent_loop] Calling tool: search
+[14:47:25] [INFO] [tools_search] Query: "中国西南部发现的超过百万年古人类遗骸" -> Google/Serper (LLM:google)
+[14:47:26] [INFO] [tools_search] Query: "Yuanmou Man age" -> Google/Serper (LLM:google)
+[14:47:28] [INFO] [tools_search] Query: "Dali Man site" -> Google/Serper (LLM:google)
+[14:47:29] [INFO] [tools_search] Query: "Dali Man isotope dating" -> Google/Serper (LLM:google)
+[14:47:31] [INFO] [tools_search] Query: "Dali Man journal cover" -> Google/Serper (LLM:google)
+[14:47:32] [INFO] [tools_search] Query: "Lantian Man dating method" -> Google/Serper (LLM:google)
+[14:47:34] [INFO] [agent_loop] Round 2, elapsed 68s, tokens 13093
+[14:48:04] [INFO] [agent_loop] Early answer blocked at round 2, requesting verification
+[14:48:04] [INFO] [agent_loop] Round 3, elapsed 97s, tokens 15659
+[14:48:26] [INFO] [agent_loop] Calling tool: search
+[14:48:26] [INFO] [tools_search] Query: "大理人 期刊封面" -> Bing/IQS (LLM:bing)
+[14:48:27] [INFO] [tools_search] Query: "Dali Man journal cover" -> Google/Serper (LLM:google)
+[14:48:28] [INFO] [tools_search] Query: "Dali Man Nature" -> Google/Serper (LLM:google)
+[14:48:30] [INFO] [tools_search] Query: "Dali Man scientific journal" -> Google/Serper (LLM:google)
+[14:48:31] [INFO] [agent_loop] Round 4, elapsed 125s, tokens 22779
+[14:48:48] [INFO] [agent_loop] Got answer at round 4: 大理人

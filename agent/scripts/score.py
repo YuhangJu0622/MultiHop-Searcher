@@ -3,15 +3,24 @@ Offline scoring script: compare agent results against reference answers.
 
 Usage:
     python agent/scripts/score.py --results agent/results.jsonl --ref agent/data/data_stage_1.jsonl
-    python agent/scripts/score.py --results agent/results.jsonl --ref agent/data/data_stage_2.jsonl
+    # 启用 LLM 含义匹配
+    python agent/scripts/score.py --results agent/results.jsonl --ref agent/data/data_stage_1.jsonl --use-llm
 """
 import argparse
 import json
+import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+_env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(_env_path)
 
 
 def normalize_answer(answer: str) -> str:
     """Normalize answer for comparison: lowercase, strip, convert integer floats."""
-    answer = answer.strip().lower()
+    answer = str(answer).strip().lower()
     try:
         num = float(answer)
         if num == int(num):
@@ -21,10 +30,63 @@ def normalize_answer(answer: str) -> str:
     return answer
 
 
+def _build_llm_client():
+    """Build OpenAI client and extra_body once, reused across threads."""
+    from openai import OpenAI
+
+    base_url = os.getenv("AGENT_BASE_URL", "")
+    api_key = os.getenv("AGENT_API_KEY", "")
+    model = os.getenv("AGENT_MODEL", "qwen3.5-plus")
+
+    if not base_url or not api_key:
+        print("警告: 未设置 AGENT_BASE_URL 或 AGENT_API_KEY, LLM 判定可能失败。")
+
+    client = OpenAI(base_url=base_url, api_key=api_key)
+
+    extra_body = None
+    if "nodesk" in base_url.lower():
+        extra_body = {
+            "channel": "DMX",
+            "channel_url": "https://www.dmxapi.cn/v1/chat/completions",
+        }
+    return client, model, extra_body
+
+
+def is_semantically_correct(predicted: str, expected: str, client, model: str, extra_body) -> bool:
+    prompt = f"""你需要作为一个公正的裁判，评估模型针对问题给出的预测答案是否与标准参考答案含义相同。
+
+[预测答案]: {predicted}
+[标准答案]: {expected}
+
+判断规则：
+1. 如果预测答案与标准答案表达了相同的核心含义、人物、地点或事实，视为正确。
+2. 如果预测答案包含了多余的废话，只要核心答案存在且正确，依然视为正确。
+3. 语言不同但含义相同（例如："美国"和"United States"）视为正确。
+4. 缩写和全称对应视为正确。
+5. 如果预测答案缺少核心信息，或者表达了不同的含义，视为错误。
+
+请仔细思考，并仅回复 "YES" 或 "NO"。"""
+
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.0,
+            max_tokens=10,
+            extra_body=extra_body,
+        )
+        result = response.choices[0].message.content.strip().upper()
+        return "YES" in result
+    except Exception as e:
+        print(f"LLM 判定失败 (predicted={predicted!r}): {e}")
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser(description="Score agent results against reference answers")
     parser.add_argument("--results", required=True, help="Path to results JSONL (must have 'id' and 'answer')")
     parser.add_argument("--ref", required=True, help="Path to reference JSONL (must have 'id' and 'answer')")
+    parser.add_argument("--use-llm", action="store_true", help="Use LLM to check semantic correctness for exact-match failures")
     args = parser.parse_args()
 
     # Load reference answers
@@ -53,10 +115,14 @@ def main():
         print(f"No results found in {args.results}")
         return
 
-    # Score
-    correct = 0
+    exact_correct = 0
+    semantic_correct = 0
     total = 0
-    wrong = []
+
+    strict_wrong = []
+    semantic_wrong = []
+    saved_by_llm = []
+
     errors = []
     elapsed_list = []
 
@@ -75,30 +141,69 @@ def main():
             errors.append({"id": qid, "error": r["error"]})
 
         if predicted == expected:
-            correct += 1
+            exact_correct += 1
+            semantic_correct += 1
         else:
-            wrong.append({"id": qid, "predicted": r["answer"], "expected": ref[qid]})
+            wrong_item = {"id": qid, "predicted": r["answer"], "expected": ref[qid]}
+            strict_wrong.append(wrong_item)
+
+    if args.use_llm and strict_wrong:
+        client, model, extra_body = _build_llm_client()
+        print(f"并行 LLM 判断中 ({len(strict_wrong)} 道题)...")
+
+        def _judge(item):
+            qid = item["id"]
+            ok = is_semantically_correct(item["predicted"], item["expected"], client, model, extra_body)
+            return qid, item, ok
+
+        with ThreadPoolExecutor(max_workers=20) as pool:
+            futures = {pool.submit(_judge, w): w for w in strict_wrong}
+            for future in as_completed(futures):
+                qid, item, ok = future.result()
+                if ok:
+                    semantic_correct += 1
+                    saved_by_llm.append(item)
+                    print(f"  Q{qid}: ✓ LLM 判定正确")
+                else:
+                    semantic_wrong.append(item)
+                    print(f"  Q{qid}: ✗ LLM 判定错误")
 
     # Print report
-    print(f"{'=' * 60}")
+    print(f"\n{'=' * 60}")
     print(f"Results: {args.results}")
     print(f"Reference: {args.ref}")
     print(f"{'=' * 60}")
 
     if total > 0:
-        print(f"\nAccuracy: {correct}/{total} = {correct / total:.2%}")
+        print(f"\n[Exact Match] Accuracy: {exact_correct}/{total} = {exact_correct / total:.2%}")
+
+        if args.use_llm:
+            print(f"[Semantic]    Accuracy: {semantic_correct}/{total} = {semantic_correct / total:.2%}")
+            saved_count = semantic_correct - exact_correct
+            print(f"              (LLM saved {saved_count} answers that failed exact match)")
     else:
         print("\nNo matched questions to score.")
         return
 
     if elapsed_list:
         avg = sum(elapsed_list) / len(elapsed_list)
-        print(f"Avg time: {avg:.1f}s  |  Total time: {sum(elapsed_list):.0f}s")
+        print(f"\nAvg time: {avg:.1f}s  |  Total time: {sum(elapsed_list):.0f}s")
 
-    if wrong:
-        print(f"\n--- Wrong answers ({len(wrong)}) ---")
-        for w in wrong:
-            print(f"  Q{w['id']}: predicted={w['predicted']!r}  expected={w['expected']!r}")
+    if args.use_llm:
+        if semantic_wrong:
+            print(f"\n--- 真正的错题 (Semantic Wrong: {len(semantic_wrong)}) ---")
+            for w in semantic_wrong:
+                print(f"  Q{w['id']}: predicted={w['predicted']!r}  expected={w['expected']!r}")
+
+        if saved_by_llm:
+            print(f"\n--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: {len(saved_by_llm)}) ---")
+            for w in saved_by_llm:
+                print(f"  Q{w['id']}: predicted={w['predicted']!r}  expected={w['expected']!r}")
+    else:
+        if strict_wrong:
+            print(f"\n--- Wrong answers ({len(strict_wrong)}) ---")
+            for w in strict_wrong:
+                print(f"  Q{w['id']}: predicted={w['predicted']!r}  expected={w['expected']!r}")
 
     if errors:
         print(f"\n--- Errors ({len(errors)}) ---")

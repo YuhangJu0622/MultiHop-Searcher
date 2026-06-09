@@ -1,0 +1,10 @@
+[14:38:01] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1823
+[14:40:23] [INFO] [agent_loop] Calling tool: search
+[14:40:23] [INFO] [tools_search] Query: "欧洲葡萄酒产区 1835 vintage" -> Google/Serper (LLM:google)
+[14:40:29] [INFO] [tools_search] Query: "Bordeaux 1835 vintage" -> Google/Serper (LLM:google)
+[14:40:37] [INFO] [tools_search] Query: "Boxer Rebellion 1900 eclipse frequency" -> Google/Serper (LLM:google)
+[14:40:45] [INFO] [tools_search] Query: "Tianjin Treaty of Tianjin 1858" -> Bing/IQS (LLM:bing)
+[14:40:46] [INFO] [tools_search] Query: "Tianjin special economic zone" -> Bing/IQS (LLM:bing)
+[14:40:47] [INFO] [tools_search] Query: "义和团运动纪念碑 Tianjin" -> Bing/IQS (LLM:bing)
+[14:40:48] [INFO] [agent_loop] Round 2, elapsed 167s, tokens 21560
+[14:41:06] [INFO] [agent_loop] Got answer at round 2: 义和团运动纪念碑

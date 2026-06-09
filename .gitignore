@@ -17,7 +17,14 @@ build/
 .vscode/
 
 # Logs
-agent/logs/
+# agent/logs/
 
 # Egg-info
 *.egg-info/
+
+# Large data files
+training/data/huggingface_data/ori_data/
+training/data/huggingface_data/convert_192k/*.jsonl
+training/data/huggingface_data/convert_30_epochs/*.jsonl
+training/data/*
+

@@ -1,0 +1,21 @@
+[10:59:15] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1661
+[10:59:23] [INFO] [agent_loop] Calling tool: search
+[10:59:23] [INFO] [tools_search] Query: "2000年初 动漫 卫视 盗贼 美女 警察 中国大陆播出" -> Bing/IQS (LLM:bing)
+[10:59:24] [INFO] [tools_search] Query: "猫眼三姐妹 大陆配音 男主角 配音员" -> Bing/IQS (LLM:bing)
+[10:59:26] [INFO] [tools_search] Query: "2007年电视剧 贞观之治 配音演员表" -> Bing/IQS (LLM:bing)
+[10:59:27] [INFO] [agent_loop] Round 2, elapsed 12s, tokens 9419
+[10:59:39] [INFO] [agent_loop] Calling tool: search
+[10:59:39] [INFO] [tools_search] Query: "猫眼三姐妹 中文版 内海俊夫 配音演员" -> Bing/IQS (LLM:bing)
+[10:59:41] [INFO] [tools_search] Query: "猫眼三姐妹 国语配音 内海俊夫 配音员是谁" -> Bing/IQS (LLM:bing)
+[10:59:42] [INFO] [tools_search] Query: "猫眼三姐妹 大陆版配音演员表" -> Bing/IQS (LLM:bing)
+[10:59:44] [INFO] [agent_loop] Round 3, elapsed 29s, tokens 17319
+[10:59:51] [INFO] [agent_loop] Calling tool: visit
+[11:00:05] [INFO] [tools_visit] Visit: "https://m.douban.com/group/topic/263075904/" -> Jina Reader
+[11:00:21] [INFO] [tools_visit] Visit: "https://www.kepuchina.cn/article/articleinfo?ar_id=332718&business_type=100&classify=0" -> Jina Reader
+[11:00:46] [INFO] [agent_loop] Round 4, elapsed 91s, tokens 19846
+[11:01:06] [INFO] [agent_loop] Round 5, elapsed 111s, tokens 21197
+[11:01:09] [INFO] [agent_loop] Calling tool: search
+[11:01:09] [INFO] [tools_search] Query: "猫眼三姐妹 中国卫视 播出 2000年" -> Bing/IQS (LLM:bing)
+[11:01:11] [INFO] [tools_search] Query: "配音演员张欣 猫眼三姐妹 贞观之治 长孙无忌" -> Bing/IQS (LLM:bing)
+[11:01:12] [INFO] [agent_loop] Round 6, elapsed 117s, tokens 26532
+[11:01:18] [INFO] [agent_loop] Got answer at round 6: 长孙无忌

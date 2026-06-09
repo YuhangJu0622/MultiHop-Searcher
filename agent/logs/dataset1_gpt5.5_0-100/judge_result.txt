@@ -1,0 +1,42 @@
+============================================================
+
+[Exact Match] Accuracy: 39/70 = 55.71%
+[Semantic]    Accuracy: 47/70 = 67.14%
+              (LLM saved 8 answers that failed exact match)
+
+Avg time: 103.4s  |  Total time: 7238s
+
+--- 真正的错题 (Semantic Wrong: 23) ---
+  Q35: predicted='2000'  expected='1995'
+  Q3: predicted='147'  expected='591'
+  Q4: predicted='Can’t verify without the next search results'  expected='Slow Love'
+  Q38: predicted='许昌人'  expected='北京人'
+  Q20: predicted='Girolamo Savonarola, O.P.'  expected='Jean Tisserand, O.F.M.'
+  Q5: predicted='The Verge'  expected='Phoenix New Times'
+  Q6: predicted='李世民'  expected='长孙无忌'
+  Q15: predicted='1969'  expected='1979'
+  Q17: predicted='中央广播电视总台'  expected='今日俄罗斯'
+  Q47: predicted='北京市朝阳区人朝分实验学校'  expected='乐清市知临中学'
+  Q39: predicted='深圳市'  expected='广州'
+  Q14: predicted='Quest for the Lost Civilization'  expected='I Survived I Kissed Dating Goodbye'
+  Q32: predicted='Pinus sylvestris var. mongolica Litv.'  expected='Populus simonii Carrière'
+  Q48: predicted='17'  expected='1'
+  Q50: predicted='Claire Robinson'  expected='Adrianne Calvo'
+  Q68: predicted='1985'  expected='1972'
+  Q62: predicted='Boccaccio'  expected='Binochios'
+  Q64: predicted='Yokohama F. Marinos'  expected='FC Seoul'
+  Q8: predicted='Ferroptosis is involved in the pathogenesis of pulmonary fibrosis'  expected='Inhibition of ferroptosis and iron accumulation alleviates pulmonary fibrosis in a bleomycin model'
+  Q33: predicted='古罗马文明'  expected='罗马帝国'
+  Q69: predicted='皇家马德里足球俱乐部'  expected='奥格斯堡青年队'
+  Q34: predicted="St Joseph's School"  expected='Convent of Our Lady of Mercy'
+  Q61: predicted='SAS version 9.4'  expected='9.1'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 8) ---
+  Q7: predicted='Washington Union Station'  expected='Union Station'
+  Q24: predicted='天风姤卦'  expected='姤卦'
+  Q0: predicted='RepRapPro Limited'  expected='RepRap Professional Limited'
+  Q60: predicted="Fontana dell'Acqua Paola"  expected='Fontana dell’Acqua Paola'
+  Q57: predicted='Thomas E. Rice'  expected='Tom Rice'
+  Q26: predicted='Christopher Rodriguez'  expected='Kit Rodriguez'
+  Q63: predicted='每瓦性能'  expected='效能功耗比'
+  Q58: predicted='Bavarian National Museum'  expected='Bayerisches Nationalmuseum'

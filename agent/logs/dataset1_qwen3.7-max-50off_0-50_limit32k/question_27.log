@@ -1,0 +1,16 @@
+[17:19:02] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1835
+[17:19:18] [INFO] [agent_loop] Calling tool: search
+[17:19:18] [INFO] [tools_search] Query: "钱学森 归国后 发表文章 监禁经历 美国" -> Bing/IQS (LLM:bing)
+[17:19:19] [INFO] [tools_search] Query: "中国 加强国家档案工作 决定 颁布年份" -> Bing/IQS (LLM:bing)
+[17:19:21] [INFO] [tools_search] Query: "British Foreign Office archives digitized academic publisher" -> Google/Serper (LLM:google)
+[17:19:24] [INFO] [agent_loop] Round 2, elapsed 22s, tokens 8298
+[17:19:55] [INFO] [agent_loop] Calling tool: search
+[17:19:55] [INFO] [tools_search] Query: "钱学森 1956年 发表文章 美国 拘留 监禁" -> Bing/IQS (LLM:bing)
+[17:19:56] [INFO] [tools_search] Query: "Adam Matthew Digital Foreign Office archives South Asia Japa" -> Google/Serper (LLM:google)
+[17:19:59] [INFO] [tools_search] Query: "British Foreign Office files Middle East Suez Canal Ottoman " -> Google/Serper (LLM:google)
+[17:20:01] [INFO] [agent_loop] Round 3, elapsed 59s, tokens 13344
+[17:22:29] [INFO] [agent_loop] Calling tool: search
+[17:22:29] [INFO] [tools_search] Query: "Adam Matthew Digital Middle East Ottoman Suez Canal Cold War" -> Google/Serper (LLM:google)
+[17:22:31] [INFO] [tools_search] Query: "钱学森 1956年1月 人民日报 我在美国的遭遇" -> Bing/IQS (LLM:bing)
+[17:22:33] [INFO] [tools_search] Query: "Foreign Office Files Middle East 1956 Suez Crisis Adam Matth" -> Google/Serper (LLM:google)
+[17:22:35] [WARNING] [agent_loop] Token limit reached at round 3

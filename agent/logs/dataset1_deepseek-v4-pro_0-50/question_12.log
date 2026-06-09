@@ -1,0 +1,55 @@
+[11:00:36] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1746
+[11:02:30] [INFO] [agent_loop] Calling tool: search
+[11:02:30] [INFO] [tools_search] Query: "以主义为名的青年社团 下属 秘密组织" -> Google/Serper (LLM:google)
+[11:02:32] [INFO] [tools_search] Query: ""以主义为名" 青年 社团 秘密 组织" -> Google/Serper (LLM:google)
+[11:02:34] [INFO] [tools_search] Query: "青年社团 秘密组织 技术合作 西方大国" -> Google/Serper (LLM:google)
+[11:02:36] [INFO] [agent_loop] Round 2, elapsed 120s, tokens 14797
+[11:02:54] [INFO] [agent_loop] Calling tool: search
+[11:02:54] [INFO] [tools_search] Query: "军统 前身 三民主义力行社 特务处" -> Google/Serper (LLM:google)
+[11:02:56] [INFO] [tools_search] Query: "中华复兴社特务处" -> Google/Serper (LLM:google)
+[11:02:57] [INFO] [tools_search] Query: "国防部保密局 轮流主讲 政治理论" -> Google/Serper (LLM:google)
+[11:02:59] [INFO] [agent_loop] Round 3, elapsed 144s, tokens 22048
+[11:03:27] [INFO] [agent_loop] Calling tool: search
+[11:03:27] [INFO] [tools_search] Query: "保密局 轮流主讲" -> Google/Serper (LLM:google)
+[11:03:28] [INFO] [tools_search] Query: "国防部保密局 政治理论 轮流主讲" -> Google/Serper (LLM:google)
+[11:03:30] [INFO] [tools_search] Query: "保密局 学习小组 轮流主讲" -> Google/Serper (LLM:google)
+[11:03:32] [INFO] [agent_loop] Round 4, elapsed 176s, tokens 29755
+[11:04:02] [INFO] [agent_loop] Calling tool: search
+[11:04:02] [INFO] [tools_search] Query: ""轮流主讲" "政治理论" "业务知识"" -> Google/Serper (LLM:google)
+[11:04:03] [INFO] [tools_search] Query: ""轮流主讲" 政治 理论 业务" -> Google/Serper (LLM:google)
+[11:04:04] [INFO] [agent_loop] Round 5, elapsed 209s, tokens 35329
+[11:04:39] [INFO] [agent_loop] Round 6, elapsed 243s, tokens 37747
+[11:04:42] [INFO] [agent_loop] Round 7, elapsed 246s, tokens 37960
+[11:04:48] [INFO] [agent_loop] Calling tool: search
+[11:04:48] [INFO] [tools_search] Query: "query1" -> Google/Serper (LLM:google)
+[11:04:50] [INFO] [tools_search] Query: "query2" -> Google/Serper (LLM:google)
+[11:04:51] [INFO] [agent_loop] Round 8, elapsed 256s, tokens 39817
+[11:04:55] [INFO] [agent_loop] Calling tool: search
+[11:04:55] [INFO] [tools_search] Query: "轮流主讲 政治理论 业务知识 历史 机构" -> Google/Serper (LLM:google)
+[11:04:58] [INFO] [tools_search] Query: "轮流主讲政治理论业务知识" -> Google/Serper (LLM:google)
+[11:05:00] [INFO] [agent_loop] Round 9, elapsed 264s, tokens 43320
+[11:05:23] [INFO] [agent_loop] Calling tool: search
+[11:05:23] [INFO] [tools_search] Query: "国防部情报局 政治学习 轮流" -> Google/Serper (LLM:google)
+[11:05:25] [INFO] [tools_search] Query: "情报局 轮流主讲 政治理论" -> Google/Serper (LLM:google)
+[11:05:27] [INFO] [agent_loop] Round 10, elapsed 291s, tokens 48456
+[11:05:53] [INFO] [agent_loop] Round 11, elapsed 317s, tokens 50214
+[11:05:57] [INFO] [agent_loop] Calling tool: search
+[11:05:57] [INFO] [tools_search] Query: "保密局 政治教育 业务学习" -> Google/Serper (LLM:google)
+[11:05:59] [INFO] [tools_search] Query: "军统 轮流主讲 政治理论" -> Google/Serper (LLM:google)
+[11:06:01] [INFO] [agent_loop] Round 12, elapsed 325s, tokens 54008
+[11:07:23] [INFO] [agent_loop] Calling tool: search
+[11:07:23] [INFO] [tools_search] Query: "1949年 民航 资产 人员 归属 变动" -> Google/Serper (LLM:google)
+[11:07:24] [INFO] [tools_search] Query: "大规模 民航 资产 归属 变动" -> Google/Serper (LLM:google)
+[11:07:26] [INFO] [agent_loop] Round 13, elapsed 410s, tokens 62313
+[11:07:43] [INFO] [agent_loop] Calling tool: search
+[11:07:43] [INFO] [tools_search] Query: ""军统局" 轮流 主讲" -> Google/Serper (LLM:google)
+[11:07:45] [INFO] [tools_search] Query: "情报局 轮流 主讲 政治" -> Google/Serper (LLM:google)
+[11:07:46] [INFO] [agent_loop] Round 14, elapsed 430s, tokens 67200
+[11:08:34] [INFO] [agent_loop] Calling tool: search
+[11:08:34] [INFO] [tools_search] Query: "三民主义力行社 特务处 1949 迁台" -> Google/Serper (LLM:google)
+[11:08:36] [INFO] [tools_search] Query: "轮流主讲 政治理论 业务知识 军统" -> Google/Serper (LLM:google)
+[11:08:37] [INFO] [agent_loop] Round 15, elapsed 481s, tokens 74098
+[11:09:13] [INFO] [agent_loop] Calling tool: visit
+[11:09:17] [INFO] [tools_visit] Visit: "https://zh.wikipedia.org/wiki/%E5%9C%8B%E6%B0%91%E6%94%BF%E5%BA%9C%E8%BB%8D%E4%BA%8B%E5%A7%94%E5%93%A1%E6%9C%83%E8%AA%BF%E6%9F%A5%E7%B5%B1%E8%A8%88%E5%B1%80" -> Jina Reader
+[11:09:23] [INFO] [tools_visit] Visit: "https://baike.baidu.com/item/%E5%9B%BD%E6%B0%91%E6%94%BF%E5%BA%9C%E5%86%9B%E4%BA%8B%E5%A7%94%E5%91%98%E4%BC%9A%E8%B0%83%E6%9F%A5%E7%BB%9F%E8%AE%A1%E5%B1%80" -> Jina Reader
+[11:11:13] [WARNING] [agent_loop] Timeout after 637s at round 16

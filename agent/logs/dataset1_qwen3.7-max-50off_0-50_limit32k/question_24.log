@@ -1,0 +1,19 @@
+[17:17:14] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1848
+[17:17:33] [INFO] [agent_loop] Calling tool: search
+[17:17:33] [INFO] [tools_search] Query: "国产动画长片 欧洲动画节 提名 2024 2025 星象" -> Bing/IQS (LLM:bing)
+[17:17:35] [INFO] [tools_search] Query: "Chinese animated feature film European animation festival no" -> Google/Serper (LLM:google)
+[17:17:37] [INFO] [tools_search] Query: "东方七宿 青龙 绢本舆图 10世纪 海外大学" -> Bing/IQS (LLM:bing)
+[17:17:39] [INFO] [tools_search] Query: "勿用取女 卦辞 乾为上卦" -> Bing/IQS (LLM:bing)
+[17:17:40] [INFO] [agent_loop] Round 2, elapsed 26s, tokens 11224
+[17:17:55] [INFO] [agent_loop] Calling tool: search
+[17:17:55] [INFO] [tools_search] Query: "落凡尘 动画电影 星象 二十八宿 东方七宿" -> Bing/IQS (LLM:bing)
+[17:17:56] [INFO] [tools_search] Query: "敦煌星图 绢本 大学 收藏 二十八宿" -> Bing/IQS (LLM:bing)
+[17:17:57] [INFO] [tools_search] Query: "周易 诸侯 父宅 地下密室 卜算" -> Bing/IQS (LLM:bing)
+[17:17:58] [INFO] [tools_search] Query: "落凡尘 动画 苍龙 青龙 星宿" -> Bing/IQS (LLM:bing)
+[17:18:00] [INFO] [agent_loop] Round 3, elapsed 46s, tokens 20959
+[17:18:27] [INFO] [agent_loop] Calling tool: search
+[17:18:27] [INFO] [tools_search] Query: "敦煌星图 绢本 大学收藏 东方苍龙 星宿图" -> Bing/IQS (LLM:bing)
+[17:18:29] [INFO] [tools_search] Query: "silk star map Chinese constellation university collection 10" -> Google/Serper (LLM:google)
+[17:18:30] [INFO] [tools_search] Query: "周文王 父亲 宅邸 地下 密室 占卜 周易" -> Bing/IQS (LLM:bing)
+[17:18:31] [INFO] [tools_search] Query: "乾卦 苍龙 东方七宿 易经 关联" -> Bing/IQS (LLM:bing)
+[17:18:32] [WARNING] [agent_loop] Token limit reached at round 3

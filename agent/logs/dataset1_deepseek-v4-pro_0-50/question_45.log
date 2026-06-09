@@ -1,0 +1,74 @@
+[12:47:05] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1638
+[12:47:30] [INFO] [agent_loop] Calling tool: search
+[12:47:30] [INFO] [tools_search] Query: "James Webb Space Telescope commemorative stamp infrared imag" -> Google/Serper (LLM:google)
+[12:47:32] [INFO] [tools_search] Query: "JWST stamp issued 2023 2024 commemorative postal" -> Google/Serper (LLM:google)
+[12:47:33] [INFO] [agent_loop] Round 2, elapsed 28s, tokens 4211
+[12:48:23] [INFO] [agent_loop] Calling tool: search
+[12:48:23] [INFO] [tools_search] Query: "annual publication documents stories behind each postal issu" -> Google/Serper (LLM:google)
+[12:48:24] [INFO] [tools_search] Query: "USPS stamp yearbook stories behind each issue" -> Google/Serper (LLM:google)
+[12:48:26] [INFO] [agent_loop] Round 3, elapsed 81s, tokens 6950
+[12:48:50] [INFO] [agent_loop] Calling tool: visit
+[12:49:03] [INFO] [tools_visit] Visit: "https://www.collectspace.com/news/news-090822a-usps-webb-space-telescope-stamp-first-day-issue.html" -> Jina Reader
+[12:49:07] [INFO] [tools_visit] Visit: "https://www.jpl.nasa.gov/news/new-us-postal-service-stamps-feature-iconic-nasa-webb-images/" -> Jina Reader
+[12:49:07] [INFO] [tools_visit] Visit: "https://www.linns.com/news/usps-unveils-2025-hardcover-stamp-yearbook" -> Jina Reader
+[12:49:27] [INFO] [agent_loop] Round 4, elapsed 142s, tokens 9032
+[12:49:52] [INFO] [agent_loop] Calling tool: search
+[12:49:52] [INFO] [tools_search] Query: "James Webb Space Telescope stamp Royal Mail yearbook" -> Google/Serper (LLM:google)
+[12:49:55] [INFO] [tools_search] Query: "Webb telescope commemorative stamp 2024 yearbook" -> Google/Serper (LLM:google)
+[12:49:56] [INFO] [tools_search] Query: "JWST infrared image stamp yearbook 2023" -> Google/Serper (LLM:google)
+[12:49:58] [INFO] [agent_loop] Round 5, elapsed 173s, tokens 12925
+[12:50:05] [INFO] [agent_loop] Calling tool: search
+[12:50:05] [INFO] [tools_search] Query: "2024 Stamp Yearbook James Webb" -> Google/Serper (LLM:google)
+[12:50:07] [INFO] [tools_search] Query: "USPS 2024 Stamp Yearbook Pillars of Creation" -> Google/Serper (LLM:google)
+[12:50:09] [INFO] [agent_loop] Round 6, elapsed 184s, tokens 14891
+[12:50:19] [INFO] [agent_loop] Calling tool: visit
+[12:50:28] [INFO] [tools_visit] Visit: "https://store.usps.com/store/product/2024-stamp-yearbook-S_992420" -> Jina Reader
+[12:50:54] [INFO] [agent_loop] Round 7, elapsed 229s, tokens 15760
+[12:51:40] [INFO] [agent_loop] Calling tool: search
+[12:51:40] [INFO] [tools_search] Query: ""2024 Stamp Yearbook" Priority Mail" -> Google/Serper (LLM:google)
+[12:51:41] [INFO] [tools_search] Query: "Stamp Yearbook includes Priority Mail stamps" -> Google/Serper (LLM:google)
+[12:51:43] [INFO] [agent_loop] Round 8, elapsed 278s, tokens 19245
+[12:52:05] [INFO] [agent_loop] Round 9, elapsed 300s, tokens 19514
+[12:52:08] [INFO] [agent_loop] Calling tool: visit
+[12:52:15] [INFO] [tools_visit] Visit: "https://stampsforever.com/posts/unboxing-the-2024-stamp-yearbook" -> Jina Reader
+[12:52:35] [INFO] [agent_loop] Round 10, elapsed 330s, tokens 20029
+[12:52:46] [INFO] [agent_loop] Calling tool: search
+[12:52:46] [INFO] [tools_search] Query: "Royal Mail James Webb Space Telescope stamp 2023 commemorati" -> Google/Serper (LLM:google)
+[12:52:48] [INFO] [tools_search] Query: "UK James Webb stamp infrared image" -> Google/Serper (LLM:google)
+[12:52:50] [INFO] [agent_loop] Round 11, elapsed 345s, tokens 22283
+[12:53:12] [INFO] [agent_loop] Calling tool: search
+[12:53:12] [INFO] [tools_search] Query: "United Nations stamp James Webb Space Telescope 2024" -> Google/Serper (LLM:google)
+[12:53:13] [INFO] [tools_search] Query: "UNPA Webb telescope stamp" -> Google/Serper (LLM:google)
+[12:53:14] [INFO] [agent_loop] Round 12, elapsed 369s, tokens 24987
+[12:53:21] [INFO] [agent_loop] Calling tool: search
+[12:53:21] [INFO] [tools_search] Query: "Royal Mail 2023 James Webb stamp" -> Google/Serper (LLM:google)
+[12:53:22] [INFO] [tools_search] Query: ""Royal Mail" "James Webb" stamp" -> Google/Serper (LLM:google)
+[12:53:23] [INFO] [agent_loop] Round 13, elapsed 379s, tokens 27584
+[12:53:37] [INFO] [agent_loop] Calling tool: search
+[12:53:37] [INFO] [tools_search] Query: ""commemorative" "James Webb" stamp infrared" -> Google/Serper (LLM:google)
+[12:53:38] [INFO] [tools_search] Query: "commemorative stamp Webb telescope infrared image 2024" -> Google/Serper (LLM:google)
+[12:53:39] [INFO] [agent_loop] Round 14, elapsed 395s, tokens 29890
+[12:54:15] [INFO] [agent_loop] Calling tool: visit
+[12:54:21] [INFO] [tools_visit] Visit: "https://www.jpl.nasa.gov/news/new-us-postal-service-stamps-feature-iconic-nasa-webb-images/" -> Jina Reader
+[12:54:43] [INFO] [agent_loop] Round 15, elapsed 458s, tokens 32222
+[12:55:05] [INFO] [agent_loop] Calling tool: search
+[12:55:05] [INFO] [tools_search] Query: ""stories behind each postal issue"" -> Google/Serper (LLM:google)
+[12:55:07] [INFO] [tools_search] Poor Google results for '"stories behind each postal issue"', trying Bing/IQS fallback
+[12:55:08] [INFO] [tools_search] Query: ""stories behind each" stamp yearbook" -> Google/Serper (LLM:google)
+[12:55:10] [INFO] [agent_loop] Round 16, elapsed 485s, tokens 39610
+[12:55:30] [INFO] [agent_loop] Calling tool: search
+[12:55:30] [INFO] [tools_search] Query: ""small space particle impact" telescope" -> Google/Serper (LLM:google)
+[12:55:32] [INFO] [tools_search] Poor Google results for '"small space particle impact" telescope', trying Bing/IQS fallback
+[12:55:33] [INFO] [tools_search] Query: ""significant technical event" telescope micrometeoroid" -> Google/Serper (LLM:google)
+[12:55:34] [INFO] [tools_search] Poor Google results for '"significant technical event" telescope micrometeoroid', trying Bing/IQS fallback
+[12:55:35] [INFO] [agent_loop] Round 17, elapsed 510s, tokens 54711
+[12:55:54] [INFO] [agent_loop] Round 18, elapsed 530s, tokens 55651
+[12:55:57] [INFO] [agent_loop] Calling tool: search
+[12:55:57] [INFO] [tools_search] Query: "Canada Post James Webb telescope stamp 2024" -> Google/Serper (LLM:google)
+[12:55:58] [INFO] [tools_search] Query: "加拿大邮政 詹姆斯·韦伯 邮票" -> Bing/IQS (LLM:bing)
+[12:56:00] [INFO] [agent_loop] Round 19, elapsed 535s, tokens 58551
+[12:56:22] [INFO] [agent_loop] Calling tool: search
+[12:56:22] [INFO] [tools_search] Query: ""annual publication" "space telescope" stamp yearbook" -> Google/Serper (LLM:google)
+[12:56:24] [INFO] [tools_search] Query: ""commemorative postal item" James Webb" -> Google/Serper (LLM:google)
+[12:56:25] [INFO] [tools_search] Poor Google results for '"commemorative postal item" James Webb', trying Bing/IQS fallback
+[12:56:26] [WARNING] [agent_loop] Timeout after 561s at round 20

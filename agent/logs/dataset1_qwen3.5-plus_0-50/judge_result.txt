@@ -1,0 +1,31 @@
+============================================================
+
+[Exact Match] Accuracy: 30/50 = 60.00%
+[Semantic]    Accuracy: 35/50 = 70.00%
+              (LLM saved 5 answers that failed exact match)
+
+Avg time: 505.6s  |  Total time: 25281s
+
+--- 真正的错题 (Semantic Wrong: 15) ---
+  Q28: predicted='One Tree Hill'  expected="You're the Worst"
+  Q5: predicted='Rolling Stone'  expected='Phoenix New Times'
+  Q46: predicted='Sandra Oh'  expected='Aarti Bajaj'
+  Q31: predicted='2020'  expected='2018'
+  Q14: predicted='Memorial Drive'  expected='I Survived I Kissed Dating Goodbye'
+  Q11: predicted='Tancredo Neves'  expected='Francesco Cossiga'
+  Q34: predicted='Cavendish Grammar School'  expected='Convent of Our Lady of Mercy'
+  Q48: predicted='<think>\n省略大量思考内容\n</think>\n<tool_call>\n{"name": "search", "arguments": {"query": ["Mirny Ice Station aviation incident aircraft fire refueling", "Mirny Antarctica plane crash runway cones stall", "Mirny Station aircraft accident survivors"], "engine": ["google", "google", "google"]}}\n</tool_call>'  expected='1'
+  Q9: predicted='Gliese 12'  expected='TWA 7'
+  Q42: predicted='Munhwa Broadcasting Corporation'  expected='Korean Broadcasting System'
+  Q45: predicted='Stamp Yearbook'  expected='2024 Stamp Yearbook'
+  Q2: predicted='radio receiver'  expected='FM radio'
+  Q41: predicted='2018 Press Releases'  expected='Federal Reserve Board - 2018 Press Releases'
+  Q33: predicted='拜占庭帝国'  expected='罗马帝国'
+  Q8: predicted='<think>\n省略大量思考内容.\n</think>\n<tool_call>\n{"name": "search", "arguments": {"query": ["\\"Inhibition of ferroptosis and iron accumulation alleviates pulmonary fibrosis\\" mycoplasma MRC-5", "\\"Redox Biology\\" 2022 57 102509 mycoplasma testing cell line", "Pei Zhuo Redox Biology 2022 bleomycin MRC-5 mycoplasma"], "engine": ["google", "google", "google"]}}\n</tool_call>'  expected='Inhibition of ferroptosis and iron accumulation alleviates pulmonary fibrosis in a bleomycin model'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 5) ---
+  Q7: predicted='Washington Union Station'  expected='Union Station'
+  Q20: predicted='Jean Tisserand, OFM'  expected='Jean Tisserand, O.F.M.'
+  Q32: predicted='Populus simonii'  expected='Populus simonii Carrière'
+  Q17: predicted='今日俄罗斯国际新闻通讯社'  expected='今日俄罗斯'
+  Q0: predicted='RepRapPro Limited'  expected='RepRap Professional Limited'

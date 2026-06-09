@@ -1,0 +1,23 @@
+[21:49:57] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1789
+[21:50:05] [INFO] [agent_loop] Calling tool: search
+[21:50:05] [INFO] [tools_search] Query: "Bilibili sued by East Asian public broadcaster 2020s" -> Google/Serper (LLM:google)
+[21:50:07] [INFO] [tools_search] Query: "哔哩哔哩 被东亚公共广播机构起诉 2020年代" -> Bing/IQS (LLM:bing)
+[21:50:08] [INFO] [tools_search] Query: "Bilibili sports broadcasting lawsuit national sports league" -> Google/Serper (LLM:google)
+[21:50:10] [INFO] [agent_loop] Round 2, elapsed 13s, tokens 6130
+[21:50:19] [INFO] [agent_loop] Calling tool: search
+[21:50:19] [INFO] [tools_search] Query: "KBS sued Bilibili copyright 2023" -> Google/Serper (LLM:google)
+[21:50:20] [INFO] [tools_search] Query: "MBC granted exclusive internet broadcasting rights Shanghai " -> Google/Serper (LLM:google)
+[21:50:22] [INFO] [tools_search] Query: "KBS 授权 上海 公司 独家网络传播权" -> Bing/IQS (LLM:bing)
+[21:50:23] [INFO] [tools_search] Query: "MBC 授权 上海 公司 独家网络传播权" -> Bing/IQS (LLM:bing)
+[21:50:25] [INFO] [agent_loop] Round 3, elapsed 28s, tokens 12633
+[21:53:49] [INFO] [agent_loop] Calling tool: search
+[21:53:49] [INFO] [tools_search] Query: "KBS exclusive internet broadcasting rights Shanghai company " -> Google/Serper (LLM:google)
+[21:53:51] [INFO] [tools_search] Query: "KBS 独家 网络传播权 上海 公司 授权" -> Bing/IQS (LLM:bing)
+[21:53:52] [INFO] [tools_search] Query: "MBC Munhwa Broadcasting Corporation exclusive rights Shangha" -> Google/Serper (LLM:google)
+[21:53:54] [INFO] [tools_search] Query: "MBC 东方明珠 独家 网络传播权 2015" -> Bing/IQS (LLM:bing)
+[21:53:55] [INFO] [agent_loop] Round 4, elapsed 238s, tokens 19870
+[21:54:32] [INFO] [agent_loop] Calling tool: search
+[21:54:32] [INFO] [tools_search] Query: "MBC 上海东方明珠 独家合作 2015 互联网" -> Bing/IQS (LLM:bing)
+[21:54:33] [INFO] [tools_search] Query: "KBS granted exclusive internet rights Shanghai company befor" -> Google/Serper (LLM:google)
+[21:54:35] [INFO] [tools_search] Query: "Munhwa Broadcasting Corporation full English name" -> Google/Serper (LLM:google)
+[21:54:36] [WARNING] [agent_loop] Token limit reached at round 4

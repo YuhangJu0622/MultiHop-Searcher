@@ -1,0 +1,21 @@
+[17:23:11] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1884
+[17:23:22] [INFO] [agent_loop] Calling tool: search
+[17:23:22] [INFO] [tools_search] Query: "space mission map hundreds of millions of galaxies launch mi" -> Google/Serper (LLM:google)
+[17:23:24] [INFO] [tools_search] Query: "航天机构 发射 绘制数亿星系地图 任务 2024 2025" -> Bing/IQS (LLM:bing)
+[17:23:26] [INFO] [tools_search] Query: "中国北方省份 能源输出 土地复垦 环境影响评估 公众意见征询 2024 2025" -> Bing/IQS (LLM:bing)
+[17:23:27] [INFO] [agent_loop] Round 2, elapsed 16s, tokens 8008
+[17:23:38] [INFO] [agent_loop] Calling tool: search
+[17:23:38] [INFO] [tools_search] Query: "SPHEREx launch date 2025 map 450 million galaxies" -> Google/Serper (LLM:google)
+[17:23:39] [INFO] [tools_search] Query: "北方省份 综合能源基地 传统与可再生能源 生态恢复 林业 速生树种 固沙" -> Bing/IQS (LLM:bing)
+[17:23:41] [INFO] [tools_search] Query: "省级林业机构 生态防护林 退化林修复 速生树种 固沙 遗传样本 海拔" -> Bing/IQS (LLM:bing)
+[17:23:43] [INFO] [agent_loop] Round 3, elapsed 32s, tokens 13766
+[17:24:00] [INFO] [agent_loop] Calling tool: search
+[17:24:00] [INFO] [tools_search] Query: "sand fixation tree species genetic diversity elevation gradi" -> Google/Serper (LLM:google)
+[17:24:05] [INFO] [tools_search] Query: "固沙树种 遗传多样性 海拔梯度 种群基因组 跨地域 采样 研究 2024 2025" -> Bing/IQS (LLM:bing)
+[17:24:07] [INFO] [tools_search] Query: "退化防护林修复 单一速生树种 固沙 省级林业 遗传样本 适应性" -> Bing/IQS (LLM:bing)
+[17:24:09] [INFO] [agent_loop] Round 4, elapsed 58s, tokens 20181
+[17:24:55] [INFO] [agent_loop] Calling tool: search
+[17:24:55] [INFO] [tools_search] Query: "Populus simonii genetic diversity elevation gradient adaptat" -> Google/Serper (LLM:google)
+[17:24:58] [INFO] [tools_search] Query: "小叶杨 遗传多样性 海拔 适应性 基因组 固沙 研究" -> Bing/IQS (LLM:bing)
+[17:24:59] [INFO] [tools_search] Query: "杨树 固沙林 退化林修复 遗传样本 跨地域 跨海拔 适应性研究 2024 2025" -> Bing/IQS (LLM:bing)
+[17:25:01] [WARNING] [agent_loop] Token limit reached at round 4

@@ -1,0 +1,13 @@
+[14:34:21] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1635
+[14:35:07] [INFO] [agent_loop] Calling tool: search
+[14:35:07] [INFO] [tools_search] Query: "JWST exoplanet discovery mid 2020s red dwarf" -> Google/Serper (LLM:google)
+[14:35:09] [INFO] [tools_search] Query: "詹姆斯·韦伯望远镜 2023 红矮星 行星发现" -> Bing/IQS (LLM:bing)
+[14:35:10] [INFO] [agent_loop] Round 2, elapsed 49s, tokens 8547
+[14:35:27] [INFO] [agent_loop] Calling tool: search
+[14:35:27] [INFO] [tools_search] Query: "GJ 486 exoplanet discovery 2023" -> Google/Serper (LLM:google)
+[14:35:29] [INFO] [tools_search] Query: "GJ 486 b host star" -> Google/Serper (LLM:google)
+[14:35:30] [INFO] [tools_search] Query: "詹姆斯·韦伯望远镜 GJ 486 2023" -> Bing/IQS (LLM:bing)
+[14:35:32] [INFO] [agent_loop] Round 3, elapsed 70s, tokens 14023
+[14:35:46] [INFO] [agent_loop] Early answer blocked at round 3, requesting verification
+[14:35:46] [INFO] [agent_loop] Round 4, elapsed 85s, tokens 14940
+[14:36:05] [INFO] [agent_loop] Got answer at round 4: GJ 486

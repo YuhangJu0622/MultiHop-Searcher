@@ -1,0 +1,25 @@
+[11:18:01] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1737
+[11:21:35] [INFO] [agent_loop] Round 2, elapsed 215s, tokens 16321
+[11:21:58] [INFO] [agent_loop] Calling tool: search
+[11:21:58] [INFO] [tools_search] Query: "被美国司法部要求登记为外国代理人的电视频道" -> Bing/IQS (LLM:bing)
+[11:22:00] [INFO] [tools_search] Query: "RT 上级机构 2013 普京 重组" -> Bing/IQS (LLM:bing)
+[11:22:01] [INFO] [tools_search] Query: "普京 电视讲话 哀悼 空难" -> Bing/IQS (LLM:bing)
+[11:22:02] [INFO] [tools_search] Query: "境外电视频道 监控 标记 中国" -> Bing/IQS (LLM:bing)
+[11:22:04] [INFO] [agent_loop] Round 3, elapsed 243s, tokens 25185
+[11:23:25] [INFO] [agent_loop] Calling tool: search
+[11:23:25] [INFO] [tools_search] Query: "美国司法部 外国代理人 CGTN RT" -> Google/Serper (LLM:google)
+[11:23:26] [INFO] [tools_search] Query: "RT 今日俄罗斯 上级机构 重组 2013 普京" -> Google/Serper (LLM:google)
+[11:23:28] [INFO] [tools_search] Query: "今日俄罗斯 频道 中国 落标 受监控 标记" -> Bing/IQS (LLM:bing)
+[11:23:29] [INFO] [tools_search] Query: "CGTN India regulatory watermark" -> Google/Serper (LLM:google)
+[11:23:31] [INFO] [tools_search] Query: "习近平 电视讲话 哀悼 空难" -> Bing/IQS (LLM:bing)
+[11:23:32] [INFO] [tools_search] Query: "今日俄罗斯国际新闻通讯社" -> Bing/IQS (LLM:bing)
+[11:23:33] [INFO] [agent_loop] Round 4, elapsed 333s, tokens 40297
+[11:25:33] [INFO] [agent_loop] Round 5, elapsed 453s, tokens 47875
+[11:25:47] [INFO] [agent_loop] Calling tool: search
+[11:25:47] [INFO] [tools_search] Query: "Russia Today 今日俄罗斯 上级机构 2013 重组" -> Bing/IQS (LLM:bing)
+[11:25:49] [INFO] [tools_search] Query: "境外电视频道 受监控 特殊标记 监 字" -> Bing/IQS (LLM:bing)
+[11:25:50] [INFO] [tools_search] Query: "CGTN India monitored tag watermark" -> Google/Serper (LLM:google)
+[11:25:52] [INFO] [tools_search] Query: "半岛电视台 美国 外国代理人 上级机构" -> Google/Serper (LLM:google)
+[11:25:54] [INFO] [tools_search] Query: "印度 外国电视频道 监管 标记" -> Google/Serper (LLM:google)
+[11:25:55] [INFO] [agent_loop] Round 6, elapsed 474s, tokens 57226
+[11:28:40] [WARNING] [agent_loop] Timeout after 640s at round 7

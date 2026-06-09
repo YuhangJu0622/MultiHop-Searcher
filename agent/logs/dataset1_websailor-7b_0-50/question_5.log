@@ -1,0 +1,26 @@
+[14:34:43] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1635
+[14:34:47] [INFO] [agent_loop] Calling tool: search
+[14:34:47] [INFO] [tools_search] Query: "新闻 公布 创办 辍学" -> Google/Serper (LLM:google)
+[14:34:49] [INFO] [tools_search] Query: "新闻 出版 创办 辍学" -> Bing/IQS (auto)
+[14:34:51] [INFO] [tools_search] Query: "新闻 出版 公司 创办 辍学" -> Bing/IQS (auto)
+[14:34:52] [INFO] [agent_loop] Round 2, elapsed 9s, tokens 7864
+[14:35:08] [INFO] [agent_loop] Calling tool: search
+[14:35:08] [INFO] [tools_search] Query: "新闻 出版 创办 辍学" -> Google/Serper (LLM:google)
+[14:35:11] [INFO] [tools_search] Query: "新闻 出版 创办 大学 辍学" -> Bing/IQS (auto)
+[14:35:12] [INFO] [agent_loop] Round 3, elapsed 29s, tokens 11735
+[14:35:18] [INFO] [agent_loop] Calling tool: search
+[14:35:18] [INFO] [tools_search] Query: "新闻 出版 创办 辍学" -> Google/Serper (LLM:google)
+[14:35:19] [INFO] [tools_search] Query: "新闻 出版 创办 大学 辍学" -> Bing/IQS (auto)
+[14:35:20] [INFO] [agent_loop] Round 4, elapsed 36s, tokens 15815
+[14:35:27] [INFO] [agent_loop] Calling tool: search
+[14:35:27] [INFO] [tools_search] Query: "新闻 出版 创办 辍学" -> Google/Serper (LLM:google)
+[14:35:28] [INFO] [tools_search] Query: "新闻 出版 创办 大学 辍学" -> Bing/IQS (auto)
+[14:35:29] [INFO] [agent_loop] Round 5, elapsed 46s, tokens 19830
+[14:35:37] [INFO] [agent_loop] Calling tool: search
+[14:35:37] [INFO] [tools_search] Query: "新闻 出版 创办 辍学" -> Google/Serper (LLM:google)
+[14:35:38] [INFO] [tools_search] Query: "新闻 出版 创办 大学 辍学" -> Bing/IQS (auto)
+[14:35:39] [INFO] [agent_loop] Round 6, elapsed 56s, tokens 23859
+[14:35:50] [INFO] [agent_loop] Calling tool: search
+[14:35:50] [INFO] [tools_search] Query: "新闻 出版 创办 辍学" -> Google/Serper (LLM:google)
+[14:35:52] [INFO] [tools_search] Query: "新闻 出版 创办 大学 辍学" -> Bing/IQS (auto)
+[14:35:53] [WARNING] [agent_loop] Token limit reached at round 6

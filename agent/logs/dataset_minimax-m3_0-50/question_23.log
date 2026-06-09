@@ -1,0 +1,16 @@
+[11:47:12] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1622
+[11:47:23] [INFO] [agent_loop] Calling tool: search
+[11:47:23] [INFO] [tools_search] Query: "winery sparkling wine named after Russia arms treaty summit " -> Google/Serper (LLM:google)
+[11:47:24] [INFO] [tools_search] Query: "sparkling wine named after Soviet Union arms agreement G8 su" -> Google/Serper (LLM:google)
+[11:47:26] [INFO] [agent_loop] Round 2, elapsed 15s, tokens 3694
+[11:47:35] [INFO] [agent_loop] Calling tool: search
+[11:47:35] [INFO] [tools_search] Query: "Iron Horse winery Russian Cuvee sparkling wine arms treaty s" -> Google/Serper (LLM:google)
+[11:47:36] [INFO] [tools_search] Query: "Iron Horse Vineyards "Russian Cuvee" history Reagan Gorbache" -> Google/Serper (LLM:google)
+[11:47:37] [INFO] [agent_loop] Round 3, elapsed 26s, tokens 6036
+[11:47:57] [INFO] [agent_loop] Calling tool: visit
+[11:48:05] [INFO] [tools_visit] Visit: "https://ironhorsevineyards.com/product/2021-russian-river-cuv-e/" -> Jina Reader
+[11:48:18] [INFO] [agent_loop] Round 4, elapsed 67s, tokens 6955
+[11:48:26] [INFO] [agent_loop] Calling tool: search
+[11:48:26] [INFO] [tools_search] Query: "Reagan Gorbachev INF Treaty 1987 arms reduction agreement la" -> Google/Serper (LLM:google)
+[11:48:27] [INFO] [agent_loop] Round 5, elapsed 76s, tokens 7993
+[11:48:43] [INFO] [agent_loop] Got answer at round 5: Ronald Reagan

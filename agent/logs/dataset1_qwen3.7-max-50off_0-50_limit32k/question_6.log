@@ -1,0 +1,20 @@
+[17:00:16] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1661
+[17:00:28] [INFO] [agent_loop] Calling tool: search
+[17:00:28] [INFO] [tools_search] Query: "2000年初 动漫 卫视 盗贼 美女 警察 中国大陆" -> Bing/IQS (LLM:bing)
+[17:00:29] [INFO] [tools_search] Query: "猫眼三姐妹 大陆配音 男主角 配音员" -> Bing/IQS (LLM:bing)
+[17:00:30] [INFO] [tools_search] Query: "猫眼三姐妹 动画 中国卫视播出 2000年" -> Bing/IQS (LLM:bing)
+[17:00:32] [INFO] [agent_loop] Round 2, elapsed 16s, tokens 8819
+[17:00:43] [INFO] [agent_loop] Calling tool: search
+[17:00:43] [INFO] [tools_search] Query: "猫眼三姐妹 大陆版 配音演员 内海俊夫" -> Bing/IQS (LLM:bing)
+[17:00:44] [INFO] [tools_search] Query: "猫眼三姐妹 国语配音 演员表" -> Bing/IQS (LLM:bing)
+[17:00:46] [INFO] [tools_search] Query: "贞观之治 2007 电视剧 配音演员表" -> Bing/IQS (LLM:bing)
+[17:00:47] [INFO] [agent_loop] Round 3, elapsed 31s, tokens 15850
+[17:01:04] [INFO] [agent_loop] Calling tool: search
+[17:01:04] [INFO] [tools_search] Query: "猫眼三姐妹 大陆配音版 内海俊夫 配音演员" -> Bing/IQS (LLM:bing)
+[17:01:05] [INFO] [tools_search] Query: "姚培华 猫眼三姐妹 配音角色" -> Bing/IQS (LLM:bing)
+[17:01:07] [INFO] [tools_search] Query: "猫眼三姐妹 国语版 配音 全部演员表" -> Bing/IQS (LLM:bing)
+[17:01:08] [INFO] [agent_loop] Round 4, elapsed 52s, tokens 23600
+[17:01:23] [INFO] [agent_loop] Calling tool: visit
+[17:01:53] [INFO] [tools_visit] Visit: "https://www.kepuchina.cn/article/articleinfo?ar_id=332718&business_type=100&classify=0" -> httpx (Jina failed: [visit] Jina fetch failed: )
+[17:01:53] [INFO] [tools_visit] Visit: "https://m.douban.com/group/topic/263075904/" -> httpx (Jina failed: [visit] Jina fetch failed: )
+[17:02:28] [WARNING] [agent_loop] Token limit reached at round 4

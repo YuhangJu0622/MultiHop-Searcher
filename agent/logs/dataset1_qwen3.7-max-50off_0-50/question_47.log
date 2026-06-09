@@ -1,0 +1,132 @@
+[11:52:00] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1624
+[11:52:04] [INFO] [agent_loop] Calling tool: search
+[11:52:04] [INFO] [tools_search] Query: "中学 创办2005年后 第一届学生 数学竞赛国家队 改名" -> Bing/IQS (LLM:bing)
+[11:52:05] [INFO] [tools_search] Query: "中学 2005年创办 首届学生 数学奥赛国家队 2018年改名" -> Bing/IQS (LLM:bing)
+[11:52:07] [INFO] [agent_loop] Round 2, elapsed 7s, tokens 6310
+[11:52:12] [INFO] [agent_loop] Calling tool: search
+[11:52:12] [INFO] [tools_search] Query: "首届学生 数学竞赛 国家队 中学 改名 2018" -> Bing/IQS (LLM:bing)
+[11:52:13] [INFO] [tools_search] Query: "中学 2006年创办 第一届 数学奥赛 金牌 改名" -> Bing/IQS (LLM:bing)
+[11:52:15] [INFO] [tools_search] Query: "新建中学 首届毕业生 IMO 国家队 更名" -> Bing/IQS (LLM:bing)
+[11:52:16] [INFO] [agent_loop] Round 3, elapsed 16s, tokens 12425
+[11:52:31] [INFO] [agent_loop] Calling tool: search
+[11:52:31] [INFO] [tools_search] Query: "中学 2007年创办 首届学生 数学竞赛 国家队 更名" -> Bing/IQS (LLM:bing)
+[11:52:33] [INFO] [tools_search] Query: "中学 2008年成立 第一届 数学奥赛 国家集训队 改名 2018" -> Bing/IQS (LLM:bing)
+[11:52:34] [INFO] [tools_search] Query: "site:zhihu.com 中学 创办 2005 首届 数学 国家队 改名" -> Google/Serper (LLM:google)
+[11:52:35] [INFO] [agent_loop] Round 4, elapsed 35s, tokens 18215
+[11:52:42] [INFO] [agent_loop] Calling tool: search
+[11:52:42] [INFO] [tools_search] Query: "中学 2018年更名 首届学生 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[11:52:43] [INFO] [tools_search] Query: "中学 2018年改名 创办于2006 数学奥赛" -> Bing/IQS (LLM:bing)
+[11:52:44] [INFO] [tools_search] Query: "中学 2018年更名 2007年创办 数学竞赛 金牌" -> Bing/IQS (LLM:bing)
+[11:52:46] [INFO] [agent_loop] Round 5, elapsed 46s, tokens 24950
+[11:52:57] [INFO] [agent_loop] Calling tool: search
+[11:52:57] [INFO] [tools_search] Query: "中学 2018年更名 创办于2008 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:52:59] [INFO] [tools_search] Query: "中学 2018年改名 2009年创办 首届 数学奥赛" -> Bing/IQS (LLM:bing)
+[11:53:00] [INFO] [tools_search] Query: "中学 2018年更名 2010年创办 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[11:53:02] [INFO] [agent_loop] Round 6, elapsed 62s, tokens 31577
+[11:53:06] [INFO] [agent_loop] Calling tool: search
+[11:53:06] [INFO] [tools_search] Query: "中学 2018年更名 创办于2006 首届毕业生 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:53:07] [INFO] [tools_search] Query: "中学 2018年改名 2007年成立 第一届学生 数学奥赛 金牌" -> Bing/IQS (LLM:bing)
+[11:53:09] [INFO] [tools_search] Query: "中学 2018年更名 2008年成立 首届学生 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[11:53:10] [INFO] [agent_loop] Round 7, elapsed 71s, tokens 38158
+[11:53:18] [INFO] [agent_loop] Calling tool: search
+[11:53:18] [INFO] [tools_search] Query: "中学 2018年更名 创办于2006 首届毕业生 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:53:19] [INFO] [tools_search] Query: "中学 2018年改名 2007年成立 第一届学生 数学奥赛 金牌" -> Bing/IQS (LLM:bing)
+[11:53:20] [INFO] [tools_search] Query: "中学 2018年更名 2008年成立 首届学生 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[11:53:21] [INFO] [agent_loop] Round 8, elapsed 81s, tokens 44709
+[11:53:30] [INFO] [agent_loop] Calling tool: search
+[11:53:30] [INFO] [tools_search] Query: "site:zhihu.com 中学 创办 2006 2007 2008 首届 数学 国家队 改名" -> Google/Serper (LLM:google)
+[11:53:31] [INFO] [tools_search] Query: "中学 2018年更名 创办于2006 首届毕业生 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:53:32] [INFO] [tools_search] Query: "中学 2018年改名 2007年成立 第一届学生 数学奥赛 金牌" -> Bing/IQS (LLM:bing)
+[11:53:33] [INFO] [agent_loop] Round 9, elapsed 93s, tokens 51118
+[11:53:38] [INFO] [agent_loop] Calling tool: search
+[11:53:38] [INFO] [tools_search] Query: "中学 2018年更名 创办于2006 首届毕业生 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:53:39] [INFO] [tools_search] Query: "中学 2018年改名 2007年成立 第一届学生 数学奥赛 金牌" -> Bing/IQS (LLM:bing)
+[11:53:40] [INFO] [tools_search] Query: "中学 2018年更名 2008年成立 首届学生 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[11:53:41] [INFO] [agent_loop] Round 10, elapsed 101s, tokens 57713
+[11:53:54] [INFO] [agent_loop] Calling tool: search
+[11:53:54] [INFO] [tools_search] Query: "中学 2018年更名 创办于2006 首届毕业生 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:53:55] [INFO] [tools_search] Query: "中学 2018年改名 2007年成立 第一届学生 数学奥赛 金牌" -> Bing/IQS (LLM:bing)
+[11:53:56] [INFO] [tools_search] Query: "中学 2018年更名 2008年成立 首届学生 数学竞赛 国家队" -> Bing/IQS (LLM:bing)
+[11:53:57] [INFO] [agent_loop] Round 11, elapsed 117s, tokens 64517
+[11:54:10] [INFO] [agent_loop] Calling tool: search
+[11:54:10] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:12] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:13] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:15] [INFO] [agent_loop] Round 12, elapsed 135s, tokens 71813
+[11:54:28] [INFO] [agent_loop] Calling tool: search
+[11:54:28] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:29] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:30] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:31] [INFO] [agent_loop] Round 13, elapsed 151s, tokens 78960
+[11:54:47] [INFO] [agent_loop] Calling tool: search
+[11:54:47] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:48] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:49] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:54:50] [INFO] [agent_loop] Round 14, elapsed 171s, tokens 86107
+[11:55:01] [INFO] [agent_loop] Calling tool: search
+[11:55:01] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:01] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:02] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:03] [INFO] [agent_loop] Round 15, elapsed 183s, tokens 93254
+[11:55:14] [INFO] [agent_loop] Calling tool: search
+[11:55:14] [INFO] [tools_search] Query: "site:zhihu.com 中学 创办 2006 2007 2008 首届 数学 国家队 改名" -> Google/Serper (LLM:google)
+[11:55:16] [INFO] [tools_search] Query: "中学 2018年更名 创办于2006 首届毕业生 数学竞赛" -> Bing/IQS (LLM:bing)
+[11:55:17] [INFO] [tools_search] Query: "中学 2018年改名 2007年成立 第一届学生 数学奥赛 金牌" -> Bing/IQS (LLM:bing)
+[11:55:17] [INFO] [agent_loop] Round 16, elapsed 198s, tokens 99508
+[11:55:27] [INFO] [agent_loop] Calling tool: search
+[11:55:27] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:28] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:29] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:30] [INFO] [agent_loop] Round 17, elapsed 211s, tokens 106656
+[11:55:44] [INFO] [agent_loop] Calling tool: search
+[11:55:44] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:45] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:46] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:55:47] [INFO] [agent_loop] Round 18, elapsed 228s, tokens 113803
+[11:56:01] [INFO] [agent_loop] Calling tool: search
+[11:56:01] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:01] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:02] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:03] [INFO] [agent_loop] Round 19, elapsed 244s, tokens 120950
+[11:56:09] [INFO] [agent_loop] Calling tool: search
+[11:56:09] [INFO] [tools_search] Query: "中学 创办于2006年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:10] [INFO] [tools_search] Query: "中学 创办于2007年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:11] [INFO] [tools_search] Query: "中学 创办于2008年 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:11] [INFO] [agent_loop] Round 20, elapsed 252s, tokens 128097
+[11:56:25] [INFO] [agent_loop] Calling tool: search
+[11:56:25] [INFO] [tools_search] Query: "中学 2006年创办 首届毕业生 数学奥赛 国家队 2018年改名" -> Bing/IQS (LLM:bing)
+[11:56:26] [INFO] [tools_search] Query: "中学 2007年创办 第一届学生 数学竞赛 国家集训队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:56:28] [INFO] [tools_search] Query: "中学 2008年创办 首届学生 数学奥赛 金牌 2018年改名" -> Bing/IQS (LLM:bing)
+[11:56:29] [INFO] [agent_loop] Round 21, elapsed 270s, tokens 135527
+[11:56:48] [INFO] [agent_loop] Calling tool: search
+[11:56:48] [INFO] [tools_search] Query: ""2018年" "更名" "中学" "创办" "2006" OR "2007" OR "2008" OR "2009" " -> Google/Serper (LLM:google)
+[11:56:49] [INFO] [tools_search] Query: ""首届" "数学" "国家队" OR "国家集训队" "中学" "改名" "2018"" -> Google/Serper (LLM:google)
+[11:56:52] [INFO] [agent_loop] Round 22, elapsed 292s, tokens 139450
+[11:57:09] [INFO] [agent_loop] Calling tool: search
+[11:57:09] [INFO] [tools_search] Query: "中学 2006年创办 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:57:11] [INFO] [tools_search] Query: "中学 2007年创办 第一届学生 数学竞赛 国家集训队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:57:12] [INFO] [tools_search] Query: "中学 2008年创办 首届学生 数学奥赛 金牌 2018年改名" -> Bing/IQS (LLM:bing)
+[11:57:13] [INFO] [agent_loop] Round 23, elapsed 313s, tokens 146825
+[11:57:29] [INFO] [agent_loop] Calling tool: search
+[11:57:29] [INFO] [tools_search] Query: "中学 2006年创办 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:57:30] [INFO] [tools_search] Query: "中学 2007年创办 第一届学生 数学竞赛 国家集训队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:57:30] [INFO] [tools_search] Query: "中学 2008年创办 首届学生 数学奥赛 金牌 2018年改名" -> Bing/IQS (LLM:bing)
+[11:57:31] [INFO] [agent_loop] Round 24, elapsed 332s, tokens 154748
+[11:57:44] [INFO] [agent_loop] Calling tool: search
+[11:57:44] [INFO] [tools_search] Query: "中学 2006年创办 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:57:44] [INFO] [tools_search] Query: "中学 2007年创办 第一届学生 数学竞赛 国家集训队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:57:45] [INFO] [tools_search] Query: "中学 2008年创办 首届学生 数学奥赛 金牌 2018年改名" -> Bing/IQS (LLM:bing)
+[11:57:46] [INFO] [agent_loop] Round 25, elapsed 347s, tokens 162319
+[11:58:02] [INFO] [agent_loop] Calling tool: search
+[11:58:02] [INFO] [tools_search] Query: "中学 2006年创办 首届学生 数学竞赛 国家队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:58:03] [INFO] [tools_search] Query: "中学 2007年创办 第一届学生 数学竞赛 国家集训队 2018年更名" -> Bing/IQS (LLM:bing)
+[11:58:03] [INFO] [tools_search] Query: "中学 2008年创办 首届学生 数学奥赛 金牌 2018年改名" -> Bing/IQS (LLM:bing)
+[11:58:04] [INFO] [agent_loop] Round 26, elapsed 365s, tokens 170109
+[12:25:12] [INFO] [agent_loop] Calling tool: search
+[12:25:12] [INFO] [tools_search] Query: "site:baike.baidu.com 中学 2006年创办 2018年更名" -> Bing/IQS (LLM:bing)
+[12:25:13] [INFO] [tools_search] Poor Bing/IQS results for 'site:baike.baidu.com 中学 2006年创办 2018年更名', trying Google fallback
+[12:25:15] [INFO] [tools_search] Query: "site:baike.baidu.com 中学 2007年创办 2018年更名" -> Bing/IQS (LLM:bing)
+[12:25:16] [INFO] [tools_search] Poor Bing/IQS results for 'site:baike.baidu.com 中学 2007年创办 2018年更名', trying Google fallback
+[12:25:17] [INFO] [tools_search] Query: "site:baike.baidu.com 中学 2008年创办 2018年更名" -> Bing/IQS (LLM:bing)
+[12:25:18] [INFO] [tools_search] Poor Bing/IQS results for 'site:baike.baidu.com 中学 2008年创办 2018年更名', trying Google fallback
+[12:25:19] [WARNING] [agent_loop] Timeout after 2000s at round 27

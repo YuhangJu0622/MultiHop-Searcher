@@ -1,0 +1,12 @@
+[14:49:11] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1624
+[14:50:10] [INFO] [agent_loop] Calling tool: search
+[14:50:10] [INFO] [tools_search] Query: "2005年后创办的中学 第一届学生 数学竞赛国家队" -> Bing/IQS (LLM:bing)
+[14:50:12] [INFO] [tools_search] Query: "2005年以后成立的高中 数学竞赛国家队成员" -> Bing/IQS (LLM:bing)
+[14:50:13] [INFO] [agent_loop] Round 2, elapsed 63s, tokens 13650
+[14:50:41] [INFO] [agent_loop] Early answer blocked at round 2, requesting verification
+[14:50:41] [INFO] [agent_loop] Round 3, elapsed 90s, tokens 16452
+[14:51:13] [INFO] [agent_loop] Calling tool: search
+[14:51:13] [INFO] [tools_search] Query: "深圳中学 2005年后创办" -> Bing/IQS (LLM:bing)
+[14:51:14] [INFO] [tools_search] Query: "深圳中学 创办时间" -> Bing/IQS (auto)
+[14:51:16] [INFO] [agent_loop] Round 4, elapsed 125s, tokens 22898
+[14:51:35] [INFO] [agent_loop] Got answer at round 4: 深圳中学

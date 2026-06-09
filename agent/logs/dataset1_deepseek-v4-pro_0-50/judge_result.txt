@@ -1,0 +1,23 @@
+============================================================
+
+[Exact Match] Accuracy: 33/45 = 73.33%
+[Semantic]    Accuracy: 37/45 = 82.22%
+              (LLM saved 4 answers that failed exact match)
+
+Avg time: 431.6s  |  Total time: 19424s
+
+--- 真正的错题 (Semantic Wrong: 8) ---
+  Q42: predicted='Munhwa Broadcasting Corporation'  expected='Korean Broadcasting System'
+  Q11: predicted='<think>\n省略思考内容</think>'  expected='Francesco Cossiga'
+  Q36: predicted='35'  expected='32'
+  Q39: predicted='Wait, I am not ready to answer yet. I need to fix the search call syntax. Let me try again with a correct JSON format.'  expected='广州'
+  Q28: predicted='<think>\n省略大量思考内容</think>'  expected="You're the Worst"
+  Q3: predicted='<think>\n省略思考内容\n</think>'  expected='591'
+  Q19: predicted='<think>\n省略大量思考内容</think>'  expected='1953'
+  Q14: predicted='<think>\n省略思考内容</think>'  expected='I Survived I Kissed Dating Goodbye'
+
+--- 被 LLM 挽救的题目 (Strict Wrong but Semantic Correct: 4) ---
+  Q7: predicted='Washington Union Station'  expected='Union Station'
+  Q20: predicted='Jean Tisserand OFM'  expected='Jean Tisserand, O.F.M.'
+  Q32: predicted='Populus simonii'  expected='Populus simonii Carrière'
+  Q17: predicted='今日俄罗斯国际新闻通讯社'  expected='今日俄罗斯'

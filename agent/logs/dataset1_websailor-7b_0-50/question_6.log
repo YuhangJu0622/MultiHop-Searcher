@@ -1,0 +1,21 @@
+[14:35:12] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1621
+[14:35:20] [INFO] [agent_loop] Calling tool: search
+[14:35:20] [INFO] [tools_search] Query: "2000年初 动漫 卫视 盗贼 美女 警察" -> Bing/IQS (auto)
+[14:35:21] [INFO] [tools_search] Query: "2000年初 动漫 盗贼 美女 警察 卫视" -> Bing/IQS (auto)
+[14:35:23] [INFO] [agent_loop] Round 2, elapsed 10s, tokens 6321
+[14:35:29] [INFO] [agent_loop] Calling tool: search
+[14:35:29] [INFO] [tools_search] Query: "2000年初 动漫 盗贼 美女 警察 卫视" -> Bing/IQS (auto)
+[14:35:30] [INFO] [tools_search] Query: "2000年初 动漫 盗贼 卫视" -> Bing/IQS (auto)
+[14:35:31] [INFO] [tools_search] Query: "2000年初 动漫 美女 警察 卫视" -> Bing/IQS (auto)
+[14:35:33] [INFO] [agent_loop] Round 3, elapsed 20s, tokens 14219
+[14:35:39] [INFO] [agent_loop] Calling tool: search
+[14:35:39] [INFO] [tools_search] Query: "怪盗MOUSE 卫视 播放" -> Bing/IQS (auto)
+[14:35:40] [INFO] [tools_search] Query: "怪盗MOUSE 中国大陆 配音" -> Bing/IQS (auto)
+[14:35:42] [INFO] [agent_loop] Round 4, elapsed 29s, tokens 20481
+[14:35:53] [INFO] [agent_loop] Calling tool: visit
+[14:36:15] [INFO] [tools_visit] Visit: "https://wapbaike.baidu.com/view/2362731.htm" -> Jina Reader
+[14:36:54] [INFO] [agent_loop] Round 5, elapsed 102s, tokens 22299
+[14:37:00] [INFO] [agent_loop] Calling tool: search
+[14:37:00] [INFO] [tools_search] Query: "怪盗MOUSE 卫视 播出" -> Bing/IQS (auto)
+[14:37:01] [INFO] [tools_search] Query: "怪盗MOUSE 卫视 中国大陆" -> Bing/IQS (auto)
+[14:37:03] [WARNING] [agent_loop] Token limit reached at round 5

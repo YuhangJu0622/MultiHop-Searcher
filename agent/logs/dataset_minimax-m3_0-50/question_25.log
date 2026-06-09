@@ -1,0 +1,17 @@
+[11:48:46] [INFO] [agent_loop] Round 1, elapsed 0s, tokens 1733
+[11:49:06] [INFO] [agent_loop] Calling tool: search
+[11:49:06] [INFO] [tools_search] Query: "ARM processor architecture origin British company Acorn Comp" -> Google/Serper (auto)
+[11:49:07] [INFO] [tools_search] Query: "Nintendo DS Apple Newton ARM processor Acorn" -> Google/Serper (auto)
+[11:49:09] [INFO] [agent_loop] Round 2, elapsed 23s, tokens 4130
+[11:49:18] [INFO] [agent_loop] Calling tool: search
+[11:49:18] [INFO] [tools_search] Query: "BBC Micro nickname Beeb abbreviation" -> Google/Serper (auto)
+[11:49:19] [INFO] [tools_search] Query: "Acorn Atom 6502 processor Commodore 64 same series" -> Google/Serper (auto)
+[11:49:20] [INFO] [agent_loop] Round 3, elapsed 34s, tokens 6213
+[11:49:52] [INFO] [agent_loop] Calling tool: search
+[11:49:52] [INFO] [tools_search] Query: "BBC Micro Beeb 简称 昵称" -> Bing/IQS (auto)
+[11:49:53] [INFO] [tools_search] Query: "BBC Microcomputer BBC Computer Literacy Project Acorn 1981" -> Google/Serper (auto)
+[11:49:54] [INFO] [agent_loop] Round 4, elapsed 68s, tokens 10755
+[11:50:28] [INFO] [agent_loop] Calling tool: visit
+[11:50:31] [INFO] [tools_visit] Visit: "https://en.wikipedia.org/wiki/BBC_Micro" -> Jina Reader
+[11:51:12] [INFO] [agent_loop] Round 5, elapsed 146s, tokens 13752
+[11:51:31] [INFO] [agent_loop] Got answer at round 5: BBC Micro
